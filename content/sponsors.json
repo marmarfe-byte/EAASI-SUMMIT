@@ -60,7 +60,7 @@
       "id": "spon-diamond",
       "name": "Diamond Aircraft",
       "tier": "silver",
-      "logo": "/assets/sponsors/diamond-aircraft.avif",
+      "logo": "/assets/sponsors/diamond-aircraft.png",
       "description": "Austrian manufacturer of piston and turboprop aircraft widely used for aerial survey and mapping missions.",
       "websiteUrl": "https://www.diamondaircraft.com"
     },
@@ -76,7 +76,7 @@
       "id": "spon-teledyne",
       "name": "Teledyne Geospatial",
       "tier": "bronze",
-      "logo": "/assets/sponsors/teledyne.avif",
+      "logo": "/assets/sponsors/teledyne.png",
       "description": "Combines Teledyne Optech lidar sensors with Teledyne CARIS software for high-accuracy land and sea mapping.",
       "websiteUrl": "https://www.teledynegeospatial.com"
     },

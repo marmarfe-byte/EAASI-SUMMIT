@@ -35,8 +35,8 @@ export function renderHome(data) {
             ${g.items
               .map((s) =>
                 !isPlaceholder(s.logo)
-                  ? `<span class="sponsor-chip"><img src="${escapeHtml(s.logo)}" alt="${escapeHtml(s.name)}"/></span>`
-                  : `<span class="sponsor-chip sponsor-chip--text">${escapeHtml(s.name)}</span>`
+                  ? `<span class="sponsor-chip sponsor-chip--${g.tier}"><img src="${escapeHtml(s.logo)}" alt="${escapeHtml(s.name)}"/></span>`
+                  : `<span class="sponsor-chip sponsor-chip--${g.tier} sponsor-chip--text">${escapeHtml(s.name)}</span>`
               )
               .join("")}
           </div>

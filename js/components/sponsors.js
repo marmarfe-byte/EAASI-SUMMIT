@@ -22,8 +22,8 @@ export function renderSponsors(data, filterTier) {
   const cards = filtered
     .map((s) => {
       const logo = !isPlaceholder(s.logo)
-        ? `<img class="sponsor-logo" src="${escapeHtml(s.logo)}" alt="${escapeHtml(s.name)}"/>`
-        : `<div class="sponsor-logo img-placeholder">${escapeHtml(initials(s.name))}</div>`;
+        ? `<img class="sponsor-logo sponsor-logo--${escapeHtml(s.tier)}" src="${escapeHtml(s.logo)}" alt="${escapeHtml(s.name)}"/>`
+        : `<div class="sponsor-logo sponsor-logo--${escapeHtml(s.tier)} img-placeholder">${escapeHtml(initials(s.name))}</div>`;
       return `
       <div class="card">
         <div class="sponsor-row">

@@ -12,7 +12,7 @@
  * added/renamed.
  */
 
-const CACHE_VERSION = "eaasi-summit-v11";
+const CACHE_VERSION = "eaasi-summit-v12";
 const APP_SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const CONTENT_CACHE = `${CACHE_VERSION}-content`;
 
@@ -45,9 +45,9 @@ const APP_SHELL_FILES = [
   "/assets/sponsors/pointly.avif",
   "/assets/sponsors/dielmo3d.avif",
   "/assets/sponsors/vexcel.avif",
-  "/assets/sponsors/diamond-aircraft.avif",
+  "/assets/sponsors/diamond-aircraft.png",
   "/assets/sponsors/xeos.avif",
-  "/assets/sponsors/teledyne.avif",
+  "/assets/sponsors/teledyne.png",
   "/assets/sponsors/phaseone.avif",
   "/assets/sponsors/simactive.avif",
   "/assets/venue/hotel-1.avif",

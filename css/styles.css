@@ -584,18 +584,22 @@ main {
   border: 1px solid var(--periwinkle);
   border-radius: 10px;
   padding: 6px 12px;
-  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: var(--shadow-card);
 }
 .sponsor-chip img {
-  max-height: 40px;
-  max-width: 140px;
   object-fit: contain;
   display: block;
 }
+/* Tiered sizing — Gold largest, Silver 90% of Gold, Bronze 80% of Gold */
+.sponsor-chip--gold { height: 64px; }
+.sponsor-chip--gold img { max-height: 46px; max-width: 160px; }
+.sponsor-chip--silver { height: 58px; }
+.sponsor-chip--silver img { max-height: 41px; max-width: 144px; }
+.sponsor-chip--bronze { height: 51px; }
+.sponsor-chip--bronze img { max-height: 37px; max-width: 128px; }
 .sponsor-chip--text {
   font-size: 12px;
   font-weight: 700;
@@ -665,12 +669,14 @@ main {
   gap: 14px;
 }
 .sponsor-logo {
-  width: 108px;
-  height: 64px;
   border-radius: 12px;
   flex-shrink: 0;
   object-fit: contain;
 }
+/* Tiered sizing — Gold largest, Silver 90% of Gold, Bronze 80% of Gold */
+.sponsor-logo--gold { width: 140px; height: 84px; }
+.sponsor-logo--silver { width: 126px; height: 76px; }
+.sponsor-logo--bronze { width: 112px; height: 67px; }
 .tier-badge {
   font-size: 11px;
   font-weight: 800;
