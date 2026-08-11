@@ -1,0 +1,94 @@
+{
+  "speakers": [
+    {
+      "id": "spk-cassettari",
+      "name": "Seppe Cassettari",
+      "company": "British Cartographic Society",
+      "role": "Keynote Speaker",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "40+ years in cartography & geospatial; leads the Geofutures initiative."
+    },
+    {
+      "id": "spk-isprs",
+      "name": "ISPRS Representative",
+      "company": "ISPRS — to be confirmed",
+      "role": "Keynote Speaker",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "Keynote from the International Society for Photogrammetry & Remote Sensing."
+    },
+    {
+      "id": "spk-iulietto",
+      "name": "Gian Marco Iulietto",
+      "company": "LX20 Law Firm",
+      "role": "Tech Lawyer — Corporate & Technology Law",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "https://linkedin.com/in/gianmarcoiulietto",
+      "bio": "Technology lawyer focused on the intersection of law, technology, and business, with a cross-border practice spanning corporate, FinTech, AI regulation, privacy, cybersecurity and technology-driven M&A across the EU, US and international markets. First Italian recipient of the Innovative Leaders award at the 2025 Leadership, Influence & Inclusivity in Law Awards (Law.com International)."
+    },
+    {
+      "id": "spk-ign",
+      "name": "IGN Spain",
+      "company": "Government of Spain — to be confirmed",
+      "role": "Institutional Guest",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "Institutional guest from the National Geographic Institute of Spain."
+    },
+    {
+      "id": "spk-delatorre",
+      "name": "Javier de la Torre",
+      "company": "CARTO",
+      "role": "Founder & Chief Strategy Officer",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "Location-intelligence pioneer; founded CARTO in 2012."
+    },
+    {
+      "id": "spk-cooper",
+      "name": "Phil Cooper",
+      "company": "AWS",
+      "role": "Global Geospatial Lead",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "Leads AWS global geospatial efforts across Aerospace & Satellite."
+    },
+    {
+      "id": "spk-tidmarsh",
+      "name": "Rachel Tidmarsh",
+      "company": "EAASI",
+      "role": "Treasurer",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "PLACEHOLDER — 2–3 sentence bio."
+    },
+    {
+      "id": "spk-president",
+      "name": "Roland Stengele",
+      "company": "EAASI",
+      "role": "President",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "PLACEHOLDER — 2–3 sentence bio."
+    },
+    {
+      "id": "spk-vp",
+      "name": "Simon Musaeus",
+      "company": "EAASI",
+      "role": "Vice President",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "PLACEHOLDER — 2–3 sentence bio."
+    },
+    {
+      "id": "spk-secgen",
+      "name": "Marcos Martinez",
+      "company": "EAASI",
+      "role": "Secretary General",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "PLACEHOLDER — 2–3 sentence bio."
+    }
+  ]
+}

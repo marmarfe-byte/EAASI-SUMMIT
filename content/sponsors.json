@@ -1,0 +1,105 @@
+{
+  "sponsors": [
+    {
+      "id": "spon-hexagon",
+      "name": "Hexagon",
+      "tier": "gold",
+      "logo": "/assets/sponsors/hexagon.avif",
+      "description": "Global leader in digital reality solutions, combining sensor, software and autonomous technologies for geospatial and industrial applications.",
+      "websiteUrl": "https://hexagon.com"
+    },
+    {
+      "id": "spon-esri",
+      "name": "Esri",
+      "tier": "gold",
+      "logo": "/assets/sponsors/esri.avif",
+      "description": "The global market leader in geographic information system (GIS) mapping and spatial analytics software.",
+      "websiteUrl": "https://esri.com"
+    },
+    {
+      "id": "spon-riegl",
+      "name": "RIEGL",
+      "tier": "silver",
+      "logo": "/assets/sponsors/riegl.avif",
+      "description": "Austrian pioneer in laser scanning (LiDAR) technology for airborne, mobile and terrestrial survey applications.",
+      "websiteUrl": "https://www.riegl.com"
+    },
+    {
+      "id": "spon-flai",
+      "name": "Flai",
+      "tier": "silver",
+      "logo": "/assets/sponsors/flai.avif",
+      "description": "Slovenia-based AI platform for automatic classification of airborne, mobile and UAV LiDAR point clouds.",
+      "websiteUrl": "https://www.flai.ai"
+    },
+    {
+      "id": "spon-pointly",
+      "name": "Pointly",
+      "tier": "silver",
+      "logo": "/assets/sponsors/pointly.avif",
+      "description": "Berlin-based cloud platform for fast, AI-assisted classification of large 3D point cloud datasets.",
+      "websiteUrl": "https://pointly.ai"
+    },
+    {
+      "id": "spon-dielmo3d",
+      "name": "Dielmo3D",
+      "tier": "silver",
+      "logo": "/assets/sponsors/dielmo3d.avif",
+      "description": "Spanish geospatial data company providing LiDAR, photogrammetry and topography solutions since 2003.",
+      "websiteUrl": "https://dielmo.com/en/"
+    },
+    {
+      "id": "spon-vexcel",
+      "name": "Vexcel Imaging",
+      "tier": "silver",
+      "logo": "/assets/sponsors/vexcel.avif",
+      "description": "Home of the UltraCam — large-format aerial cameras and hybrid LiDAR-imaging systems for photogrammetric mapping.",
+      "websiteUrl": "https://www.vexcel-imaging.com"
+    },
+    {
+      "id": "spon-diamond",
+      "name": "Diamond Aircraft",
+      "tier": "silver",
+      "logo": "/assets/sponsors/diamond-aircraft.avif",
+      "description": "Austrian manufacturer of piston and turboprop aircraft widely used for aerial survey and mapping missions.",
+      "websiteUrl": "https://www.diamondaircraft.com"
+    },
+    {
+      "id": "spon-xeos",
+      "name": "XEOS Imaging",
+      "tier": "silver",
+      "logo": "/assets/sponsors/xeos.avif",
+      "description": "Canadian specialist in aerial photography, LiDAR topographic surveys and AI-assisted mapping since 2004.",
+      "websiteUrl": "https://xeosimaging.com/en/"
+    },
+    {
+      "id": "spon-teledyne",
+      "name": "Teledyne Geospatial",
+      "tier": "bronze",
+      "logo": "/assets/sponsors/teledyne.avif",
+      "description": "Combines Teledyne Optech lidar sensors with Teledyne CARIS software for high-accuracy land and sea mapping.",
+      "websiteUrl": "https://www.teledynegeospatial.com"
+    },
+    {
+      "id": "spon-phaseone",
+      "name": "PhaseOne",
+      "tier": "bronze",
+      "logo": "/assets/sponsors/phaseone.avif",
+      "description": "Danish manufacturer of medium-format aerial and industrial imaging camera systems.",
+      "websiteUrl": "https://www.phaseone.com"
+    },
+    {
+      "id": "spon-simactive",
+      "name": "SimActive",
+      "tier": "bronze",
+      "logo": "/assets/sponsors/simactive.avif",
+      "description": "Montreal-based photogrammetry software company; makers of CORRELATOR3D for processing drone, aircraft and satellite imagery into maps and 3D models.",
+      "websiteUrl": "https://www.simactive.com/es/"
+    }
+  ],
+  "tierColors": {
+    "gold": "#C9A84C",
+    "silver": "#6A7A8E",
+    "bronze": "#A0704A"
+  }
+}

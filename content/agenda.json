@@ -1,0 +1,416 @@
+{
+  "days": [
+    {
+      "date": "2026-11-17",
+      "label": "Tuesday, Nov 17",
+      "sessions": [
+        {
+          "id": "d1-s1",
+          "startTime": "16:00",
+          "endTime": "17:00",
+          "title": "Board Meeting",
+          "room": "",
+          "speakerIds": [],
+          "description": "Board members will meet.",
+          "track": "Board"
+        },
+        {
+          "id": "d1-s2",
+          "startTime": "17:00",
+          "endTime": "18:00",
+          "title": "Registration Desk Opens",
+          "room": "Hotel Lobby",
+          "speakerIds": [],
+          "description": "The Registration Desk will be located in the hotel lobby.",
+          "track": "Arrival"
+        },
+        {
+          "id": "d1-s3",
+          "startTime": "18:00",
+          "endTime": "19:00",
+          "title": "Committees Catch Up",
+          "room": "Hotel Lobby",
+          "speakerIds": [],
+          "description": "Meet the committees' leaders and members at the hotel lobby.",
+          "track": "Committee"
+        },
+        {
+          "id": "d1-s4",
+          "sponsorId": "spon-xeos",
+          "startTime": "19:00",
+          "endTime": "19:05",
+          "title": "Welcome Reception",
+          "room": "Sports Club",
+          "speakerIds": [],
+          "description": "Sponsored by XEOS.",
+          "track": "Social"
+        },
+        {
+          "id": "d1-s5",
+          "startTime": "19:05",
+          "endTime": "19:15",
+          "title": "Welcome to EAASI Conference",
+          "room": "",
+          "speakerIds": ["spk-secgen"],
+          "description": "Welcome by Secretary General Marcos Martinez.",
+          "track": "Plenary"
+        },
+        {
+          "id": "d1-s6",
+          "startTime": "19:15",
+          "endTime": "19:45",
+          "title": "Meet the Board Candidates",
+          "room": "",
+          "speakerIds": [],
+          "description": "Board Election 2026 — Candidates Presentation.",
+          "track": "Board"
+        },
+        {
+          "id": "d1-s7",
+          "sponsorId": "spon-hexagon",
+          "startTime": "19:45",
+          "endTime": "",
+          "title": "Reception Dinner",
+          "room": "Albatros",
+          "speakerIds": [],
+          "description": "Sponsored by HEXAGON.",
+          "track": "Social"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "label": "Wednesday, Nov 18",
+      "sessions": [
+        {
+          "id": "d2-s1",
+          "startTime": "09:00",
+          "endTime": "09:30",
+          "title": "Conference Welcome",
+          "room": "Augusta",
+          "speakerIds": ["spk-president"],
+          "description": "By EAASI President Roland Stengele. Opening of Conference Day 1.",
+          "track": "Plenary"
+        },
+        {
+          "id": "d2-s2",
+          "startTime": "09:30",
+          "endTime": "10:00",
+          "title": "Keynote",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "Keynote speaker to be confirmed.",
+          "track": "Keynote"
+        },
+        {
+          "id": "d2-s3",
+          "sponsorId": "spon-esri",
+          "startTime": "10:00",
+          "endTime": "10:25",
+          "title": "Gold Sponsor Use Case #1",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "Gold Sponsor showcase — ESRI.",
+          "track": "Sponsor"
+        },
+        {
+          "id": "d2-s4",
+          "sponsorId": "spon-pointly",
+          "startTime": "10:25",
+          "endTime": "10:55",
+          "title": "Coffee Break",
+          "room": "PLACEHOLDER — Foyer",
+          "speakerIds": [],
+          "description": "Sponsored by Pointly.",
+          "track": "Break"
+        },
+        {
+          "id": "d2-s5",
+          "sponsorId": "spon-riegl",
+          "startTime": "10:55",
+          "endTime": "11:25",
+          "title": "Silver Sponsor Use Case — RIEGL",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "Silver Sponsor showcase — RIEGL.",
+          "track": "Sponsor"
+        },
+        {
+          "id": "d2-s6",
+          "startTime": "11:25",
+          "endTime": "12:40",
+          "title": "Experts Panel — Wider Geospatial Data Economy",
+          "room": "Augusta",
+          "speakerIds": ["spk-delatorre", "spk-cooper"],
+          "description": "Moderated by TBD. Speakers: Javier de la Torre (CARTO), Phil Cooper (AWS), further panellist TBC.",
+          "track": "Panel"
+        },
+        {
+          "id": "d2-s7",
+          "sponsorId": "spon-dielmo3d",
+          "startTime": "12:40",
+          "endTime": "13:00",
+          "title": "Silver Sponsor Use Case — Dielmo 3D",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "Silver Sponsor showcase — Dielmo 3D.",
+          "track": "Sponsor"
+        },
+        {
+          "id": "d2-s8",
+          "startTime": "13:00",
+          "endTime": "13:30",
+          "title": "Keynote — \"Geofutures\"",
+          "room": "Augusta",
+          "speakerIds": ["spk-cassettari"],
+          "description": "Keynote from the British Cartographic Society on the Geofutures initiative.",
+          "track": "Keynote"
+        },
+        {
+          "id": "d2-s9",
+          "sponsorId": "spon-riegl",
+          "startTime": "13:30",
+          "endTime": "14:25",
+          "title": "Lunch + Board Vote",
+          "room": "Olivo's Restaurant",
+          "speakerIds": [],
+          "description": "Sponsored by RIEGL. EAASI Members will have the opportunity to vote for their preferred candidates for the next term, with ballots available for collection throughout the morning. Voting closes at 14:15.",
+          "track": "Break"
+        },
+        {
+          "id": "d2-s10",
+          "sponsorId": "spon-pointly",
+          "startTime": "14:25",
+          "endTime": "14:45",
+          "title": "Silver Sponsor Use Case — Pointly",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "Silver Sponsor showcase — Pointly.",
+          "track": "Sponsor"
+        },
+        {
+          "id": "d2-s11",
+          "startTime": "14:45",
+          "endTime": "15:55",
+          "title": "Working Session — Geofutures",
+          "room": "Birdie",
+          "speakerIds": [],
+          "description": "Geofutures-related challenges — working session.",
+          "track": "Working Group"
+        },
+        {
+          "id": "d2-s12",
+          "sponsorId": "spon-flai",
+          "startTime": "15:55",
+          "endTime": "16:45",
+          "title": "Silver Sponsor Use Case — FLAI",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "Silver Sponsor showcase — FLAI.",
+          "track": "Sponsor"
+        },
+        {
+          "id": "d2-s13",
+          "sponsorId": "spon-pointly",
+          "startTime": "16:45",
+          "endTime": "17:00",
+          "title": "Coffee Break",
+          "room": "PLACEHOLDER — Foyer",
+          "speakerIds": [],
+          "description": "Sponsored by Pointly.",
+          "track": "Break"
+        },
+        {
+          "id": "d2-s14",
+          "startTime": "17:00",
+          "endTime": "",
+          "title": "2026 Budget & Current Reserves — Day 1 Wrap Up",
+          "room": "Augusta",
+          "speakerIds": ["spk-tidmarsh"],
+          "description": "Presented by Rachel Tidmarsh, EAASI Treasurer.",
+          "track": "Board"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "label": "Thursday, Nov 19",
+      "sessions": [
+        {
+          "id": "d3-s1",
+          "startTime": "09:00",
+          "endTime": "09:20",
+          "title": "Opening Speech",
+          "room": "Augusta",
+          "speakerIds": ["spk-vp"],
+          "description": "By EAASI Vice President Simon Musaeus. Opening of Conference Day 2.",
+          "track": "Plenary"
+        },
+        {
+          "id": "d3-s2",
+          "sponsorId": "spon-hexagon",
+          "startTime": "09:20",
+          "endTime": "09:45",
+          "title": "Gold Sponsor Use Case #2",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "Gold Sponsor showcase — HEXAGON.",
+          "track": "Sponsor"
+        },
+        {
+          "id": "d3-s3",
+          "startTime": "09:45",
+          "endTime": "10:25",
+          "title": "Keynote — ISPRS Representative",
+          "room": "Augusta",
+          "speakerIds": ["spk-isprs"],
+          "description": "Keynote from the International Society for Photogrammetry & Remote Sensing (speaker to be confirmed).",
+          "track": "Keynote"
+        },
+        {
+          "id": "d3-s4",
+          "sponsorId": "spon-diamond",
+          "startTime": "10:25",
+          "endTime": "10:55",
+          "title": "Silver Sponsor Use Case — Diamond Aircraft",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "\"5 years of EAASI partnership\" — presented by Mario Spiegel.",
+          "track": "Sponsor"
+        },
+        {
+          "id": "d3-s5",
+          "sponsorId": "spon-vexcel",
+          "startTime": "10:55",
+          "endTime": "11:25",
+          "title": "Coffee Break",
+          "room": "PLACEHOLDER — Foyer",
+          "speakerIds": [],
+          "description": "Sponsored by Vexcel.",
+          "track": "Break"
+        },
+        {
+          "id": "d3-s6",
+          "sponsorId": "spon-xeos",
+          "startTime": "11:25",
+          "endTime": "11:45",
+          "title": "Silver Sponsor Use Case — XEOS",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "\"Large Scale Automatic 3D City Buildings Reconstruction from Aerial LiDAR by XEOS AI\" — presented by Tony St-Pierre.",
+          "track": "Sponsor"
+        },
+        {
+          "id": "d3-s7",
+          "startTime": "11:45",
+          "endTime": "13:15",
+          "title": "Committees Presentations and Debate",
+          "room": "Birdie",
+          "speakerIds": [],
+          "description": "EAASI Committees Debate. Parallel working group sessions.",
+          "track": "Working Group"
+        },
+        {
+          "id": "d3-s8",
+          "startTime": "13:15",
+          "endTime": "13:35",
+          "title": "Committees Conclusions & Next Steps",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "Working groups present their conclusions.",
+          "track": "Plenary"
+        },
+        {
+          "id": "d3-s9",
+          "sponsorId": "spon-diamond",
+          "startTime": "13:35",
+          "endTime": "14:35",
+          "title": "Lunch",
+          "room": "Olivo's Restaurant",
+          "speakerIds": [],
+          "description": "Sponsored by Diamond Aircraft.",
+          "track": "Break"
+        },
+        {
+          "id": "d3-s10",
+          "sponsorId": "spon-vexcel",
+          "startTime": "14:35",
+          "endTime": "14:55",
+          "title": "Silver Sponsor Use Case — Vexcel",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "Silver Sponsor showcase — Vexcel.",
+          "track": "Sponsor"
+        },
+        {
+          "id": "d3-s11",
+          "startTime": "14:55",
+          "endTime": "15:25",
+          "title": "IGN Spain — Guest Presentation",
+          "room": "Augusta",
+          "speakerIds": ["spk-ign"],
+          "description": "Institutional guest presentation from Spain's National Geographic Institute.",
+          "track": "Guest"
+        },
+        {
+          "id": "d3-s12",
+          "startTime": "15:25",
+          "endTime": "16:15",
+          "title": "Keynote — \"Legal Landscape of AI & Geospatial\"",
+          "room": "Augusta",
+          "speakerIds": ["spk-iulietto"],
+          "description": "Gian Marco Iulietto, Tech Lawyer at LX20 Law Firm, on the legal landscape of AI and geospatial data.",
+          "track": "Keynote"
+        },
+        {
+          "id": "d3-s13",
+          "sponsorId": "spon-vexcel",
+          "startTime": "16:15",
+          "endTime": "16:30",
+          "title": "Coffee Break",
+          "room": "PLACEHOLDER — Foyer",
+          "speakerIds": [],
+          "description": "Sponsored by Vexcel.",
+          "track": "Break"
+        },
+        {
+          "id": "d3-s14",
+          "startTime": "16:30",
+          "endTime": "17:00",
+          "title": "OTA 2026 Ceremony",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "The winner of the OTA 2026 will be announced.",
+          "track": "Ceremony"
+        },
+        {
+          "id": "d3-s15",
+          "startTime": "17:00",
+          "endTime": "",
+          "title": "Conference Wrap Up",
+          "room": "Augusta",
+          "speakerIds": ["spk-secgen"],
+          "description": "By Secretary General Marcos Martinez.",
+          "track": "Plenary"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "label": "Friday, Nov 20",
+      "sessions": [
+        {
+          "id": "d4-s1",
+          "sponsorId": "spon-dielmo3d",
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "title": "City Tour — Extended Networking",
+          "room": "",
+          "speakerIds": [],
+          "description": "Sponsored by Dielmo 3D. Extended networking city tour of Alicante, concluding back at the hotel around 13:00.",
+          "track": "Social"
+        }
+      ]
+    }
+  ]
+}

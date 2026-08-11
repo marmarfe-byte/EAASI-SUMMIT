@@ -1,0 +1,19 @@
+{
+  "eventName": "EAASI Partners Summit 2026",
+  "tagline": "Where the Future of Aerial Survey Takes Off.",
+  "location": "Alicante, Spain",
+  "dates": {
+    "start": "2026-11-17",
+    "end": "2026-11-20",
+    "displayRange": "November 17–20, 2026"
+  },
+  "welcomeMessage": "Join EAASI Members and Observers in Alicante for keynotes, working sessions, and networking dedicated to the aerial surveying industry — hosted at Hotel Alicante Golf, Playa San Juan.",
+  "countdownTargetISO": "2026-11-17T09:00:00+01:00",
+  "quickLinks": [
+    { "label": "Agenda", "target": "agenda" },
+    { "label": "Venue & Map", "target": "venue" },
+    { "label": "Social Activities", "target": "social" },
+    { "label": "Practical Info", "target": "practical" }
+  ],
+  "heroImage": "PLACEHOLDER — hero/venue photo path"
+}

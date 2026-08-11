@@ -1,0 +1,36 @@
+{
+  "activities": [
+    {
+      "id": "soc-wed-dinner",
+      "name": "Welcome Dinner — La Ereta",
+      "day": "2026-11-18",
+      "time": "19:00",
+      "location": "Restaurante La Ereta, Alicante",
+      "address": "Parque de La Ereta, s/n, Alicante",
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Restaurante+La+Ereta+Parque+de+la+Ereta+Alicante",
+      "websiteUrl": "https://laereta.es/",
+      "description": "Sponsored by ESRI. Mediterranean tasting-menu dinner at La Ereta, perched on Mount Benacantil below Santa Bárbara Castle with panoramic views over Alicante. Buses depart the hotel at 19:00 (dinner service from ~19:30), returning at 21:30."
+    },
+    {
+      "id": "soc-thu-dinner",
+      "name": "Gala Dinner — La Dársena",
+      "day": "2026-11-19",
+      "time": "19:00",
+      "location": "Restaurante Dársena, Alicante",
+      "address": "Avda. Perfecto Palacio de la Fuente, 6, Muelle de Poniente (Centro de negocios Panoramis Life & Business), 03001 Alicante",
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Restaurante+Darsena+Muelle+de+Poniente+Alicante",
+      "websiteUrl": "https://darsena.com/",
+      "description": "Sponsored by FLAI. Dinner at Dársena, known for authentic Alicantian rice dishes on the marina. Buses depart the hotel at 19:00 (dinner service from ~19:30), returning at 21:30."
+    },
+    {
+      "id": "soc-fri-networking-tour",
+      "name": "City Tour — Extended Networking",
+      "day": "2026-11-20",
+      "time": "09:00",
+      "location": "PLACEHOLDER — Departure point (likely hotel lobby)",
+      "address": "PLACEHOLDER — Address",
+      "mapLink": "PLACEHOLDER — Google Maps link",
+      "description": "Sponsored by Dielmo 3D. Extended networking city tour of Alicante, concluding back at the hotel around 13:00."
+    }
+  ]
+}

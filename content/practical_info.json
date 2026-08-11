@@ -1,0 +1,29 @@
+{
+  "heroImage": "/assets/practical/vista-alicante.avif",
+  "nearestAirport": {
+    "name": "Alicante–Elche Airport (ALC)",
+    "distanceFromVenue": "~24 km from Hotel Alicante Golf, around 20–25 min by car",
+    "transportOptions": "Taxi or rideshare is the most direct option (no train/tram runs directly to Playa San Juan). Airport shuttle/transfer companies also serve the Alicante area — check with the hotel for recommended transfer providers."
+  },
+  "localTransport": "Hotel Alicante Golf is in Playa San Juan, north of Alicante city centre. TRAM Line 4 (Alicante–Sant Joan) runs along the coast with stops near Playa San Juan; taxis and rideshare apps (Free Now, Uber) are readily available. Coach transport to/from the Wednesday and Thursday dinners is provided by the organisers (see Social Activities).",
+  "weather": {
+    "expectedRange": "Mild — typically 12–19°C (53–66°F) in mid-to-late November, with occasional rain.",
+    "note": "Pack layers and a light jacket; an umbrella or light rain shell is a good idea."
+  },
+  "dressCode": {
+    "sessions": "PLACEHOLDER — business casual",
+    "dinners": "PLACEHOLDER — smart casual / cocktail attire",
+    "activities": "PLACEHOLDER — athletic wear for yoga/running/golf"
+  },
+  "faq": [
+    { "question": "How much does registration cost?", "answer": "See the Tickets tab for the full fee table and to register — Early Bird rates are available for a limited time." },
+    { "question": "Where do I book accommodation?", "answer": "The designated hotel is Hotel Alicante Golf — see the Venue tab for room rates and how to reserve at the Summit's preferred rate." },
+    { "question": "Is Wi-Fi available at the venue?", "answer": "PLACEHOLDER — answer." },
+    { "question": "Is there a dedicated app support contact?", "answer": "Yes — contact Marcos Martinez (Secretary General) on the Event Organizer Hotline, +34 686 04 94 33." }
+  ],
+  "emergencyContacts": [
+    { "label": "Event Organizer Hotline — Marcos Martinez", "phone": "+34 686 04 94 33" },
+    { "label": "Hotel Alicante Golf Front Desk", "phone": "+34 965 235 000" },
+    { "label": "Local Emergency Services", "phone": "112" }
+  ]
+}

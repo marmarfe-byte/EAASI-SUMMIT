@@ -1,0 +1,17 @@
+{
+  "intro": "Register for the EAASI Partners Summit 2026 in Alicante. Tickets are purchased directly through the official EAASI website.",
+  "purchaseUrl": "https://www.eaasi.eu/event-details/eaasi-summit-2026-alicante",
+  "fees": [
+    { "audience": "Members and Observers", "tier": "Early Bird", "price": "300€" },
+    { "audience": "Members and Observers", "tier": "Standard Price", "price": "350€" },
+    { "audience": "Non Members", "tier": "Early Bird", "price": "650€" },
+    { "audience": "Non Members", "tier": "Standard Price", "price": "850€" }
+  ],
+  "feesDeadlineNote": "Early Bird pricing (Members/Observers and Non Members) is valid through August 31, 2026. Standard pricing applies from September 1, 2026.",
+  "notes": [
+    "Please register early — it helps us with logistics and guarantees your place at the Summit.",
+    "Early Bird pricing ends August 31, 2026, so don't wait too long.",
+    "Not yet a member? You can apply to join EAASI at any time via the 'Apply' button on our homepage — membership comes with significant registration benefits.",
+    "We look forward to welcoming you in Alicante! 🌍"
+  ]
+}

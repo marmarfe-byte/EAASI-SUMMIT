@@ -1,0 +1,36 @@
+{
+  "committees": [
+    {
+      "id": "com-eu-projects",
+      "name": "EU Projects",
+      "chair": "Simon Musaeus",
+      "mission": "PLACEHOLDER — mission statement for the EU Projects committee.",
+      "currentFocus": "PLACEHOLDER — current goals / initiatives.",
+      "members": ["Florian Romanowski", "Marcos Martinez"]
+    },
+    {
+      "id": "com-universities-students",
+      "name": "Universities & Students Engagement",
+      "chair": "Patrik Maixner",
+      "mission": "PLACEHOLDER — mission statement.",
+      "currentFocus": "PLACEHOLDER — current goals / initiatives.",
+      "members": ["Milo Durica", "Luca Rampa", "Julian Vallet", "Ralph Coleman"]
+    },
+    {
+      "id": "com-aerial-operations",
+      "name": "Aerial Operations",
+      "chair": "Soren Jepersen",
+      "mission": "PLACEHOLDER — mission statement.",
+      "currentFocus": "PLACEHOLDER — current goals / initiatives.",
+      "members": ["Roland Stengele", "Jorg Werti", "Igor"]
+    },
+    {
+      "id": "com-certification",
+      "name": "Certification",
+      "chair": "Aicke Damrau",
+      "mission": "PLACEHOLDER — mission statement.",
+      "currentFocus": "PLACEHOLDER — current goals / initiatives.",
+      "members": ["Engelbert Breg", "Roland Stengele"]
+    }
+  ]
+}

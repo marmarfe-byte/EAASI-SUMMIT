@@ -1,0 +1,38 @@
+{
+  "venueName": "Hotel Alicante Golf",
+  "address": "Calle Escultor José Gutiérrez, 23, 03540 Alicante (Playa San Juan), Spain",
+  "mapEmbedUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Alicante+Golf+Calle+Escultor+Jose+Gutierrez+23+Alicante",
+  "mapLatLng": { "lat": 38.3608, "lng": -0.4256 },
+  "heroImage": "/assets/venue/hotel-1.avif",
+  "checkInNotes": "Front desk: +34 965 235 000 · reservas@hotelalicantegolf.com. Standard hotel check-in/check-out times apply — confirm exact times with the front desk.",
+  "floors": [
+    {
+      "floorName": "Event Spaces",
+      "rooms": [
+        { "roomName": "Augusta", "capacity": null, "usedFor": "Main Plenary Hall — keynotes, plenary sessions, panels" },
+        { "roomName": "Birdie", "capacity": null, "usedFor": "Breakout Room — committee and working group sessions" },
+        { "roomName": "Olivo's Restaurant", "capacity": null, "usedFor": "Buffet lunch" },
+        { "roomName": "Sports Club", "capacity": null, "usedFor": "Tuesday welcome drink" },
+        { "roomName": "Albatros", "capacity": null, "usedFor": "Tuesday reception dinner" },
+        { "roomName": "Lobby", "capacity": null, "usedFor": "Registration desk — check-in, badge pickup" }
+      ]
+    }
+  ],
+  "floorPlanImage": "PLACEHOLDER — floor plan image path",
+  "accommodation": {
+    "intro": "Book your room at Hotel Alicante Golf in time to take advantage of the Summit's preferred rates.",
+    "roomTypes": [
+      { "name": "Standard Room", "pricePerNight": "132,00 €" },
+      { "name": "Standard Room with Views", "pricePerNight": "148,00 €" },
+      { "name": "Deluxe Room", "pricePerNight": "159,00 €" }
+    ],
+    "ratesNote": "Preferred Summit rates — breakfast and taxes included.",
+    "totalRooms": 150,
+    "availabilityNote": "The hotel holds 150 rooms for the Summit but cannot guarantee availability — book early.",
+    "reservationEmail": "reservas@hotelalicantegolf.com",
+    "reservationPhone": "+34 965 235 000",
+    "reservationInstructions": "Contact the hotel's reservations department by email or phone and identify yourself as an attendee of the EAASI 2026 Summit to receive the preferred rate.",
+    "paymentNote": "Once your request is sent, the hotel will reply with a secure payment link to complete the reservation.",
+    "cancellationPolicy": "Fully refundable if cancelled 15 or more days before arrival."
+  }
+}

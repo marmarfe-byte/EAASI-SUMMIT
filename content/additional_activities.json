@@ -1,0 +1,34 @@
+{
+  "activities": [
+    {
+      "id": "add-yoga",
+      "name": "Yoga",
+      "schedule": "Mornings, Nov 18–20",
+      "time": "07:00",
+      "coordinator": "Simon Musaeus",
+      "meetingPoint": "PLACEHOLDER — Hotel lobby / beachfront meeting point",
+      "whatToBring": "PLACEHOLDER — workout clothes, water bottle, mat if you have one",
+      "description": "PLACEHOLDER — short description of the daily yoga sessions."
+    },
+    {
+      "id": "add-running",
+      "name": "Running",
+      "schedule": "Mornings, Nov 18–20",
+      "time": "07:00",
+      "coordinator": "Patrik Maixner",
+      "meetingPoint": "PLACEHOLDER — Hotel lobby / beachfront meeting point",
+      "whatToBring": "PLACEHOLDER — running shoes, water bottle",
+      "description": "PLACEHOLDER — short description of the daily running route."
+    },
+    {
+      "id": "add-golf",
+      "name": "Golf",
+      "schedule": "Monday afternoon, Nov 16",
+      "time": "14:00",
+      "coordinator": "PLACEHOLDER — Coordinator name",
+      "meetingPoint": "PLACEHOLDER — Golf club name & meeting point",
+      "whatToBring": "PLACEHOLDER — clubs (rental available on request), golf attire",
+      "description": "PLACEHOLDER — course name, tee time details, sign-up instructions."
+    }
+  ]
+}
