@@ -3,34 +3,58 @@
     {
       "id": "com-eu-projects",
       "name": "EU Projects",
-      "chair": "Simon Musaeus",
+      "chair": "Simon Musaeus – EAASI",
       "mission": "PLACEHOLDER — mission statement for the EU Projects committee.",
-      "currentFocus": "PLACEHOLDER — current goals / initiatives.",
-      "members": ["Florian Romanowski", "Marcos Martinez"]
+      "currentFocus": "To be determined",
+      "members": ["Florian Romanowski – Opegieka", "Marcos Martinez – EAASI"]
     },
     {
       "id": "com-universities-students",
       "name": "Universities & Students Engagement",
-      "chair": "Patrik Maixner",
-      "mission": "PLACEHOLDER — mission statement.",
-      "currentFocus": "PLACEHOLDER — current goals / initiatives.",
-      "members": ["Milo Durica", "Luca Rampa", "Julian Vallet", "Ralph Coleman"]
+      "chair": "Patrik Meixner – Primis",
+      "mission": "Connect EAASI member companies with universities, technical schools and students in the aerial surveying industry, building the sector's future talent pipeline through outreach, events and educational content.",
+      "currentFocus": "Draft focus areas (provisional — to be refined by the committee chair): expanding outreach to secondary schools and teachers' organizations; supporting student-facing events such as the KonGeos fair (Mainz, Oct 2026) and the Intergeo Student Tour; developing a \"Rookie of the Year\" award; coordinating the OTA thesis award with EuroSDR; building a shared 2026–2027 calendar of member events, office visits and site visits open to students; and exploring a possible EAASI Summer School concept in cooperation with universities.",
+      "members": [
+        "Miloslav Durika – Photomap",
+        "Julien Vallet – Helimap",
+        "Ralph Coleman – Woolpert",
+        "Uwe Bacher – Hexagon",
+        "Luca Rampa – Italian Remote Sensing",
+        "Polona Finzgar – Flycom",
+        "Charlene Negrello – Helimap",
+        "Martin Sadilek – Primis",
+        "Vijay Vellaichamy – Woolpert",
+        "Robbe Van Wichelen – BSF Swissphoto",
+        "Marcos Martinez – EAASI",
+        "Ada Perello – EAASI"
+      ]
     },
     {
       "id": "com-aerial-operations",
       "name": "Aerial Operations",
-      "chair": "Soren Jepersen",
-      "mission": "PLACEHOLDER — mission statement.",
-      "currentFocus": "PLACEHOLDER — current goals / initiatives.",
-      "members": ["Roland Stengele", "Jorg Werti", "Igor"]
+      "chair": "Soren Jepersen – Hexagon",
+      "mission": "Support EAASI aerial operator members by identifying shared operational challenges and building practical tools and resources for day-to-day use.",
+      "currentFocus": "The committee is up and running, with two meetings completed and clear momentum building. Following a broad discussion across key operational challenges, three priority areas have been identified: Sustainability — an EAASI Sustainability Company Paper, a practical framework members can use in tenders covering CO₂ reporting, operational efficiency and transparency on reduction and compensation; EAASI Online Sharing Platform — strengthening collaboration by sharing and adding valuable content for EAASI members; and Fuel Costs — improving transparency on fuel prices, understanding the group's collective footprint in aircraft and fuel usage, and exploring joint supplier engagement for better commercial terms. Owners, deliverables and timelines are now in place, with first outputs expected within the next period — the committee is moving from discussion to execution.",
+      "members": [
+        "Roland Stengele – BSF Swissphoto",
+        "Jorg Werti – BSF Swissphoto",
+        "Igor Nedeljković – Mapsoft",
+        "Fredrik Hoff – Field",
+        "Mario Spiegel – Diamond Aircraft",
+        "Wayne Barrett – Ravenair",
+        "Luc Coussement – Vansteelandt",
+        "Lars Najbjerg – Focus Aero",
+        "Bartosz Majkowski – Opegieka",
+        "Marcos Martinez – EAASI"
+      ]
     },
     {
       "id": "com-certification",
       "name": "Certification",
-      "chair": "Aicke Damrau",
+      "chair": "Aicke Damrau – Geofly",
       "mission": "PLACEHOLDER — mission statement.",
       "currentFocus": "PLACEHOLDER — current goals / initiatives.",
-      "members": ["Engelbert Breg", "Roland Stengele"]
+      "members": ["Engelbert Breg – Vexcel", "Roland Stengele – BSF Swissphoto"]
     }
   ]
 }

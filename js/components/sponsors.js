@@ -33,7 +33,6 @@ export function renderSponsors(data, filterTier) {
             <h3 style="margin-top:6px;">${escapeHtml(displayText(s.name, "Sponsor TBC"))}</h3>
           </div>
         </div>
-        <div class="desc" style="margin-top:10px;">${escapeHtml(displayText(s.description, "Description coming soon."))}</div>
         ${
           !isPlaceholder(s.websiteUrl)
             ? `<div style="margin-top:12px;"><a class="btn btn--ghost" href="${escapeHtml(s.websiteUrl)}" ${externalLinkAttrs()}>Visit website ${EXTERNAL_LINK}</a></div>`

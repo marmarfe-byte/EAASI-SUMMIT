@@ -9,7 +9,7 @@ export function renderCommittees(data) {
       <div class="card">
         <h3>${escapeHtml(c.name)}</h3>
         <div class="meta">
-          <span>Chair: ${escapeHtml(displayText(c.chair, "TBC"))}</span>
+          <span><strong>Chair:</strong> ${escapeHtml(displayText(c.chair, "TBC"))}</span>
         </div>
         <div class="desc">${escapeHtml(displayText(c.mission, "Mission statement coming soon."))}</div>
         <div class="desc" style="margin-top:8px;"><strong>Current focus:</strong> ${escapeHtml(displayText(c.currentFocus, "TBC"))}</div>

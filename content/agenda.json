@@ -229,6 +229,17 @@
           "speakerIds": ["spk-tidmarsh"],
           "description": "Presented by Rachel Tidmarsh, EAASI Treasurer.",
           "track": "Board"
+        },
+        {
+          "id": "d2-s15",
+          "sponsorId": "spon-esri",
+          "startTime": "19:00",
+          "endTime": "",
+          "title": "Dinner — La Ereta",
+          "room": "",
+          "speakerIds": [],
+          "description": "Sponsored by ESRI. Mediterranean tasting-menu dinner at La Ereta, perched on Mount Benacantil below Santa Bárbara Castle with panoramic views over Alicante. Buses depart the hotel at 19:00 (dinner service from ~19:30), returning at 21:30.",
+          "track": "Social"
         }
       ]
     },
@@ -392,6 +403,17 @@
           "speakerIds": ["spk-secgen"],
           "description": "By Secretary General Marcos Martinez.",
           "track": "Plenary"
+        },
+        {
+          "id": "d3-s16",
+          "sponsorId": "spon-flai",
+          "startTime": "19:00",
+          "endTime": "",
+          "title": "Dinner — La Dársena",
+          "room": "",
+          "speakerIds": [],
+          "description": "Sponsored by FLAI. Dinner at Dársena, known for authentic Alicantian rice dishes on the marina. Buses depart the hotel at 19:00 (dinner service from ~19:30), returning at 21:30.",
+          "track": "Social"
         }
       ]
     },

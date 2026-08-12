@@ -5,7 +5,6 @@
       "name": "Hexagon",
       "tier": "gold",
       "logo": "/assets/sponsors/hexagon.png",
-      "description": "Global leader in digital reality solutions, combining sensor, software and autonomous technologies for geospatial and industrial applications.",
       "websiteUrl": "https://hexagon.com"
     },
     {
@@ -13,7 +12,6 @@
       "name": "Esri",
       "tier": "gold",
       "logo": "/assets/sponsors/esri.png",
-      "description": "The global market leader in geographic information system (GIS) mapping and spatial analytics software.",
       "websiteUrl": "https://esri.com"
     },
     {
@@ -21,7 +19,6 @@
       "name": "RIEGL",
       "tier": "silver",
       "logo": "/assets/sponsors/riegl.png",
-      "description": "Austrian pioneer in laser scanning (LiDAR) technology for airborne, mobile and terrestrial survey applications.",
       "websiteUrl": "https://www.riegl.com"
     },
     {
@@ -29,7 +26,6 @@
       "name": "Flai",
       "tier": "silver",
       "logo": "/assets/sponsors/flai.png",
-      "description": "Slovenia-based AI platform for automatic classification of airborne, mobile and UAV LiDAR point clouds.",
       "websiteUrl": "https://www.flai.ai"
     },
     {
@@ -37,7 +33,6 @@
       "name": "Pointly",
       "tier": "silver",
       "logo": "/assets/sponsors/pointly.png",
-      "description": "Berlin-based cloud platform for fast, AI-assisted classification of large 3D point cloud datasets.",
       "websiteUrl": "https://pointly.ai"
     },
     {
@@ -45,7 +40,6 @@
       "name": "Dielmo3D",
       "tier": "silver",
       "logo": "/assets/sponsors/dielmo3d.png",
-      "description": "Spanish geospatial data company providing LiDAR, photogrammetry and topography solutions since 2003.",
       "websiteUrl": "https://dielmo.com/en/"
     },
     {
@@ -53,7 +47,6 @@
       "name": "Vexcel Imaging",
       "tier": "silver",
       "logo": "/assets/sponsors/vexcel.png",
-      "description": "Home of the UltraCam — large-format aerial cameras and hybrid LiDAR-imaging systems for photogrammetric mapping.",
       "websiteUrl": "https://www.vexcel-imaging.com"
     },
     {
@@ -61,7 +54,6 @@
       "name": "Diamond Aircraft",
       "tier": "silver",
       "logo": "/assets/sponsors/diamond-aircraft.png",
-      "description": "Austrian manufacturer of piston and turboprop aircraft widely used for aerial survey and mapping missions.",
       "websiteUrl": "https://www.diamondaircraft.com"
     },
     {
@@ -69,7 +61,6 @@
       "name": "XEOS Imaging",
       "tier": "silver",
       "logo": "/assets/sponsors/xeos.png",
-      "description": "Canadian specialist in aerial photography, LiDAR topographic surveys and AI-assisted mapping since 2004.",
       "websiteUrl": "https://xeosimaging.com/en/"
     },
     {
@@ -77,7 +68,6 @@
       "name": "Teledyne Geospatial",
       "tier": "bronze",
       "logo": "/assets/sponsors/teledyne.png",
-      "description": "Combines Teledyne Optech lidar sensors with Teledyne CARIS software for high-accuracy land and sea mapping.",
       "websiteUrl": "https://www.teledynegeospatial.com"
     },
     {
@@ -85,7 +75,6 @@
       "name": "PhaseOne",
       "tier": "bronze",
       "logo": "/assets/sponsors/phaseone.png",
-      "description": "Danish manufacturer of medium-format aerial and industrial imaging camera systems.",
       "websiteUrl": "https://www.phaseone.com"
     },
     {
@@ -93,7 +82,6 @@
       "name": "SimActive",
       "tier": "bronze",
       "logo": "/assets/sponsors/simactive.png",
-      "description": "Montreal-based photogrammetry software company; makers of CORRELATOR3D for processing drone, aircraft and satellite imagery into maps and 3D models.",
       "websiteUrl": "https://www.simactive.com/es/"
     }
   ],

@@ -3,32 +3,32 @@
     {
       "id": "add-yoga",
       "name": "Yoga",
-      "schedule": "Mornings, Nov 18–20",
+      "schedule": "Mornings, Nov 18–19",
       "time": "07:00",
       "coordinator": "Simon Musaeus",
-      "meetingPoint": "PLACEHOLDER — Hotel lobby / beachfront meeting point",
-      "whatToBring": "PLACEHOLDER — workout clothes, water bottle, mat if you have one",
-      "description": "PLACEHOLDER — short description of the daily yoga sessions."
+      "meetingPoint": "Hotel Lobby",
+      "whatToBring": "Workout clothes, water bottle, mat if you have one",
+      "description": "Start the day with a group yoga session, Wednesday and Thursday mornings."
     },
     {
       "id": "add-running",
       "name": "Running",
-      "schedule": "Mornings, Nov 18–20",
+      "schedule": "Mornings, Nov 18–19",
       "time": "07:00",
-      "coordinator": "Patrik Maixner",
-      "meetingPoint": "PLACEHOLDER — Hotel lobby / beachfront meeting point",
-      "whatToBring": "PLACEHOLDER — running shoes, water bottle",
-      "description": "PLACEHOLDER — short description of the daily running route."
+      "coordinator": "Patrik Meixner",
+      "meetingPoint": "Hotel Lobby",
+      "whatToBring": "Running shoes, water bottle",
+      "description": "Group run for all paces, Wednesday and Thursday mornings."
     },
     {
       "id": "add-golf",
       "name": "Golf",
       "schedule": "Monday afternoon, Nov 16",
       "time": "14:00",
-      "coordinator": "PLACEHOLDER — Coordinator name",
-      "meetingPoint": "PLACEHOLDER — Golf club name & meeting point",
-      "whatToBring": "PLACEHOLDER — clubs (rental available on request), golf attire",
-      "description": "PLACEHOLDER — course name, tee time details, sign-up instructions."
+      "coordinator": "Roland Stengele",
+      "meetingPoint": "Hotel Golf Course",
+      "whatToBring": "Golf attire; clubs provided for the Clinic, bring or rent your own for the 18-hole round",
+      "description": "Two options are available at the hotel's own golf course. Option 1 — Beginner Lesson / Golf Clinic: a 90-minute session, no previous golf experience required. €35 per person, minimum 6 / maximum 30 participants (larger groups split into smaller ones). Fixed price, advance booking required; the hotel provides clubs and equipment. Option 2 — 18-hole round: Monday afternoon, tee-off at 14:00. Pricing varies with demand — currently €54 per person, not including buggy rental. No participant limit, but all players must hold a valid golf licence and be eligible to play an 18-hole course. Payment is required to confirm the reservation, and clubs are not provided. Interested participants should contact Roland Stengele or Marcos Martinez in advance to arrange either option."
     }
   ]
 }

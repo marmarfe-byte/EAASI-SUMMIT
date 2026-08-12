@@ -13,7 +13,7 @@ export function renderAdditional(data) {
         <h3>${escapeHtml(displayText(a.name, "Activity TBC"))}</h3>
         <div class="meta">
           <span>Meet: ${escapeHtml(displayText(a.meetingPoint, "TBC"))}</span>
-          ${a.coordinator ? `<span>· Coordinator: ${escapeHtml(displayText(a.coordinator, "TBC"))}</span>` : ""}
+          ${a.coordinator ? `<span>· Coordinator: <strong>${escapeHtml(displayText(a.coordinator, "TBC"))}</strong></span>` : ""}
         </div>
         <div class="desc">${escapeHtml(displayText(a.description, "Details coming soon."))}</div>
         <div class="desc" style="margin-top:8px;"><strong>What to bring:</strong> ${escapeHtml(displayText(a.whatToBring, "TBC"))}</div>
@@ -27,5 +27,8 @@ export function renderAdditional(data) {
       <p>Yoga, running &amp; golf</p>
     </div>
     ${cards}
+    <div class="desc" style="margin-top:16px;">
+      For more information about a specific activity, please contact its coordinator during the event days. We also recommend joining the WhatsApp channel we'll set up for real-time updates during the Summit.
+    </div>
   `;
 }
