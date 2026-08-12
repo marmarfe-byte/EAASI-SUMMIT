@@ -1,8 +1,18 @@
 {
   "activities": [
     {
+      "id": "soc-tue-welcome-dinner",
+      "name": "Welcome Dinner",
+      "day": "2026-11-17",
+      "time": "19:45",
+      "location": "Hotel Alicante Golf — Albatros Room",
+      "address": "Calle Escultor José Gutiérrez, 23, 03540 Alicante (Playa San Juan), Spain",
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Hotel+Alicante+Golf+Calle+Escultor+Jose+Gutierrez+23+Alicante",
+      "description": "Sponsored by HEXAGON. Held at the hotel — no transport needed. See Agenda for the full Tuesday evening programme."
+    },
+    {
       "id": "soc-wed-dinner",
-      "name": "Welcome Dinner — La Ereta",
+      "name": "Dinner — La Ereta",
       "day": "2026-11-18",
       "time": "19:00",
       "location": "Restaurante La Ereta, Alicante",
@@ -13,7 +23,7 @@
     },
     {
       "id": "soc-thu-dinner",
-      "name": "Gala Dinner — La Dársena",
+      "name": "Dinner — La Dársena",
       "day": "2026-11-19",
       "time": "19:00",
       "location": "Restaurante Dársena, Alicante",

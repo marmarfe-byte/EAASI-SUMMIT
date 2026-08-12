@@ -5,11 +5,12 @@ import { getSpeakerById } from "../data.js";
 // catch-all bucket for plenaries/keynotes/panels/working groups/etc.
 // Colours are drawn from the existing EAASI brand table (no new hues
 // introduced); Gold/Silver/Bronze stay reserved for sponsor tier badges.
+// Sponsor uses Dark Teal rather than Steel so it doesn't read as "Silver".
 const CATEGORIES = [
   { id: "sessions", label: "Sessions", color: "#3DBFBF", text: "#1A2340", tracks: null },
   { id: "board", label: "Board", color: "#1A2340", text: "#F5F8FF", tracks: ["Board"] },
   { id: "committee", label: "Committee", color: "#2B3A67", text: "#F5F8FF", tracks: ["Committee"] },
-  { id: "sponsor", label: "Sponsor", color: "#9AABC2", text: "#1A2340", tracks: ["Sponsor"] },
+  { id: "sponsor", label: "Sponsor", color: "#2A8F8F", text: "#F5F8FF", tracks: ["Sponsor"] },
   { id: "social", label: "Social", color: "#2A7A2A", text: "#F5F8FF", tracks: ["Social"] },
 ];
 
@@ -27,11 +28,15 @@ function getSponsor(data, sponsorId) {
   return (data.sponsors?.sponsors || []).find((s) => s.id === sponsorId) || null;
 }
 
-function sponsorLogoChip(sponsor) {
+function sponsorLogoImg(sponsor, sizeClass) {
   if (!sponsor) return "";
   return !isPlaceholder(sponsor.logo)
-    ? `<img class="agenda-sponsor-logo" src="${escapeHtml(sponsor.logo)}" alt="${escapeHtml(sponsor.name)}" title="Sponsored by ${escapeHtml(sponsor.name)}"/>`
-    : `<span class="agenda-sponsor-logo agenda-sponsor-logo--text">${escapeHtml(sponsor.name)}</span>`;
+    ? `<img class="${sizeClass}" src="${escapeHtml(sponsor.logo)}" alt="${escapeHtml(sponsor.name)}"/>`
+    : `<div class="${sizeClass} agenda-sponsor-logo--text">${escapeHtml(sponsor.name)}</div>`;
+}
+
+function sponsorLabel(sponsor) {
+  return `<span class="agenda-sponsor-label">Sponsored by ${escapeHtml(sponsor.name)}</span>`;
 }
 
 export function renderAgenda(data, agendaDay, agendaCategory) {
@@ -79,16 +84,23 @@ export function renderAgenda(data, agendaDay, agendaCategory) {
             <span>${escapeHtml(s.startTime)}</span>
             ${s.endTime ? `<span class="end">${escapeHtml(s.endTime)}</span>` : ""}
           </div>
-          <div style="flex:1;">
-            <div class="meta" style="margin-bottom:6px; justify-content:space-between; align-items:center;">
+          <div style="flex:1; min-width:0;">
+            <div class="meta" style="margin-bottom:6px;">
               ${categoryTag(s.track)}
-              ${sponsorLogoChip(sponsor)}
             </div>
             <h3>${escapeHtml(displayText(s.title, "Session title TBC"))}</h3>
             <div class="meta">
               <span>${escapeHtml(displayText(s.room, "Room TBC"))}</span>
               ${speakerNames ? `<span>· ${escapeHtml(speakerNames)}</span>` : ""}
             </div>
+            ${
+              sponsor
+                ? `<div class="agenda-sponsor-block">
+                    ${sponsorLogoImg(sponsor, "agenda-sponsor-logo")}
+                    ${sponsorLabel(sponsor)}
+                  </div>`
+                : ""
+            }
           </div>
         </div>
       </div>`;
@@ -127,11 +139,20 @@ export function renderSessionDetail(data, sessionId) {
   const sponsor = getSponsor(data, session.sponsorId);
 
   return `
-    <div class="meta" style="justify-content:space-between; align-items:center;">
-      ${categoryTag(session.track)}
-      ${sponsor ? `<span class="meta" style="gap:6px;">Sponsored by ${sponsorLogoChip(sponsor)}</span>` : ""}
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:16px;">
+      <div style="flex:1; min-width:0;">
+        ${categoryTag(session.track)}
+        <h2 style="margin-top:10px; font-size:20px;">${escapeHtml(displayText(session.title, "Session title TBC"))}</h2>
+      </div>
+      ${
+        sponsor
+          ? `<div class="agenda-sponsor-detail">
+              ${sponsorLogoImg(sponsor, "agenda-sponsor-logo-detail")}
+              ${sponsorLabel(sponsor)}
+            </div>`
+          : ""
+      }
     </div>
-    <h2 style="margin-top:10px; font-size:20px;">${escapeHtml(displayText(session.title, "Session title TBC"))}</h2>
     <div class="meta" style="margin-top:8px;">
       <span>${escapeHtml(formatFullDate(day.date))}</span>
       <span>· ${escapeHtml(session.startTime)}${session.endTime ? `–${escapeHtml(session.endTime)}` : ""}</span>

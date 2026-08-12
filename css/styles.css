@@ -592,14 +592,15 @@ main {
 .sponsor-chip img {
   object-fit: contain;
   display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
-/* Tiered sizing — Gold largest, Silver 90% of Gold, Bronze 80% of Gold */
-.sponsor-chip--gold { height: 64px; }
-.sponsor-chip--gold img { max-height: 46px; max-width: 160px; }
-.sponsor-chip--silver { height: 58px; }
-.sponsor-chip--silver img { max-height: 41px; max-width: 144px; }
-.sponsor-chip--bronze { height: 51px; }
-.sponsor-chip--bronze img { max-height: 37px; max-width: 128px; }
+/* Tiered sizing — every logo in a tier occupies the exact same fixed
+   footprint (Gold largest, Silver 90% of Gold, Bronze 80% of Gold);
+   the image scales to fit inside via object-fit: contain. */
+.sponsor-chip--gold { width: 168px; height: 68px; }
+.sponsor-chip--silver { width: 151px; height: 61px; }
+.sponsor-chip--bronze { width: 134px; height: 54px; }
 .sponsor-chip--text {
   font-size: 12px;
   font-weight: 700;
@@ -783,15 +784,49 @@ main {
 .day-tab.is-active .d1 { color: var(--teal); }
 .day-tab.is-active .d2 { color: var(--cloud); }
 
+/* Sponsor block on agenda cards — logo + "Sponsored by X" label */
+.agenda-sponsor-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--periwinkle);
+}
 .agenda-sponsor-logo {
-  max-height: 30px;
-  max-width: 100px;
+  max-height: 64px;
+  max-width: 220px;
   object-fit: contain;
   display: block;
 }
-.agenda-sponsor-logo--text {
-  font-size: 11px;
+.agenda-sponsor-label {
+  font-size: 12.5px;
   font-weight: 700;
+  color: var(--mid-navy);
+}
+
+/* Sponsor badge in the session detail overlay — big, right-aligned */
+.agenda-sponsor-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.agenda-sponsor-logo-detail {
+  max-height: 120px;
+  max-width: 200px;
+  object-fit: contain;
+  display: block;
+}
+.agenda-sponsor-detail .agenda-sponsor-label {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.agenda-sponsor-logo--text {
+  font-size: 12px;
+  font-weight: 800;
   color: var(--mid-navy);
   white-space: nowrap;
 }

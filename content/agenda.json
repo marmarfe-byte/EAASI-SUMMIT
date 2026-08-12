@@ -50,7 +50,7 @@
           "startTime": "19:05",
           "endTime": "19:15",
           "title": "Welcome to EAASI Conference",
-          "room": "",
+          "room": "Sports Club",
           "speakerIds": ["spk-secgen"],
           "description": "Welcome by Secretary General Marcos Martinez.",
           "track": "Plenary"
@@ -60,7 +60,7 @@
           "startTime": "19:15",
           "endTime": "19:45",
           "title": "Meet the Board Candidates",
-          "room": "",
+          "room": "Sports Club",
           "speakerIds": [],
           "description": "Board Election 2026 — Candidates Presentation.",
           "track": "Board"
@@ -107,7 +107,7 @@
           "sponsorId": "spon-esri",
           "startTime": "10:00",
           "endTime": "10:25",
-          "title": "Gold Sponsor Use Case #1",
+          "title": "Gold Sponsor Use Case #1 — ESRI",
           "room": "Augusta",
           "speakerIds": [],
           "description": "Gold Sponsor showcase — ESRI.",
@@ -171,10 +171,10 @@
           "sponsorId": "spon-riegl",
           "startTime": "13:30",
           "endTime": "14:25",
-          "title": "Lunch + Board Vote",
+          "title": "Lunch",
           "room": "Olivo's Restaurant",
           "speakerIds": [],
-          "description": "Sponsored by RIEGL. EAASI Members will have the opportunity to vote for their preferred candidates for the next term, with ballots available for collection throughout the morning. Voting closes at 14:15.",
+          "description": "Sponsored by RIEGL.",
           "track": "Break"
         },
         {
@@ -251,7 +251,7 @@
           "sponsorId": "spon-hexagon",
           "startTime": "09:20",
           "endTime": "09:45",
-          "title": "Gold Sponsor Use Case #2",
+          "title": "Gold Sponsor Use Case #2 — HEXAGON",
           "room": "Augusta",
           "speakerIds": [],
           "description": "Gold Sponsor showcase — HEXAGON.",
@@ -325,10 +325,10 @@
           "sponsorId": "spon-diamond",
           "startTime": "13:35",
           "endTime": "14:35",
-          "title": "Lunch",
+          "title": "Lunch + Board Vote",
           "room": "Olivo's Restaurant",
           "speakerIds": [],
-          "description": "Sponsored by Diamond Aircraft.",
+          "description": "Sponsored by Diamond Aircraft. EAASI Members will have the opportunity to vote for their preferred candidates for the next term, with ballots available for collection throughout the morning. Voting closes at 14:15.",
           "track": "Break"
         },
         {
