@@ -12,7 +12,7 @@
  * added/renamed.
  */
 
-const CACHE_VERSION = "eaasi-summit-v13";
+const CACHE_VERSION = "eaasi-summit-v14";
 const APP_SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const CONTENT_CACHE = `${CACHE_VERSION}-content`;
 
@@ -38,18 +38,18 @@ const APP_SHELL_FILES = [
   "/icons/icon-192.png",
   "/icons/icon-512.png",
   "/assets/eaasi-logo.png",
-  "/assets/sponsors/hexagon.avif",
-  "/assets/sponsors/esri.avif",
-  "/assets/sponsors/riegl.avif",
-  "/assets/sponsors/flai.avif",
-  "/assets/sponsors/pointly.avif",
-  "/assets/sponsors/dielmo3d.avif",
-  "/assets/sponsors/vexcel.avif",
+  "/assets/sponsors/hexagon.png",
+  "/assets/sponsors/esri.png",
+  "/assets/sponsors/riegl.png",
+  "/assets/sponsors/flai.png",
+  "/assets/sponsors/pointly.png",
+  "/assets/sponsors/dielmo3d.png",
+  "/assets/sponsors/vexcel.png",
   "/assets/sponsors/diamond-aircraft.png",
-  "/assets/sponsors/xeos.avif",
+  "/assets/sponsors/xeos.png",
   "/assets/sponsors/teledyne.png",
-  "/assets/sponsors/phaseone.avif",
-  "/assets/sponsors/simactive.avif",
+  "/assets/sponsors/phaseone.png",
+  "/assets/sponsors/simactive.png",
   "/assets/venue/hotel-1.avif",
   "/assets/practical/vista-alicante.avif",
 ];
