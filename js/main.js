@@ -31,6 +31,7 @@ const state = {
   sponsorFilter: "all",
   overlay: null, // { type: 'session' | 'speaker', id }
   openFaqIndex: null,
+  openCommittees: new Set(),
   menuOpen: false,
 };
 
@@ -62,7 +63,7 @@ function renderMainContent() {
     case "sponsors":
       return renderSponsors(content, state.sponsorFilter);
     case "committees":
-      return renderCommittees(content);
+      return renderCommittees(content, state.openCommittees);
     case "practical":
       return renderPractical(content, state.openFaqIndex);
     default:
@@ -182,6 +183,15 @@ function attachDelegation() {
     if (faqBtn) {
       const idx = Number(faqBtn.getAttribute("data-faq"));
       state.openFaqIndex = state.openFaqIndex === idx ? null : idx;
+      render();
+      return;
+    }
+
+    const committeeToggle = e.target.closest("[data-committee-toggle]");
+    if (committeeToggle) {
+      const id = committeeToggle.getAttribute("data-committee-toggle");
+      if (state.openCommittees.has(id)) state.openCommittees.delete(id);
+      else state.openCommittees.add(id);
       render();
       return;
     }

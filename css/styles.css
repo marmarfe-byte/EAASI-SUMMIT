@@ -565,7 +565,7 @@ main {
 .sponsor-strip-group { margin-bottom: 16px; }
 .sponsor-strip-group:last-child { margin-bottom: 0; }
 .sponsor-strip-group .tier-label {
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -598,7 +598,7 @@ main {
 /* Tiered sizing — every logo in a tier occupies the exact same fixed
    footprint (Gold largest, Silver 90% of Gold, Bronze 80% of Gold);
    the image scales to fit inside via object-fit: contain. */
-.sponsor-chip--gold { width: 168px; height: 68px; }
+.sponsor-chip--gold { width: 185px; height: 75px; }
 .sponsor-chip--silver { width: 151px; height: 61px; }
 .sponsor-chip--bronze { width: 134px; height: 54px; }
 .sponsor-chip--text {
@@ -675,11 +675,11 @@ main {
   object-fit: contain;
 }
 /* Tiered sizing — Gold largest, Silver 90% of Gold, Bronze 80% of Gold */
-.sponsor-logo--gold { width: 140px; height: 84px; }
+.sponsor-logo--gold { width: 154px; height: 92px; }
 .sponsor-logo--silver { width: 126px; height: 76px; }
 .sponsor-logo--bronze { width: 112px; height: 67px; }
 .tier-badge {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -692,7 +692,36 @@ main {
 .tier-badge.tier-silver { background: var(--silver); }
 .tier-badge.tier-bronze { background: var(--bronze); }
 
+/* ---------- Additional Activities ---------- */
+.activity-highlights {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--slate);
+}
+.activity-highlights li { margin-bottom: 6px; }
+.activity-highlights li:last-child { margin-bottom: 0; }
+
 /* ---------- Committees ---------- */
+.committee-toggle {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 10px 0 0;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--teal-dark);
+  cursor: pointer;
+}
+.committee-toggle .chevron { transition: transform 0.2s ease; }
+.committee-toggle.is-open .chevron { transform: rotate(180deg); }
+.committee-details { margin-top: 8px; }
 .committee-members {
   margin-top: 10px;
   padding-top: 10px;

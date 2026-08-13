@@ -16,6 +16,13 @@ export function renderAdditional(data) {
           ${a.coordinator ? `<span>· Coordinator: <strong>${escapeHtml(displayText(a.coordinator, "TBC"))}</strong></span>` : ""}
         </div>
         <div class="desc">${escapeHtml(displayText(a.description, "Details coming soon."))}</div>
+        ${
+          Array.isArray(a.highlights) && a.highlights.length
+            ? `<ul class="activity-highlights">${a.highlights
+                .map((h) => `<li>${escapeHtml(h)}</li>`)
+                .join("")}</ul>`
+            : ""
+        }
         <div class="desc" style="margin-top:8px;"><strong>What to bring:</strong> ${escapeHtml(displayText(a.whatToBring, "TBC"))}</div>
       </div>`
     )
