@@ -3,6 +3,7 @@
     {
       "id": "com-eu-projects",
       "name": "EU Projects",
+      "logo": "/assets/committees/eu-projects.png",
       "chair": "Simon Musaeus – EAASI",
       "mission": "PLACEHOLDER — mission statement for the EU Projects committee.",
       "currentFocus": "To be determined",
@@ -11,6 +12,7 @@
     {
       "id": "com-universities-students",
       "name": "Universities & Students Engagement",
+      "logo": "/assets/committees/universities.png",
       "chair": "Patrik Meixner – Primis",
       "mission": "Connect EAASI member companies with universities, technical schools and students in the aerial surveying industry, building the sector's future talent pipeline through outreach, events and educational content.",
       "currentFocus": "The committee is expanding outreach to secondary schools and teachers' organizations, and supporting student-facing events such as the KonGeos fair (Mainz, Oct 2026) and the Intergeo Student Tour. It is also developing a \"Rookie of the Year\" award, coordinating the OTA thesis award with EuroSDR, building a shared 2026–2027 calendar of member events, office visits and site visits open to students, and exploring an EAASI Summer School concept in cooperation with universities.",
@@ -32,6 +34,7 @@
     {
       "id": "com-aerial-operations",
       "name": "Aerial Operations",
+      "logo": "/assets/committees/aerial-operations.png",
       "chair": "Soren Jepersen – Hexagon",
       "mission": "Support EAASI aerial operator members by identifying shared operational challenges and building practical tools and resources for day-to-day use.",
       "currentFocus": "The committee is up and running, with two meetings completed and clear momentum building. Following a broad discussion across key operational challenges, three priority areas have been identified: Sustainability — an EAASI Sustainability Company Paper, a practical framework members can use in tenders covering CO₂ reporting, operational efficiency and transparency on reduction and compensation; EAASI Online Sharing Platform — strengthening collaboration by sharing and adding valuable content for EAASI members; and Fuel Costs — improving transparency on fuel prices, understanding the group's collective footprint in aircraft and fuel usage, and exploring joint supplier engagement for better commercial terms. Owners, deliverables and timelines are now in place, with first outputs expected within the next period — the committee is moving from discussion to execution.",
@@ -51,6 +54,7 @@
     {
       "id": "com-certification",
       "name": "Certification",
+      "logo": "/assets/committees/certification.png",
       "chair": "Aicke Damrau – Geofly",
       "mission": "PLACEHOLDER — mission statement.",
       "currentFocus": "PLACEHOLDER — current goals / initiatives.",

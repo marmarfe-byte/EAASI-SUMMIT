@@ -704,6 +704,14 @@ main {
 .activity-highlights li:last-child { margin-bottom: 0; }
 
 /* ---------- Committees ---------- */
+.committee-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 56px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
 .committee-toggle {
   width: 100%;
   text-align: left;

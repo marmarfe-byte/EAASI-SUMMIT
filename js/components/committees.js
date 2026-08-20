@@ -1,4 +1,4 @@
-import { escapeHtml, displayText } from "../utils.js";
+import { escapeHtml, displayText, isPlaceholder } from "../utils.js";
 import { CHEVRON_DOWN } from "../icons.js";
 
 export function renderCommittees(data, openCommittees) {
@@ -8,9 +8,12 @@ export function renderCommittees(data, openCommittees) {
     .map((c) => {
       const members = (c.members || []).filter((m) => !!m);
       const isOpen = open.has(c.id);
+      const heading = !isPlaceholder(c.logo)
+        ? `<img class="committee-logo" src="${escapeHtml(c.logo)}" alt="${escapeHtml(c.name)}"/>`
+        : `<h3>${escapeHtml(c.name)}</h3>`;
       return `
       <div class="card">
-        <h3>${escapeHtml(c.name)}</h3>
+        ${heading}
         <div class="meta">
           <span><strong>Chair:</strong> ${escapeHtml(displayText(c.chair, "TBC"))}</span>
         </div>
