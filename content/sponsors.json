@@ -83,6 +83,13 @@
       "tier": "bronze",
       "logo": "/assets/sponsors/simactive.png",
       "websiteUrl": "https://www.simactive.com/es/"
+    },
+    {
+      "id": "spon-trimble",
+      "name": "Trimble",
+      "tier": "bronze",
+      "logo": "/assets/sponsors/trimble.png",
+      "websiteUrl": "https://www.trimble.com"
     }
   ],
   "tierColors": {
