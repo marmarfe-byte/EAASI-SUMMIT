@@ -129,10 +129,10 @@
           "sponsorId": "spon-riegl",
           "startTime": "10:55",
           "endTime": "11:25",
-          "title": "Silver Sponsor Use Case — RIEGL",
+          "title": "Real-time Geo-referencing in Wide-area and Corridor Airborne Laser Scanning",
           "room": "Augusta",
-          "speakerIds": [],
-          "description": "Silver Sponsor showcase — RIEGL.",
+          "speakerIds": ["spk-rieger"],
+          "description": "Silver Sponsor showcase — RIEGL. Technical challenges, accuracy limits, and emerging applications, presented by Peter Rieger, RIEGL ALS Business Division Manager.",
           "track": "Sponsor"
         },
         {

@@ -89,6 +89,15 @@
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
       "bio": "PLACEHOLDER — 2–3 sentence bio."
+    },
+    {
+      "id": "spk-rieger",
+      "name": "Peter Rieger",
+      "company": "RIEGL",
+      "role": "ALS Business Division Manager",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "PLACEHOLDER — 2–3 sentence bio."
     }
   ]
 }
