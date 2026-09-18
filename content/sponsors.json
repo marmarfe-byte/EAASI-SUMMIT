@@ -36,11 +36,11 @@
       "websiteUrl": "https://pointly.ai"
     },
     {
-      "id": "spon-dielmo3d",
-      "name": "Dielmo3D",
+      "id": "spon-neobora",
+      "name": "Neobora",
       "tier": "silver",
-      "logo": "/assets/sponsors/dielmo3d.png",
-      "websiteUrl": "https://dielmo.com/en/"
+      "logo": "/assets/sponsors/neobora.svg",
+      "websiteUrl": "https://neobora.ai/"
     },
     {
       "id": "spon-vexcel",

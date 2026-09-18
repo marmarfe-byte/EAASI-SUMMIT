@@ -147,13 +147,13 @@
         },
         {
           "id": "d2-s7",
-          "sponsorId": "spon-dielmo3d",
+          "sponsorId": "spon-neobora",
           "startTime": "12:40",
           "endTime": "13:00",
-          "title": "Silver Sponsor Use Case — Dielmo 3D",
+          "title": "Silver Sponsor Use Case — Neobora",
           "room": "Augusta",
           "speakerIds": [],
-          "description": "Silver Sponsor showcase — Dielmo 3D.",
+          "description": "Silver Sponsor showcase — Neobora.",
           "track": "Sponsor"
         },
         {
@@ -423,13 +423,13 @@
       "sessions": [
         {
           "id": "d4-s1",
-          "sponsorId": "spon-dielmo3d",
+          "sponsorId": "spon-neobora",
           "startTime": "09:00",
           "endTime": "13:00",
           "title": "City Tour — Extended Networking",
           "room": "",
           "speakerIds": [],
-          "description": "Sponsored by Dielmo 3D. Extended networking city tour of Alicante, concluding back at the hotel around 13:00.",
+          "description": "Sponsored by Neobora. Extended networking city tour of Alicante, concluding back at the hotel around 13:00.",
           "track": "Social"
         }
       ]
