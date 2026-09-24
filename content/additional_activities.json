@@ -22,17 +22,23 @@
     },
     {
       "id": "add-golf",
-      "name": "Golf",
-      "schedule": "Monday afternoon, Nov 16",
-      "time": "14:00",
+      "name": "Golf — 18-Hole Round",
+      "schedule": "Tuesday, Nov 17",
+      "time": "10:00",
       "coordinator": "Roland Stengele",
       "meetingPoint": "Hotel Golf Course",
-      "whatToBring": "Golf attire; clubs provided for the Clinic, bring or rent your own for the 18-hole round",
-      "description": "Two options at the hotel's own golf course. Contact Roland Stengele or Marcos Martinez in advance to book either one.",
-      "highlights": [
-        "Beginner Clinic — 90 min, no experience needed. €35pp, min 6 / max 30 (larger groups split). Fixed price, advance booking required. Hotel provides clubs & equipment.",
-        "18-Hole Round — Monday, tee-off 14:00. ~€54pp, price varies with demand, buggy not included. No participant limit, valid golf licence required. Payment required to confirm; clubs not provided."
-      ]
+      "whatToBring": "Golf attire; bring or rent your own clubs",
+      "description": "18-hole round at the hotel's own golf course, tee-off at 10:00. ~€54pp, price varies with demand, buggy not included. No participant limit, valid golf licence required. Payment required to confirm; clubs not provided. Contact Roland Stengele or Marcos Martinez in advance to book."
+    },
+    {
+      "id": "add-golf-clinic",
+      "name": "Golf Clinic",
+      "schedule": "Friday, Nov 20",
+      "time": "10:00",
+      "coordinator": "Roland Stengele",
+      "meetingPoint": "Hotel Golf Course",
+      "whatToBring": "Golf attire; clubs & equipment provided by the hotel",
+      "description": "Beginner-friendly clinic at the hotel's own golf course for those who want to try golf for the first time — 90 min, no previous experience needed. €35pp, min 6 / max 30 participants (larger groups split). Fixed price, advance booking required. Contact Roland Stengele or Marcos Martinez in advance to book."
     }
   ]
 }

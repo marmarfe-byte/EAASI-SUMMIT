@@ -11,12 +11,12 @@
     },
     {
       "id": "spk-isprs",
-      "name": "ISPRS Representative",
-      "company": "ISPRS — to be confirmed",
-      "role": "Keynote Speaker",
+      "name": "Lena Halounova",
+      "company": "ISPRS",
+      "role": "Former President, ISPRS",
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "Keynote from the International Society for Photogrammetry & Remote Sensing."
+      "bio": "Former President of the International Society for Photogrammetry and Remote Sensing (ISPRS)."
     },
     {
       "id": "spk-iulietto",
