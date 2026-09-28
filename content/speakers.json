@@ -98,6 +98,15 @@
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
       "bio": "PLACEHOLDER — 2–3 sentence bio."
+    },
+    {
+      "id": "spk-muick",
+      "name": "Marc Muick",
+      "company": "Vexcel Imaging",
+      "role": "PLACEHOLDER — role/title at Vexcel Imaging",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "PLACEHOLDER — 2–3 sentence bio."
     }
   ]
 }

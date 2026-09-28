@@ -347,10 +347,10 @@
           "sponsorId": "spon-vexcel",
           "startTime": "14:35",
           "endTime": "14:55",
-          "title": "Silver Sponsor Use Case — Vexcel",
+          "title": "When Humans and AI Look at the Same Pixel — How Reference Images Create a Common Language for Humans and AI",
           "room": "Augusta",
-          "speakerIds": [],
-          "description": "Silver Sponsor showcase — Vexcel.",
+          "speakerIds": ["spk-muick"],
+          "description": "Silver Sponsor showcase — Vexcel Imaging, presented by Marc Muick.",
           "track": "Sponsor"
         },
         {
