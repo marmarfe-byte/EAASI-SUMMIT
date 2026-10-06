@@ -34,13 +34,24 @@
     },
     {
       "id": "soc-fri-networking-tour",
-      "name": "City Tour — Extended Networking",
+      "name": "Guided Visit — Alicante Tide Gauge, Spain's \"Height Zero\"",
       "day": "2026-11-20",
       "time": "09:00",
-      "location": "PLACEHOLDER — Departure point (likely hotel lobby)",
-      "address": "PLACEHOLDER — Address",
-      "mapLink": "PLACEHOLDER — Google Maps link",
-      "description": "Sponsored by Neobora. Extended networking city tour of Alicante, concluding back at the hotel around 13:00."
+      "location": "Alicante Tide Gauge & Geodetic Station (IGN) — Muelle de Levante, Port of Alicante",
+      "address": "Muelle de Levante, Puerto de Alicante, 03001 Alicante, Spain",
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Mare%C3%B3grafo+Muelle+de+Levante+Puerto+de+Alicante",
+      "websiteUrl": "https://www.ign.es/web/resources/docs/IGNCnig/folletos/Estacion_Mareografica_Geodesica_Alicante.pdf",
+      "websiteLabel": "IGN brochure (PDF)",
+      "description": "Sponsored by Neobora. Extended networking morning with a guided visit to the historic Alicante Tide Gauge, organised by Spain's National Geographic Institute (IGN). IGN experts will walk us through its history and explain how the National Altimetric Reference — the origin of every official height in mainland Spain — was established here. Concludes back at the hotel around 13:00.",
+      "highlightsTitle": "Why Alicante is Spain's \"Height Zero\"",
+      "highlights": [
+        "Between 1870 and 1874, IGN surveyors read the sea level by hand on a tide staff in Alicante's port every day; the average became the Mean Sea Level in Alicante (NMMA).",
+        "That mean sea level is the origin of altitudes for mainland Spain — 2024 marked its 150th anniversary.",
+        "The reference benchmark NP1 is a bronze disc on the first step of Alicante City Hall, set at 3.4095 m above mean sea level.",
+        "Spain's first tide gauge started recording here in 1874; the current station, ALAC1 (the 'Fundamental Station of the Mediterranean'), was built from 1925.",
+        "From paper chart recorders and 1960s punched tape to today's angular encoders and radar sensors sending data to IGN in real time, every minute.",
+        "A permanent GNSS station on site monitors any ground or port movement — and, via GNSS reflectometry, can measure sea level from satellite signals bouncing off the water."
+      ]
     }
   ]
 }

@@ -16,6 +16,13 @@ export function renderSocial(data) {
           <span>${escapeHtml(displayText(a.location, "Location TBC"))}</span>
         </div>
         <div class="desc">${escapeHtml(displayText(a.description, "Details coming soon."))}</div>
+        ${
+          Array.isArray(a.highlights) && a.highlights.length
+            ? `<div class="highlights"><strong>${escapeHtml(a.highlightsTitle || "Did you know?")}</strong><ul>${a.highlights
+                .map((h) => `<li>${escapeHtml(h)}</li>`)
+                .join("")}</ul></div>`
+            : ""
+        }
         <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
           ${
             !isPlaceholder(a.mapLink)
@@ -24,7 +31,7 @@ export function renderSocial(data) {
           }
           ${
             !isPlaceholder(a.websiteUrl)
-              ? `<a class="btn btn--ghost" href="${escapeHtml(a.websiteUrl)}" ${externalLinkAttrs()}>Website ${EXTERNAL_LINK}</a>`
+              ? `<a class="btn btn--ghost" href="${escapeHtml(a.websiteUrl)}" ${externalLinkAttrs()}>${escapeHtml(a.websiteLabel || "Website")} ${EXTERNAL_LINK}</a>`
               : ""
           }
         </div>
