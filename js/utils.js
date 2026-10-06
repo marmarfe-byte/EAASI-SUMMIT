@@ -23,7 +23,8 @@ function stripPlaceholderPrefix(name) {
 
 export function initials(name) {
   if (name == null || typeof name !== "string" || name.trim() === "") return "?";
-  const parts = stripPlaceholderPrefix(name).split(/\s+/).filter(Boolean);
+  const parts = stripPlaceholderPrefix(name).split(/\s+/).filter(Boolean)
+    .filter((p, i, all) => !(i < all.length - 1 && /^(dr|prof)\.?$/i.test(p)));
   if (parts.length === 0) return "?";
   if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
   return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();

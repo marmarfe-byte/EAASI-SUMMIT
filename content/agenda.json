@@ -357,10 +357,10 @@
           "id": "d3-s11",
           "startTime": "14:55",
           "endTime": "15:25",
-          "title": "IGN Spain — Guest Presentation",
+          "title": "From Data to Value — A Retrospective and Outlook on Data Use in Germany's Federal Administration",
           "room": "Augusta",
-          "speakerIds": ["spk-ign"],
-          "description": "Institutional guest presentation from Spain's National Geographic Institute.",
+          "speakerIds": ["spk-knoefel"],
+          "description": "Guest presentation on Digital Twin Germany by Dr. Patrick Knöfel, Federal Agency for Cartography and Geodesy (BKG).",
           "track": "Guest"
         },
         {
