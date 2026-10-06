@@ -1,5 +1,35 @@
-import { escapeHtml, displayText, isPlaceholder } from "../utils.js";
-import { CHEVRON_DOWN } from "../icons.js";
+import { escapeHtml, displayText, isPlaceholder, externalLinkAttrs } from "../utils.js";
+import { CHEVRON_DOWN, EXTERNAL_LINK } from "../icons.js";
+
+function renderTaxis(t) {
+  const apps = (t.apps || [])
+    .map(
+      (a) => `
+      <div class="taxi-app">
+        <div>
+          <strong>${escapeHtml(displayText(a.name, "App"))}</strong>
+          <div class="desc">${escapeHtml(displayText(a.description, ""))}</div>
+        </div>
+        ${!isPlaceholder(a.url) ? `<a class="btn btn--ghost" href="${escapeHtml(a.url)}" ${externalLinkAttrs()}>Get app ${EXTERNAL_LINK}</a>` : ""}
+      </div>`
+    )
+    .join("");
+  return `
+    <div class="card">
+      <h3>Taxis &amp; Ride-Hailing</h3>
+      <div class="desc">${escapeHtml(displayText(t.intro, ""))}</div>
+      <div class="highlights">
+        <strong>Hotel taxis</strong>
+        ${escapeHtml(
+          isPlaceholder(t.hotelTaxis) || !t.hotelTaxis
+            ? "Hotel Alicante Golf can also arrange taxis for you — details coming soon; meanwhile, ask at the front desk."
+            : t.hotelTaxis
+        )}
+      </div>
+      ${apps}
+      ${t.note ? `<div class="desc" style="margin-top:10px; font-size:13px;">${escapeHtml(displayText(t.note, ""))}</div>` : ""}
+    </div>`;
+}
 
 export function renderPractical(data, openFaqIndex) {
   const p = data.practical;
@@ -54,6 +84,8 @@ export function renderPractical(data, openFaqIndex) {
       <div class="desc">${escapeHtml(displayText(p.nearestAirport?.transportOptions, "TBC"))}</div>
       <div class="desc" style="margin-top:8px;">${escapeHtml(displayText(p.localTransport, "Local transport info coming soon."))}</div>
     </div>
+
+    ${p.taxis ? renderTaxis(p.taxis) : ""}
 
     <div class="card">
       <h3>Weather &amp; What to Pack</h3>

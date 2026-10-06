@@ -284,6 +284,17 @@ main {
 .card .highlights strong { display: block; margin-bottom: 4px; color: var(--mid-navy); }
 .card .highlights ul { margin: 0; padding-left: 18px; }
 .card .highlights li + li { margin-top: 4px; }
+.taxi-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--periwinkle);
+}
+.taxi-app:first-of-type { margin-top: 12px; }
+.taxi-app strong { color: var(--navy); }
+.taxi-app .btn { flex-shrink: 0; }
 
 /* ---------- Buttons / chips ---------- */
 .btn {

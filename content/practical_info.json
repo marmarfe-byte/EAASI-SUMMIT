@@ -5,7 +5,34 @@
     "distanceFromVenue": "~24 km from Hotel Alicante Golf, around 20–25 min by car",
     "transportOptions": "Taxi or rideshare is the most direct option (no train/tram runs directly to Playa San Juan). Airport shuttle/transfer companies also serve the Alicante area — check with the hotel for recommended transfer providers."
   },
-  "localTransport": "Hotel Alicante Golf is in Playa San Juan, north of Alicante city centre. TRAM Line 4 (Alicante–Sant Joan) runs along the coast with stops near Playa San Juan; taxis and rideshare apps (Free Now, Uber) are readily available. Coach transport to/from the Wednesday and Thursday dinners is provided by the organisers (see Social Activities).",
+  "localTransport": "Hotel Alicante Golf is in Playa San Juan, north of Alicante city centre. TRAM Line 4 (Alicante–Sant Joan) runs along the coast with stops near Playa San Juan; taxis and ride-hailing apps (FREENOW, Bolt, Cabify, Uber) are readily available — see Taxis & Ride-Hailing below. Coach transport to/from the Wednesday and Thursday dinners and the Friday tide gauge visit is provided by the organisers (see Social Activities).",
+  "taxis": {
+    "intro": "Four ride-hailing apps operate in Alicante, including pickups at Alicante–Elche Airport (ALC). Download one before you travel and set up payment in advance. Official taxi ranks are also available at the airport and in the city centre.",
+    "hotelTaxis": "PLACEHOLDER — Hotel-arranged taxi details (how to book, contact, rates)",
+    "apps": [
+      {
+        "name": "FREENOW",
+        "description": "Books licensed local taxis through the app, with in-app payment. Handy when you prefer an official taxi.",
+        "url": "https://www.free-now.com/"
+      },
+      {
+        "name": "Bolt",
+        "description": "Ride-hailing app with private-hire vehicles; usually competitively priced. Upfront fare shown before booking.",
+        "url": "https://bolt.eu/"
+      },
+      {
+        "name": "Cabify",
+        "description": "Spanish ride-hailing app widely used across Spain; upfront fares and in-app payment.",
+        "url": "https://cabify.com/"
+      },
+      {
+        "name": "Uber",
+        "description": "Works with your existing Uber account; upfront fares and in-app payment.",
+        "url": "https://www.uber.com/"
+      }
+    ],
+    "note": "Availability can be patchier late at night, especially at the airport — if an app shows no cars, use the official taxi rank or ask the hotel front desk."
+  },
   "weather": {
     "expectedRange": "Mild — typically 12–19°C (53–66°F) in mid-to-late November, with occasional rain.",
     "note": "Pack layers and a light jacket; an umbrella or light rain shell is a good idea."
