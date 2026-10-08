@@ -12,21 +12,25 @@
     "apps": [
       {
         "name": "FREENOW",
+        "logo": "/assets/practical/taxis/freenow.svg",
         "description": "Books licensed local taxis through the app, with in-app payment. Handy when you prefer an official taxi.",
         "url": "https://www.free-now.com/"
       },
       {
         "name": "Bolt",
+        "logo": "/assets/practical/taxis/bolt.svg",
         "description": "Ride-hailing app with private-hire vehicles; usually competitively priced. Upfront fare shown before booking.",
         "url": "https://bolt.eu/"
       },
       {
         "name": "Cabify",
+        "logo": "/assets/practical/taxis/cabify.svg",
         "description": "Spanish ride-hailing app widely used across Spain; upfront fares and in-app payment.",
         "url": "https://cabify.com/"
       },
       {
         "name": "Uber",
+        "logo": "/assets/practical/taxis/uber.svg",
         "description": "Works with your existing Uber account; upfront fares and in-app payment.",
         "url": "https://www.uber.com/"
       }

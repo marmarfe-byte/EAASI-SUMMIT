@@ -221,9 +221,28 @@ function attachDelegation() {
 
 function registerServiceWorker() {
   if (!("serviceWorker" in navigator)) return;
-  navigator.serviceWorker.register("/service-worker.js").catch((err) => {
-    console.error("Service worker registration failed:", err);
+  // A new service worker (new CACHE_VERSION) brings new JS/CSS; reload once it
+  // takes control so the page isn't left running the old app shell while
+  // content JSON (network-first) is already new.
+  const hadController = !!navigator.serviceWorker.controller;
+  let reloaded = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (!hadController || reloaded) return;
+    reloaded = true;
+    window.location.reload();
   });
+  navigator.serviceWorker
+    .register("/service-worker.js")
+    .then((reg) => {
+      // Installed PWAs often resume without a navigation (when the browser
+      // normally checks for updates), so also check whenever the app is shown.
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible") reg.update().catch(() => {});
+      });
+    })
+    .catch((err) => {
+      console.error("Service worker registration failed:", err);
+    });
 }
 
 async function init() {

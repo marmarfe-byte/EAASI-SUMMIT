@@ -294,6 +294,7 @@ main {
 }
 .taxi-app:first-of-type { margin-top: 12px; }
 .taxi-app strong { color: var(--navy); }
+.taxi-logo { display: block; height: 22px; width: auto; max-width: 120px; object-fit: contain; object-position: left center; margin-bottom: 4px; }
 .taxi-app .btn { flex-shrink: 0; }
 
 /* ---------- Buttons / chips ---------- */

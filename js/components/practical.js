@@ -7,7 +7,11 @@ function renderTaxis(t) {
       (a) => `
       <div class="taxi-app">
         <div>
-          <strong>${escapeHtml(displayText(a.name, "App"))}</strong>
+          ${
+            a.logo && !isPlaceholder(a.logo)
+              ? `<img class="taxi-logo" src="${escapeHtml(a.logo)}" alt="${escapeHtml(displayText(a.name, "App"))}"/>`
+              : `<strong>${escapeHtml(displayText(a.name, "App"))}</strong>`
+          }
           <div class="desc">${escapeHtml(displayText(a.description, ""))}</div>
         </div>
         ${!isPlaceholder(a.url) ? `<a class="btn btn--ghost" href="${escapeHtml(a.url)}" ${externalLinkAttrs()}>Get app ${EXTERNAL_LINK}</a>` : ""}

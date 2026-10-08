@@ -12,7 +12,7 @@
  * added/renamed.
  */
 
-const CACHE_VERSION = "eaasi-summit-v27";
+const CACHE_VERSION = "eaasi-summit-v31";
 const APP_SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const CONTENT_CACHE = `${CACHE_VERSION}-content`;
 
@@ -53,6 +53,10 @@ const APP_SHELL_FILES = [
   "/assets/sponsors/trimble.png",
   "/assets/venue/hotel-1.avif",
   "/assets/practical/vista-alicante.avif",
+  "/assets/practical/taxis/freenow.svg",
+  "/assets/practical/taxis/bolt.svg",
+  "/assets/practical/taxis/cabify.svg",
+  "/assets/practical/taxis/uber.svg",
   "/assets/committees/eu-projects.png",
   "/assets/committees/universities.png",
   "/assets/committees/aerial-operations.png",
@@ -76,9 +80,11 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
       const shellCache = await caches.open(APP_SHELL_CACHE);
-      await shellCache.addAll(APP_SHELL_FILES);
+      // cache: "reload" bypasses the browser's HTTP cache (GitHub Pages sends
+      // max-age=600), so a new version never stores stale JS/CSS.
+      await shellCache.addAll(APP_SHELL_FILES.map((u) => new Request(u, { cache: "reload" })));
       const contentCache = await caches.open(CONTENT_CACHE);
-      await contentCache.addAll(CONTENT_FILES);
+      await contentCache.addAll(CONTENT_FILES.map((u) => new Request(u, { cache: "reload" })));
       self.skipWaiting();
     })()
   );
