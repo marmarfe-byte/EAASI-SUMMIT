@@ -107,10 +107,10 @@
           "sponsorId": "spon-esri",
           "startTime": "10:00",
           "endTime": "10:25",
-          "title": "Gold Sponsor Use Case #1 — ESRI",
+          "title": "Taking Airborne Data to a Next Level of Detail — Combined Processing of Aerial and Mobile Mapping Data",
           "room": "Augusta",
-          "speakerIds": [],
-          "description": "Gold Sponsor showcase — ESRI.",
+          "speakerIds": ["spk-szadkowski", "spk-klimek"],
+          "description": "Gold Sponsor showcase — Esri, in cooperation with EAASI members IGI and GeoFly. We will explore how combined processing and co-registration of airborne imagery, LiDAR, and ground-level mobile mapping data can extend the value of traditional aerial survey workflows. Using new Reality Mapping capabilities, including Gaussian Splats generated from multisource imagery and LiDAR, we will demonstrate how aerial and ground data can be fused into a continuous, highly detailed representation of reality. The session will include practical examples and early results from new capabilities executed with IGI and GeoFly. Beyond the technology itself, the focus will be on what this means for the aerial mapping market: how existing airborne datasets can become the foundation for new services, new customer use cases, and new demand streams across infrastructure, transportation, asset management, digital twins, and site operations.",
           "track": "Sponsor"
         },
         {

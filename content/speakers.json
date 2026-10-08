@@ -107,6 +107,24 @@
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
       "bio": "PLACEHOLDER — 2–3 sentence bio."
+    },
+    {
+      "id": "spk-szadkowski",
+      "name": "Arkadiusz Szadkowski",
+      "company": "Esri",
+      "role": "Global Sales Manager, Reality Mapping",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "https://www.linkedin.com/in/arkadiuszszadkowski/",
+      "bio": "Leads global business development for Reality Mapping at Esri, helping organisations turn aerial imagery, LiDAR and 3D data into digital twins and GeoAI-ready content within ArcGIS. Graduated in Photogrammetry and Remote Sensing from Warsaw University of Technology and TU Wien, then spent almost 13 years at Field Group (formerly Terratec) working on imagery, LiDAR, mobile mapping and 3D modelling — including roles as VP Software Products and head of production operations — before joining Esri."
+    },
+    {
+      "id": "spk-klimek",
+      "name": "Kristin Klimek",
+      "company": "Esri",
+      "role": "Senior Solution Engineer, Global Imagery & Remote Sensing",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "Senior Solution Engineer in Esri's Global Imagery and Remote Sensing team, specialising in Reality Mapping and photogrammetry with ArcGIS Reality. Based at the Esri R&D Center Stuttgart (formerly nFrames), she previously worked as a presales consultant and workflow specialist at Leica Geosystems and has co-authored research on combining airborne oblique cameras and LiDAR sensors."
     }
   ]
 }
