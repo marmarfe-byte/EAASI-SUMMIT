@@ -1,5 +1,5 @@
 import { escapeHtml, displayText, isPlaceholder, externalLinkAttrs } from "../utils.js";
-import { CHEVRON_DOWN, EXTERNAL_LINK } from "../icons.js";
+import { EXTERNAL_LINK } from "../icons.js";
 
 function renderTaxis(t) {
   const apps = (t.apps || [])
@@ -35,33 +35,19 @@ function renderTaxis(t) {
     </div>`;
 }
 
-export function renderPractical(data, openFaqIndex) {
+export function renderPractical(data) {
   const p = data.practical;
 
-  const faqItems = (p.faq || [])
-    .map((f, i) => {
-      const open = i === openFaqIndex ? "is-open" : "";
+  const contacts = (p.emergencyContacts || [])
+    .map((c) => {
+      const tel = (c.phone || "").replace(/\s+/g, "");
+      const emergency = tel === "112";
       return `
-      <div class="faq-item ${open}">
-        <button class="faq-question" data-faq="${i}">
-          <span>${escapeHtml(displayText(f.question, "Question TBC"))}</span>
-          ${CHEVRON_DOWN}
-        </button>
-        <div class="faq-answer">${escapeHtml(displayText(f.answer, "Answer coming soon."))}</div>
+      <div class="card contact-card${emergency ? " contact-card--emergency" : ""}">
+        <strong>${escapeHtml(displayText(c.label, "Contact"))}</strong>
+        <a class="btn ${emergency ? "btn--emergency" : "btn--ghost"}" href="tel:${escapeHtml(tel)}">${escapeHtml(displayText(c.phone, "TBC"))}</a>
       </div>`;
     })
-    .join("");
-
-  const contacts = (p.emergencyContacts || [])
-    .map(
-      (c) => `
-      <div class="card" style="margin-bottom:10px;">
-        <div class="meta" style="margin-bottom:0;">
-          <strong style="color:var(--navy);">${escapeHtml(displayText(c.label, "Contact"))}</strong>
-        </div>
-        <a class="btn btn--ghost" style="margin-top:8px;" href="tel:${escapeHtml((c.phone || "").replace(/\s+/g, ""))}">${escapeHtml(displayText(c.phone, "TBC"))}</a>
-      </div>`
-    )
     .join("");
 
   return `
@@ -81,7 +67,18 @@ export function renderPractical(data, openFaqIndex) {
         <div class="label">Weather</div>
         <div class="value">${escapeHtml(displayText(p.weather?.expectedRange, "TBC"))}</div>
       </div>
+      <div class="info-tile info-tile--wide">
+        <div class="label">Dress Code</div>
+        <div class="value">
+          <strong>Sessions:</strong> ${escapeHtml(displayText(p.dressCode?.sessions, "TBC"))}<br/>
+          <strong>Dinners:</strong> ${escapeHtml(displayText(p.dressCode?.dinners, "TBC"))}<br/>
+          <strong>Activities:</strong> ${escapeHtml(displayText(p.dressCode?.activities, "TBC"))}
+        </div>
+      </div>
     </div>
+
+    <h3 style="margin: 4px 0 10px;">Emergency Contacts</h3>
+    ${contacts}
 
     <div class="card">
       <h3>Transport</h3>
@@ -90,31 +87,5 @@ export function renderPractical(data, openFaqIndex) {
     </div>
 
     ${p.taxis ? renderTaxis(p.taxis) : ""}
-
-    <div class="card">
-      <h3>Weather &amp; What to Pack</h3>
-      <div class="desc">${escapeHtml(displayText(p.weather?.note, "TBC"))}</div>
-    </div>
-
-    <div class="card">
-      <h3>Dress Code</h3>
-      <div class="meta" style="margin-bottom:0;">
-        <span><strong>Sessions:</strong> ${escapeHtml(displayText(p.dressCode?.sessions, "TBC"))}</span>
-      </div>
-      <div class="meta" style="margin-bottom:0;">
-        <span><strong>Dinners:</strong> ${escapeHtml(displayText(p.dressCode?.dinners, "TBC"))}</span>
-      </div>
-      <div class="meta">
-        <span><strong>Activities:</strong> ${escapeHtml(displayText(p.dressCode?.activities, "TBC"))}</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>FAQ</h3>
-      ${faqItems}
-    </div>
-
-    <h3 style="margin: 18px 0 10px;">Emergency Contacts</h3>
-    ${contacts}
   `;
 }

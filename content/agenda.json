@@ -56,16 +56,6 @@
           "track": "Plenary"
         },
         {
-          "id": "d1-s6",
-          "startTime": "19:15",
-          "endTime": "19:45",
-          "title": "Meet the Board Candidates",
-          "room": "Sports Club",
-          "speakerIds": [],
-          "description": "Board Election 2026 — Candidates Presentation.",
-          "track": "Board"
-        },
-        {
           "id": "d1-s7",
           "sponsorId": "spon-hexagon",
           "startTime": "19:45",

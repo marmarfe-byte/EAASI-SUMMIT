@@ -20,7 +20,8 @@
   ],
   "floorPlanImage": "PLACEHOLDER — floor plan image path",
   "accommodation": {
-    "intro": "Book your room at Hotel Alicante Golf in time to take advantage of the Summit's preferred rates.",
+    "intro": "Hotel Alicante Golf is the Summit venue and designated hotel.",
+    "ratesWarning": "Please note: the preferred Summit rates below were only guaranteed for bookings made by 30 September 2026 and may no longer apply. Check current prices and availability directly with the hotel.",
     "roomTypes": [
       { "name": "Standard Room", "pricePerNight": "132,00 €" },
       { "name": "Standard Room with Views", "pricePerNight": "148,00 €" },
@@ -31,7 +32,7 @@
     "availabilityNote": "The hotel holds 150 rooms for the Summit but cannot guarantee availability — book early.",
     "reservationEmail": "reservas@hotelalicantegolf.com",
     "reservationPhone": "+34 965 235 000",
-    "reservationInstructions": "Contact the hotel's reservations department by email or phone and identify yourself as an attendee of the EAASI 2026 Summit to receive the preferred rate.",
+    "reservationInstructions": "Contact the hotel's reservations department by email or phone and identify yourself as an attendee of the EAASI 2026 Summit; the hotel will confirm whether the preferred rate can still be offered.",
     "paymentNote": "Once your request is sent, the hotel will reply with a secure payment link to complete the reservation.",
     "cancellationPolicy": "Fully refundable if cancelled 15 or more days before arrival."
   }

@@ -15,6 +15,7 @@ export function renderVenue(data) {
     <div class="card">
       <h3>Room Rates &amp; Reservation</h3>
       <div class="desc">${escapeHtml(displayText(a.intro, ""))}</div>
+      ${a.ratesWarning && !isPlaceholder(a.ratesWarning) ? `<div class="notice-warn">${escapeHtml(a.ratesWarning)}</div>` : ""}
       <div class="info-grid" style="margin-top:12px;">
         ${(a.roomTypes || [])
           .map(

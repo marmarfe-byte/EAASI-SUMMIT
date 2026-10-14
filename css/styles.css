@@ -820,6 +820,29 @@ main {
   margin-bottom: 4px;
 }
 .info-tile .value { font-size: 13.5px; line-height: 1.4; }
+.info-tile--wide { grid-column: 1 / -1; }
+.notice-warn {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: #FFF4E0;
+  border-left: 3px solid #E08A00;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--slate);
+}
+.contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.contact-card strong { color: var(--navy); font-size: 14px; }
+.contact-card .btn { flex-shrink: 0; }
+.contact-card--emergency { border: 2px solid #D32F2F; background: #FDECEC; }
+.contact-card--emergency strong { color: #B71C1C; }
+.btn--emergency { background: #D32F2F; color: #fff; border: 1px solid #D32F2F; font-weight: 800; font-size: 16px; }
 
 /* ---------- Day tabs (Agenda) ---------- */
 .day-tabs {
@@ -982,6 +1005,7 @@ main {
   .speaker-grid { grid-template-columns: repeat(3, 1fr); }
   .quick-links { grid-template-columns: repeat(4, 1fr); }
   .info-grid { grid-template-columns: repeat(3, 1fr); }
+  .info-tile--wide { grid-column: auto; }
   .hamburger-btn { display: none; }
   .mobile-menu { display: none; }
 }
