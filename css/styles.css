@@ -831,18 +831,12 @@ main {
   line-height: 1.5;
   color: var(--slate);
 }
-.contact-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 10px;
-}
-.contact-card strong { color: var(--navy); font-size: 14px; }
-.contact-card .btn { flex-shrink: 0; }
-.contact-card--emergency { border: 2px solid #D32F2F; background: #FDECEC; }
-.contact-card--emergency strong { color: #B71C1C; }
-.btn--emergency { background: #D32F2F; color: #fff; border: 1px solid #D32F2F; font-weight: 800; font-size: 16px; }
+.contact-tile { display: flex; flex-direction: column; }
+.contact-tile .btn { margin-top: auto; padding-top: 8px; padding-bottom: 8px; width: 100%; }
+.contact-tile .value { margin-bottom: 8px; }
+.contact-tile .label { margin-bottom: 8px; }
+.contact-grid .contact-tile:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.btn--emergency { background: #D32F2F; color: #fff; border: 1px solid #D32F2F; }
 
 /* ---------- Day tabs (Agenda) ---------- */
 .day-tabs {
@@ -1006,6 +1000,7 @@ main {
   .quick-links { grid-template-columns: repeat(4, 1fr); }
   .info-grid { grid-template-columns: repeat(3, 1fr); }
   .info-tile--wide { grid-column: auto; }
+  .contact-grid .contact-tile:last-child:nth-child(odd) { grid-column: auto; }
   .hamburger-btn { display: none; }
   .mobile-menu { display: none; }
 }

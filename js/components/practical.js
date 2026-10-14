@@ -42,9 +42,11 @@ export function renderPractical(data) {
     .map((c) => {
       const tel = (c.phone || "").replace(/\s+/g, "");
       const emergency = tel === "112";
+      const [title, ...rest] = displayText(c.label, "Contact").split(" — ");
       return `
-      <div class="card contact-card${emergency ? " contact-card--emergency" : ""}">
-        <strong>${escapeHtml(displayText(c.label, "Contact"))}</strong>
+      <div class="info-tile contact-tile">
+        <div class="label">${escapeHtml(title)}</div>
+        ${rest.length ? `<div class="value">${escapeHtml(rest.join(" — "))}</div>` : ""}
         <a class="btn ${emergency ? "btn--emergency" : "btn--ghost"}" href="tel:${escapeHtml(tel)}">${escapeHtml(displayText(c.phone, "TBC"))}</a>
       </div>`;
     })
@@ -77,8 +79,7 @@ export function renderPractical(data) {
       </div>
     </div>
 
-    <h3 style="margin: 4px 0 10px;">Emergency Contacts</h3>
-    ${contacts}
+    <div class="info-grid contact-grid">${contacts}</div>
 
     <div class="card">
       <h3>Transport</h3>
