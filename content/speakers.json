@@ -125,6 +125,24 @@
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
       "bio": "Senior Solution Engineer in Esri's Global Imagery and Remote Sensing team, specialising in Reality Mapping and photogrammetry with ArcGIS Reality. Based at the Esri R&D Center Stuttgart (formerly nFrames), she previously worked as a presales consultant and workflow specialist at Leica Geosystems and has co-authored research on combining airborne oblique cameras and LiDAR sensors."
+    },
+    {
+      "id": "spk-parsons",
+      "name": "Ed Parsons",
+      "company": "Open Geospatial Consortium (OGC)",
+      "role": "Chair of the Board of Directors — Panel Moderator",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "Digital geographer and geospatial technology advisor. Chair of the Board of Directors of the Open Geospatial Consortium (OGC) since October 2025, after almost two decades as Google's Geospatial Technologist, where he helped shape how location data is used across consumer and enterprise products. A long-standing advocate of open standards and of geography as critical digital infrastructure."
+    },
+    {
+      "id": "spk-laaksonen",
+      "name": "Heli Laaksonen",
+      "company": "National Land Survey of Finland (NLS)",
+      "role": "Director, Core Spatial Data Services",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "https://www.linkedin.com/in/heli-laaksonen-b8899a12/",
+      "bio": "Director of Core Spatial Data Services at the National Land Survey of Finland, responsible for the national topographic, elevation and aerial imagery data that underpin Finland's geospatial infrastructure. A frequent speaker on public-sector collaboration, open geospatial data and public–private partnerships in European geospatial work."
     }
   ]
 }

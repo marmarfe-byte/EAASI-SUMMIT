@@ -60,7 +60,7 @@
           "id": "d1-s7",
           "menuId": "menu-tue-dinner",
           "sponsorId": "spon-hexagon",
-          "startTime": "19:45",
+          "startTime": "20:30",
           "endTime": "",
           "title": "Reception Dinner",
           "room": "Albatros",
@@ -134,8 +134,8 @@
           "endTime": "12:40",
           "title": "Experts Panel — Wider Geospatial Data Economy",
           "room": "Augusta",
-          "speakerIds": ["spk-delatorre", "spk-cooper"],
-          "description": "Moderated by TBD. Speakers: Javier de la Torre (CARTO), Phil Cooper (AWS), further panellist TBC.",
+          "speakerIds": ["spk-parsons", "spk-delatorre", "spk-cooper", "spk-laaksonen"],
+          "description": "Moderated by Ed Parsons (Chair of the Board, Open Geospatial Consortium). Panellists: Javier de la Torre (CARTO), Phil Cooper (AWS) and Heli Laaksonen (National Land Survey of Finland).",
           "track": "Panel"
         },
         {

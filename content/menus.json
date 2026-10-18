@@ -4,92 +4,275 @@
       "id": "menu-tue-welcome",
       "title": "Welcome Reception — Spanish Wine",
       "sections": [
-        { "heading": "Cold bites", "items": ["Glazed artisan coca with goat cheese and Iberian ham", "Lebanese quinoa tabbouleh with feta"] },
-        { "heading": "Hot bites", "items": ["Chicken and vegetable gyoza in teriyaki sauce", "Mini cochinita pibil burger"] },
-        { "heading": "Drinks", "items": ["Mineral water, soft drinks and beer", "White wine: Marqués de Irún, DO Rueda", "Red wine: Viña Herminia"] }
+        {
+          "heading": "Cold bites",
+          "items": [
+            "Glazed artisan coca with goat cheese and Iberian ham",
+            "Lebanese quinoa tabbouleh with feta"
+          ]
+        },
+        {
+          "heading": "Hot bites",
+          "items": [
+            "Chicken and vegetable gyoza in teriyaki sauce",
+            "Mini cochinita pibil burger"
+          ]
+        },
+        {
+          "heading": "Drinks",
+          "items": [
+            "Mineral water, soft drinks and beer",
+            "White wine: Marqués de Irún, DO Rueda",
+            "Red wine: Viña Herminia"
+          ]
+        }
       ]
     },
     {
       "id": "menu-tue-dinner",
       "title": "Reception Dinner — Executive Menu",
       "sections": [
-        { "heading": "Starter", "items": ["Crispy chicken ravioli in tartufata sauce"] },
-        { "heading": "Main course", "items": ["Iberian pork cheek with black olive parmentier"] },
-        { "heading": "Dessert", "items": ["San Marcos cake"] },
-        { "heading": "Drinks", "items": ["House wines"] }
+        {
+          "heading": "Starter",
+          "items": [
+            "Crispy chicken ravioli in tartufata sauce"
+          ]
+        },
+        {
+          "heading": "Main course",
+          "items": [
+            "Iberian pork cheek with black olive parmentier"
+          ]
+        },
+        {
+          "heading": "Dessert",
+          "items": [
+            "San Marcos cake"
+          ]
+        },
+        {
+          "heading": "Drinks",
+          "items": [
+            "House wines"
+          ]
+        }
       ]
     },
     {
       "id": "menu-wed-coffee-am",
       "title": "Morning Coffee Break",
       "sections": [
-        { "heading": "Drinks", "items": ["Coffee, tea and infusions", "Milk, orange juice and mineral water"] },
-        { "heading": "To eat", "items": ["Mini pastries: croissants and doughnuts", "Vegetable sandwich"] }
+        {
+          "heading": "Drinks",
+          "items": [
+            "Coffee, tea and infusions",
+            "Milk, orange juice and mineral water"
+          ]
+        },
+        {
+          "heading": "To eat",
+          "items": [
+            "Mini pastries: croissants and doughnuts",
+            "Vegetable sandwich"
+          ]
+        }
       ]
     },
     {
       "id": "menu-wed-coffee-pm",
       "title": "Afternoon Coffee Break",
       "sections": [
-        { "heading": "Drinks", "items": ["Coffee, tea and infusions", "Milk, orange juice and mineral water"] },
-        { "heading": "To eat", "items": ["Mini pastries: croissants and chocolate napolitanas", "Ham, cheese and truffle-butter sandwich"] }
+        {
+          "heading": "Drinks",
+          "items": [
+            "Coffee, tea and infusions",
+            "Milk, orange juice and mineral water"
+          ]
+        },
+        {
+          "heading": "To eat",
+          "items": [
+            "Mini pastries: croissants and chocolate napolitanas",
+            "Ham, cheese and truffle-butter sandwich"
+          ]
+        }
       ]
     },
     {
       "id": "menu-wed-lunch",
       "title": "Seated Buffet Lunch",
       "sections": [
-        { "heading": "Cold", "items": ["Charcuterie station with artisan breads from the hotel bakery", "Coleslaw", "Salad bar with toppings: Greek, Caesar and Iberian", "Andalusian gazpacho shots"] },
-        { "heading": "Hot", "items": ["Roasted tomatoes with mozzarella and pesto", "Grilled fish", "Whole marinated roast chicken", "Confit pork cheek", "Vegetable tian", "Roast potatoes with rosemary and thyme", "Pilaf rice"] },
-        { "heading": "Dessert", "items": ["Chef's homemade cakes", "Seasonal fruit"] },
-        { "heading": "Drinks", "items": ["Water, soft drinks, beer, white and red wine", "Coffee and infusions"] }
+        {
+          "heading": "Cold",
+          "items": [
+            "Charcuterie station with artisan breads from the hotel bakery",
+            "Coleslaw",
+            "Salad bar with toppings: Greek, Caesar and Iberian",
+            "Andalusian gazpacho shots"
+          ]
+        },
+        {
+          "heading": "Hot",
+          "items": [
+            "Roasted tomatoes with mozzarella and pesto",
+            "Grilled fish",
+            "Whole marinated roast chicken",
+            "Confit pork cheek",
+            "Vegetable tian",
+            "Roast potatoes with rosemary and thyme",
+            "Pilaf rice"
+          ]
+        },
+        {
+          "heading": "Dessert",
+          "items": [
+            "Chef's homemade cakes",
+            "Seasonal fruit"
+          ]
+        },
+        {
+          "heading": "Drinks",
+          "items": [
+            "Water, soft drinks, beer, white and red wine",
+            "Coffee and infusions"
+          ]
+        }
       ]
     },
     {
       "id": "menu-wed-dinner",
-      "title": "Dinner at La Ereta — Menú Santa Cruz",
-      "provisional": "Provisional menu — the final menu is still to be confirmed by the restaurant.",
-      "sections": [
-        { "heading": "Cocktail", "items": ["Melon gazpacho", "Tomato, cheese and basil crisp", "Sea sobrasada with egg yolk and honey", "Alicante-style prawn gyoza", "Iberian ham croquettes", "Shrimp fritters with codium mayonnaise", "Iberian ham carving station"] },
-        { "heading": "Menu", "items": ["Red prawn carpaccio with garlic", "Bluefin tuna with fried egg", "Gratinated cod with pepper jus and honey all-i-oli", "Glazed veal rib with river potatoes and red berries", "Chocolate, bread and olive oil"] },
-        { "heading": "Drinks", "items": ["Estrella Galicia beer", "White wine: Luna Blanca, Rueda Superior, 100% Verdejo", "Red wine: Prado Rey Crianza, Ribera del Duero", "Soft drinks and mineral water"] }
-      ]
+      "title": "Dinner at La Ereta",
+      "sections": [],
+      "pending": "To be confirmed soon."
     },
     {
       "id": "menu-thu-coffee-am",
       "title": "Morning Coffee Break",
       "sections": [
-        { "heading": "Drinks", "items": ["Coffee, tea and infusions", "Milk, orange juice and mineral water"] },
-        { "heading": "To eat", "items": ["Mini pastries: croissants and mini muffins", "Assorted mini savoury bites"] }
+        {
+          "heading": "Drinks",
+          "items": [
+            "Coffee, tea and infusions",
+            "Milk, orange juice and mineral water"
+          ]
+        },
+        {
+          "heading": "To eat",
+          "items": [
+            "Mini pastries: croissants and mini muffins",
+            "Assorted mini savoury bites"
+          ]
+        }
       ]
     },
     {
       "id": "menu-thu-coffee-pm",
       "title": "Afternoon Coffee Break",
       "sections": [
-        { "heading": "Drinks", "items": ["Coffee, tea and infusions", "Milk, orange juice and mineral water"] },
-        { "heading": "To eat", "items": ["Mini pastries: croissants and caracolas", "Ham, cheese and truffle-butter sandwich"] }
+        {
+          "heading": "Drinks",
+          "items": [
+            "Coffee, tea and infusions",
+            "Milk, orange juice and mineral water"
+          ]
+        },
+        {
+          "heading": "To eat",
+          "items": [
+            "Mini pastries: croissants and caracolas",
+            "Ham, cheese and truffle-butter sandwich"
+          ]
+        }
       ]
     },
     {
       "id": "menu-thu-lunch",
       "title": "Seated Buffet Lunch",
       "sections": [
-        { "heading": "Cold", "items": ["Spanish cheese station with artisan breads", "Pasta salad with pesto and mozzarella", "Salad bar with toppings: Greek, Caesar and Iberian", "Salmorejo with ham shavings and apple"] },
-        { "heading": "Hot", "items": ["Sauce station: chimichurri, honey mustard, yoghurt", "Creole chorizo", "Fish skewers", "Grilled corn on the cob", "Barbecue beef ribs", "Slow-cooked pork loin", "Grilled vegetables: courgette, padrón peppers, aubergine", "Gratin dauphinois"] },
-        { "heading": "Dessert", "items": ["Chef's homemade cakes", "Seasonal fruit"] },
-        { "heading": "Drinks", "items": ["Water, soft drinks, beer, white and red wine", "Coffee and infusions"] }
+        {
+          "heading": "Cold",
+          "items": [
+            "Spanish cheese station with artisan breads",
+            "Pasta salad with pesto and mozzarella",
+            "Salad bar with toppings: Greek, Caesar and Iberian",
+            "Salmorejo with ham shavings and apple"
+          ]
+        },
+        {
+          "heading": "Hot",
+          "items": [
+            "Sauce station: chimichurri, honey mustard, yoghurt",
+            "Creole chorizo",
+            "Fish skewers",
+            "Grilled corn on the cob",
+            "Barbecue beef ribs",
+            "Slow-cooked pork loin",
+            "Grilled vegetables: courgette, padrón peppers, aubergine",
+            "Gratin dauphinois"
+          ]
+        },
+        {
+          "heading": "Dessert",
+          "items": [
+            "Chef's homemade cakes",
+            "Seasonal fruit"
+          ]
+        },
+        {
+          "heading": "Drinks",
+          "items": [
+            "Water, soft drinks, beer, white and red wine",
+            "Coffee and infusions"
+          ]
+        }
       ]
     },
     {
       "id": "menu-thu-dinner",
       "title": "Dinner at Dársena — Menú Celebración",
       "sections": [
-        { "heading": "Welcome cocktail", "items": ["Red pepper hummus spoon", "Gazpacho shot", "Hake salad spoon (ensaladilla)", "Oxtail and mushroom croquette", "Anchovy skewer with cherry tomato and pickles", "Pinoso sausage puff pastry", "Slow-cooked pork rib", "DO Alicante wines, beer, soft drinks and water"] },
-        { "heading": "Starter", "items": ["Salmon salad with mango and avocado"] },
-        { "heading": "Main — rice tasting", "items": ["Arroz a banda", "Rice with pork and vegetables"] },
-        { "heading": "Dessert", "items": ["San Marcos cake", "Cava or cider", "Coffee or infusions"] },
-        { "heading": "Drinks", "items": ["House white and red wine, DO Alicante", "Mineral water, beer and soft drinks", "Open bar after dinner"] }
+        {
+          "heading": "Welcome cocktail",
+          "items": [
+            "Red pepper hummus spoon",
+            "Gazpacho shot",
+            "Hake salad spoon (ensaladilla)",
+            "Oxtail and mushroom croquette",
+            "Anchovy skewer with cherry tomato and pickles",
+            "Pinoso sausage puff pastry",
+            "Slow-cooked pork rib",
+            "DO Alicante wines, beer, soft drinks and water"
+          ]
+        },
+        {
+          "heading": "Starter",
+          "items": [
+            "Salmon salad with mango and avocado"
+          ]
+        },
+        {
+          "heading": "Main — rice tasting",
+          "items": [
+            "Arroz a banda",
+            "Rice with pork and vegetables"
+          ]
+        },
+        {
+          "heading": "Dessert",
+          "items": [
+            "San Marcos cake",
+            "Cava or cider",
+            "Coffee or infusions"
+          ]
+        },
+        {
+          "heading": "Drinks",
+          "items": [
+            "House white and red wine, DO Alicante",
+            "Mineral water, beer and soft drinks",
+            "Open bar after dinner"
+          ]
+        }
       ]
     }
   ]

@@ -10,6 +10,7 @@ export function renderMenuSections(menu) {
   if (!menu) return "";
   return `
     ${menu.provisional ? `<div class="notice-warn">${escapeHtml(menu.provisional)}</div>` : ""}
+    ${menu.pending ? `<p class="desc" style="margin-top:10px;"><em>${escapeHtml(menu.pending)}</em></p>` : ""}
     <div class="food-menu">
       ${(menu.sections || [])
         .map(
