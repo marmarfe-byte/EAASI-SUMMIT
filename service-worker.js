@@ -12,7 +12,7 @@
  * added/renamed.
  */
 
-const CACHE_VERSION = "eaasi-summit-v34";
+const CACHE_VERSION = "eaasi-summit-v35";
 const APP_SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const CONTENT_CACHE = `${CACHE_VERSION}-content`;
 
@@ -35,6 +35,7 @@ const APP_SHELL_FILES = [
   "/js/components/committees.js",
   "/js/components/practical.js",
   "/js/components/tickets.js",
+  "/js/components/menu.js",
   "/icons/icon-192.png",
   "/icons/icon-512.png",
   "/assets/eaasi-logo.png",
@@ -74,6 +75,7 @@ const CONTENT_FILES = [
   "/content/sponsors.json",
   "/content/committees.json",
   "/content/practical_info.json",
+  "/content/menus.json",
 ];
 
 self.addEventListener("install", (event) => {

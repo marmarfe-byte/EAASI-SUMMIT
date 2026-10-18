@@ -921,6 +921,21 @@ main {
 }
 .session-time .end { color: var(--mid-navy); font-weight: 600; font-size: 11.5px; }
 
+/* ---------- Food menus (session detail + menu overlay) ---------- */
+.food-menu { margin-top: 10px; }
+.food-menu-section { padding: 10px 0; border-top: 1px solid var(--periwinkle); }
+.food-menu-section:first-child { border-top: none; padding-top: 4px; }
+.food-menu-heading {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 800;
+  color: var(--teal-dark);
+  margin-bottom: 6px;
+}
+.food-menu ul { margin: 0; padding: 0; list-style: none; }
+.food-menu li { font-size: 14px; line-height: 1.45; color: var(--slate); padding: 2px 0; }
+
 /* ---------- Overlay / detail modal ---------- */
 .overlay {
   position: fixed;

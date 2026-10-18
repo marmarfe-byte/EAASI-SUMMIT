@@ -9,6 +9,7 @@ const CONTENT_FILES = {
   sponsors: "/content/sponsors.json",
   committees: "/content/committees.json",
   practical: "/content/practical_info.json",
+  menus: "/content/menus.json",
 };
 
 export async function loadAllContent() {

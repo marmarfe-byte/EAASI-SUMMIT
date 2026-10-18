@@ -10,6 +10,7 @@ import { renderSponsors } from "./components/sponsors.js";
 import { renderCommittees } from "./components/committees.js";
 import { renderPractical } from "./components/practical.js";
 import { renderTickets } from "./components/tickets.js";
+import { renderMenuDetail } from "./components/menu.js";
 
 const TABS = [
   { id: "home", label: "Home" },
@@ -76,6 +77,7 @@ function renderOverlay() {
   let inner = "";
   if (state.overlay.type === "session") inner = renderSessionDetail(content, state.overlay.id);
   if (state.overlay.type === "speaker") inner = renderSpeakerDetail(content, state.overlay.id);
+  if (state.overlay.type === "food-menu") inner = renderMenuDetail(content, state.overlay.id);
   return `
     <div class="overlay">
       <div class="backdrop" data-close></div>
@@ -147,6 +149,13 @@ function attachDelegation() {
     const dayBtn = e.target.closest("[data-day]");
     if (dayBtn) {
       state.agendaDay = dayBtn.getAttribute("data-day");
+      render();
+      return;
+    }
+
+    const foodMenuBtn = e.target.closest("[data-food-menu]");
+    if (foodMenuBtn) {
+      state.overlay = { type: "food-menu", id: foodMenuBtn.getAttribute("data-food-menu") };
       render();
       return;
     }

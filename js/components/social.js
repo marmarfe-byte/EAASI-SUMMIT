@@ -24,6 +24,7 @@ export function renderSocial(data) {
             : ""
         }
         <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+          ${a.menuId ? `<button class="btn btn--ghost" data-food-menu="${escapeHtml(a.menuId)}">View menu</button>` : ""}
           ${
             !isPlaceholder(a.mapLink)
               ? `<a class="btn btn--ghost" href="${escapeHtml(a.mapLink)}" ${externalLinkAttrs()}>View on map ${PIN_SMALL}</a>`

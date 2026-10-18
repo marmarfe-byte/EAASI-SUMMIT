@@ -2,6 +2,7 @@
   "activities": [
     {
       "id": "soc-tue-welcome-dinner",
+      "menuId": "menu-tue-dinner",
       "name": "Welcome Dinner",
       "day": "2026-11-17",
       "time": "19:45",
@@ -12,6 +13,7 @@
     },
     {
       "id": "soc-wed-dinner",
+      "menuId": "menu-wed-dinner",
       "name": "Dinner — La Ereta",
       "day": "2026-11-18",
       "time": "19:00",
@@ -23,6 +25,7 @@
     },
     {
       "id": "soc-thu-dinner",
+      "menuId": "menu-thu-dinner",
       "name": "Dinner — La Dársena",
       "day": "2026-11-19",
       "time": "19:00",

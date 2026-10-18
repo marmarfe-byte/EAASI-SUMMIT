@@ -36,6 +36,7 @@
         },
         {
           "id": "d1-s4",
+          "menuId": "menu-tue-welcome",
           "sponsorId": "spon-xeos",
           "startTime": "19:00",
           "endTime": "19:05",
@@ -57,6 +58,7 @@
         },
         {
           "id": "d1-s7",
+          "menuId": "menu-tue-dinner",
           "sponsorId": "spon-hexagon",
           "startTime": "19:45",
           "endTime": "",
@@ -105,6 +107,7 @@
         },
         {
           "id": "d2-s4",
+          "menuId": "menu-wed-coffee-am",
           "sponsorId": "spon-pointly",
           "startTime": "10:25",
           "endTime": "10:55",
@@ -158,6 +161,7 @@
         },
         {
           "id": "d2-s9",
+          "menuId": "menu-wed-lunch",
           "sponsorId": "spon-riegl",
           "startTime": "13:30",
           "endTime": "14:25",
@@ -201,6 +205,7 @@
         },
         {
           "id": "d2-s13",
+          "menuId": "menu-wed-coffee-pm",
           "sponsorId": "spon-pointly",
           "startTime": "16:45",
           "endTime": "17:00",
@@ -222,6 +227,7 @@
         },
         {
           "id": "d2-s15",
+          "menuId": "menu-wed-dinner",
           "sponsorId": "spon-esri",
           "startTime": "19:00",
           "endTime": "",
@@ -281,6 +287,7 @@
         },
         {
           "id": "d3-s5",
+          "menuId": "menu-thu-coffee-am",
           "sponsorId": "spon-vexcel",
           "startTime": "10:55",
           "endTime": "11:25",
@@ -323,6 +330,7 @@
         },
         {
           "id": "d3-s9",
+          "menuId": "menu-thu-lunch",
           "sponsorId": "spon-diamond",
           "startTime": "13:35",
           "endTime": "14:35",
@@ -365,6 +373,7 @@
         },
         {
           "id": "d3-s13",
+          "menuId": "menu-thu-coffee-pm",
           "sponsorId": "spon-vexcel",
           "startTime": "16:15",
           "endTime": "16:30",
@@ -396,6 +405,7 @@
         },
         {
           "id": "d3-s16",
+          "menuId": "menu-thu-dinner",
           "sponsorId": "spon-flai",
           "startTime": "19:00",
           "endTime": "",

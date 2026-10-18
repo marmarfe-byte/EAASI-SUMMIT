@@ -1,5 +1,6 @@
 import { escapeHtml, displayText, isPlaceholder, formatDayShort, formatFullDate } from "../utils.js";
 import { getSpeakerById } from "../data.js";
+import { getMenu, renderMenuSections } from "./menu.js";
 
 // Agenda categories — kept to 5 for scannability. "Sessions" is the
 // catch-all bucket for plenaries/keynotes/panels/working groups/etc.
@@ -137,6 +138,7 @@ export function renderSessionDetail(data, sessionId) {
     .join("");
 
   const sponsor = getSponsor(data, session.sponsorId);
+  const menu = getMenu(data, session.menuId);
 
   return `
     <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:16px;">
@@ -160,5 +162,6 @@ export function renderSessionDetail(data, sessionId) {
     </div>
     <p class="desc" style="margin-top:14px;">${escapeHtml(displayText(session.description, "Session description coming soon."))}</p>
     ${speakerChips ? `<h3 style="font-size:14px; margin-top:18px; margin-bottom:8px;">Speakers</h3><div class="chip-row" style="margin-bottom:0;">${speakerChips}</div>` : ""}
+    ${menu ? `<h3 style="font-size:16px; margin-top:20px;">Menu</h3>${renderMenuSections(menu)}` : ""}
   `;
 }
