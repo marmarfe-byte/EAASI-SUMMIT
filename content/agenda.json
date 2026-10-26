@@ -178,8 +178,8 @@
           "endTime": "14:45",
           "title": "Same Flight, More Deliverables: From Point Cloud Classification to 3D Vector Objects",
           "room": "Augusta",
-          "speakerIds": [],
-          "description": "Silver Sponsor showcase — Pointly.",
+          "speakerIds": ["spk-hinrichs"],
+          "description": "Silver Sponsor showcase — Pointly, presented by Sid Hinrichs.",
           "track": "Sponsor"
         },
         {

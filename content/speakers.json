@@ -28,6 +28,15 @@
       "bio": "Former President of the International Society for Photogrammetry and Remote Sensing (ISPRS)."
     },
     {
+      "id": "spk-hinrichs",
+      "name": "Sid Hinrichs",
+      "company": "Pointly",
+      "role": "Co-founder & Head of Strategy",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "https://de.linkedin.com/in/sid-hinrichs-3794b6158",
+      "bio": "Co-founder of Pointly, the Berlin-based company behind a cloud platform that uses AI to classify 3D point clouds and turn them into vector data. With a background in consulting, project management and data science, Sid leads Pointly's strategy and works closely with mapping and surveying customers to automate point cloud classification. He was part of the team that won a Geospatial World Excellence Award in 2021."
+    },
+    {
       "id": "spk-iulietto",
       "name": "Gian Marco Iulietto",
       "company": "LX20 Law Firm",
