@@ -142,8 +142,39 @@
     {
       "id": "menu-wed-dinner",
       "title": "Dinner at La Ereta",
-      "sections": [],
-      "pending": "To be confirmed soon."
+      "sections": [
+        {
+          "heading": "Cocktail",
+          "items": [
+            "Melon gazpacho",
+            "Tomato, cheese and basil crisp",
+            "Sea sobrasada with egg yolk and honey",
+            "Alicante-style prawn gyoza",
+            "Iberian ham croquettes",
+            "Shrimp fritters with codium mayonnaise",
+            "Iberian ham carving station (jamón de cebo)"
+          ]
+        },
+        {
+          "heading": "Menu",
+          "items": [
+            "Red prawn carpaccio with garlic",
+            "Bluefin tuna with fried egg",
+            "Gratinated cod with pepper jus and honey all-i-oli",
+            "Glazed veal rib with river potatoes and red berries",
+            "Chocolate, bread and olive oil"
+          ]
+        },
+        {
+          "heading": "Drinks",
+          "items": [
+            "Estrella Galicia beer",
+            "White wine: Luna Blanca, Rueda Superior, 100% Verdejo",
+            "Red wine: Prado Rey Crianza, Ribera del Duero",
+            "Soft drinks and mineral water"
+          ]
+        }
+      ]
     },
     {
       "id": "menu-thu-coffee-am",
