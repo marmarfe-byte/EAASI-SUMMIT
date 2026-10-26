@@ -10,6 +10,15 @@
       "bio": "40+ years in cartography & geospatial; leads the Geofutures initiative."
     },
     {
+      "id": "spk-cooper",
+      "name": "Phil Cooper",
+      "company": "Amazon Web Services (AWS)",
+      "role": "Global Geospatial & GeoIntelligence Lead, AWS Public Sector",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "Business and technical leader with over 27 years in geospatial, Earth Observation and space technology. Phil spent nine years at Airbus leading the delivery of airborne and spaceborne Earth Observation capabilities, then ran the geospatial software and data business Sterling GEO for eight years — including National Survey programmes — before two years in geospatial strategy consulting. He joined AWS in 2019 and is now Global Geospatial and GeoIntelligence Lead for AWS Public Sector, where he champions Geospatial AI (GeoAI): applying foundation models, machine learning and generative AI to satellite imagery and aerial survey data. He created the AWS GenAI Geospatial Challenge programme. Phil holds an MSc in Earth Observation Science and an MBA from the University of Leicester, is a graduate of Oxford's Saïd Business School, a Visiting Fellow in Leicester's Department of Physics and Astronomy, a Fellow of the Royal Geographical Society and a Science and Technology Ambassador."
+    },
+    {
       "id": "spk-isprs",
       "name": "Lena Halounova",
       "company": "ISPRS",
@@ -28,6 +37,15 @@
       "bio": "Technology lawyer focused on the intersection of law, technology, and business, with a cross-border practice spanning corporate, FinTech, AI regulation, privacy, cybersecurity and technology-driven M&A across the EU, US and international markets. First Italian recipient of the Innovative Leaders award at the 2025 Leadership, Influence & Inclusivity in Law Awards (Law.com International)."
     },
     {
+      "id": "spk-klimek",
+      "name": "Kristin Klimek",
+      "company": "Esri",
+      "role": "Senior Solution Engineer, Global Imagery & Remote Sensing",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "Senior Solution Engineer in Esri's Global Imagery and Remote Sensing team, specialising in Reality Mapping and photogrammetry with ArcGIS Reality. Based at the Esri R&D Center Stuttgart (formerly nFrames), she previously worked as a presales consultant and workflow specialist at Leica Geosystems and has co-authored research on combining airborne oblique cameras and LiDAR sensors."
+    },
+    {
       "id": "spk-knoefel",
       "name": "Dr. Patrick Knöfel",
       "company": "Federal Agency for Cartography and Geodesy (BKG), Germany",
@@ -37,37 +55,19 @@
       "bio": "Scientist at the Federal Agency for Cartography and Geodesy (BKG) in Frankfurt am Main since 2017, focused on putting remote sensing techniques and geodata into practice for federal purposes. He is project lead for Digital Twin Germany, a high-resolution, nationwide digital replica of the country built on aerial survey and geospatial data to support decision-making in the federal administration. Previously worked on the Landscape Change Detection Service (LaVerDi). PhD from the University of Würzburg."
     },
     {
-      "id": "spk-delatorre",
-      "name": "Javier de la Torre",
-      "company": "CARTO",
-      "role": "Founder & Chief Strategy Officer",
+      "id": "spk-laaksonen",
+      "name": "Heli Laaksonen",
+      "company": "National Land Survey of Finland (NLS)",
+      "role": "Director, Core Spatial Data Services",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "Location-intelligence pioneer; founded CARTO in 2012."
+      "linkedInUrl": "https://www.linkedin.com/in/heli-laaksonen-b8899a12/",
+      "bio": "Director of Core Spatial Data Services at the National Land Survey of Finland, responsible for the national topographic, elevation and aerial imagery data that underpin Finland's geospatial infrastructure. A frequent speaker on public-sector collaboration, open geospatial data and public–private partnerships in European geospatial work."
     },
     {
-      "id": "spk-cooper",
-      "name": "Phil Cooper",
-      "company": "AWS",
-      "role": "Global Geospatial Lead",
-      "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "Leads AWS global geospatial efforts across Aerospace & Satellite."
-    },
-    {
-      "id": "spk-tidmarsh",
-      "name": "Rachel Tidmarsh",
-      "company": "EAASI",
-      "role": "Treasurer",
-      "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "PLACEHOLDER — 2–3 sentence bio."
-    },
-    {
-      "id": "spk-president",
-      "name": "Roland Stengele",
-      "company": "EAASI",
-      "role": "President",
+      "id": "spk-muick",
+      "name": "Marc Muick",
+      "company": "Vexcel Imaging",
+      "role": "Head of Applied Photogrammetry",
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
       "bio": "PLACEHOLDER — 2–3 sentence bio."
@@ -82,13 +82,13 @@
       "bio": "PLACEHOLDER — 2–3 sentence bio."
     },
     {
-      "id": "spk-secgen",
-      "name": "Marcos Martinez",
-      "company": "EAASI",
-      "role": "Secretary General",
+      "id": "spk-parsons",
+      "name": "Ed Parsons",
+      "company": "Open Geospatial Consortium (OGC)",
+      "role": "Chair of the Board of Directors, OGC — Panel Moderator",
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "PLACEHOLDER — 2–3 sentence bio."
+      "bio": "Digital geographer, geospatial technology advisor and keynote speaker. Ed is Chair of the Board of Directors of the Open Geospatial Consortium (OGC), a Visiting Professor at University College London and an industry advisor to several international universities. For many years he was Google's Geospatial Technologist, working with governments, universities and standards bodies and helping build an open data ecosystem for AI in Europe; he also co-chaired the W3C/OGC Spatial Data on the Web Working Group. Earlier he was the first Chief Technology Officer in the 200-year history of Ordnance Survey, and EMEA Applications Manager for Autodesk's GIS Division. He holds an MSc in Applied Remote Sensing from Cranfield and an honorary Doctorate of Science from Kingston University, is a Chartered Geographer, a Fellow of the Royal Geographical Society and of the Royal Institute of Navigation, and received the RGS's inaugural Professional Geography Award in 2024."
     },
     {
       "id": "spk-rieger",
@@ -100,10 +100,10 @@
       "bio": "PLACEHOLDER — 2–3 sentence bio."
     },
     {
-      "id": "spk-muick",
-      "name": "Marc Muick",
-      "company": "Vexcel Imaging",
-      "role": "Head of Applied Photogrammetry",
+      "id": "spk-president",
+      "name": "Roland Stengele",
+      "company": "EAASI",
+      "role": "President",
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
       "bio": "PLACEHOLDER — 2–3 sentence bio."
@@ -118,31 +118,22 @@
       "bio": "Leads global business development for Reality Mapping at Esri, helping organisations turn aerial imagery, LiDAR and 3D data into digital twins and GeoAI-ready content within ArcGIS. Graduated in Photogrammetry and Remote Sensing from Warsaw University of Technology and TU Wien, then spent almost 13 years at Field Group (formerly Terratec) working on imagery, LiDAR, mobile mapping and 3D modelling — including roles as VP Software Products and head of production operations — before joining Esri."
     },
     {
-      "id": "spk-klimek",
-      "name": "Kristin Klimek",
-      "company": "Esri",
-      "role": "Senior Solution Engineer, Global Imagery & Remote Sensing",
+      "id": "spk-tidmarsh",
+      "name": "Rachel Tidmarsh",
+      "company": "EAASI",
+      "role": "Treasurer",
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "Senior Solution Engineer in Esri's Global Imagery and Remote Sensing team, specialising in Reality Mapping and photogrammetry with ArcGIS Reality. Based at the Esri R&D Center Stuttgart (formerly nFrames), she previously worked as a presales consultant and workflow specialist at Leica Geosystems and has co-authored research on combining airborne oblique cameras and LiDAR sensors."
+      "bio": "PLACEHOLDER — 2–3 sentence bio."
     },
     {
-      "id": "spk-parsons",
-      "name": "Ed Parsons",
-      "company": "Open Geospatial Consortium (OGC)",
-      "role": "Chair of the Board of Directors — Panel Moderator",
+      "id": "spk-delatorre",
+      "name": "Javier de la Torre",
+      "company": "CARTO",
+      "role": "Founder & Chief Strategy Officer",
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "Digital geographer and geospatial technology advisor. Chair of the Board of Directors of the Open Geospatial Consortium (OGC) since October 2025, after almost two decades as Google's Geospatial Technologist, where he helped shape how location data is used across consumer and enterprise products. A long-standing advocate of open standards and of geography as critical digital infrastructure."
-    },
-    {
-      "id": "spk-laaksonen",
-      "name": "Heli Laaksonen",
-      "company": "National Land Survey of Finland (NLS)",
-      "role": "Director, Core Spatial Data Services",
-      "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "https://www.linkedin.com/in/heli-laaksonen-b8899a12/",
-      "bio": "Director of Core Spatial Data Services at the National Land Survey of Finland, responsible for the national topographic, elevation and aerial imagery data that underpin Finland's geospatial infrastructure. A frequent speaker on public-sector collaboration, open geospatial data and public–private partnerships in European geospatial work."
+      "bio": "Location-intelligence pioneer; founded CARTO in 2012."
     }
   ]
 }

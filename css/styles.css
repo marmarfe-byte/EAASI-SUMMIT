@@ -687,6 +687,22 @@ main {
 .speaker-card h4 { font-size: 14px; margin-bottom: 2px; }
 .speaker-card .role { font-size: 12px; color: var(--mid-navy); }
 .speaker-card .company { font-size: 12px; color: var(--slate); font-weight: 600; }
+.speaker-slot {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 9px;
+  border-radius: var(--radius-chip);
+  background: var(--ice-blue);
+  border: 1px solid var(--teal);
+  color: var(--teal-dark);
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.speaker-card .speaker-slot + .speaker-slot { margin-left: 4px; }
+.speaker-slots { margin-top: 14px; display: flex; flex-direction: column; gap: 8px; }
+.speaker-slot-row { display: flex; align-items: baseline; gap: 10px; font-size: 13px; color: var(--slate); }
+.speaker-slot-row .speaker-slot { margin-top: 0; flex-shrink: 0; }
 
 /* ---------- Sponsors ---------- */
 .sponsor-row {
