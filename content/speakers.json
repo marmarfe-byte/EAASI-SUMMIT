@@ -100,6 +100,15 @@
       "bio": "Digital geographer, geospatial technology advisor and keynote speaker. Ed is Chair of the Board of Directors of the Open Geospatial Consortium (OGC), a Visiting Professor at University College London and an industry advisor to several international universities. For many years he was Google's Geospatial Technologist, working with governments, universities and standards bodies and helping build an open data ecosystem for AI in Europe; he also co-chaired the W3C/OGC Spatial Data on the Web Working Group. Earlier he was the first Chief Technology Officer in the 200-year history of Ordnance Survey, and EMEA Applications Manager for Autodesk's GIS Division. He holds an MSc in Applied Remote Sensing from Cranfield and an honorary Doctorate of Science from Kingston University, is a Chartered Geographer, a Fellow of the Royal Geographical Society and of the Royal Institute of Navigation, and received the RGS's inaugural Professional Geography Award in 2024."
     },
     {
+      "id": "spk-perello",
+      "name": "Ada Perelló",
+      "company": "EAASI",
+      "role": "Marketing & Communications Manager",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "PLACEHOLDER — 2–3 sentence bio."
+    },
+    {
       "id": "spk-rieger",
       "name": "Peter Rieger",
       "company": "RIEGL",

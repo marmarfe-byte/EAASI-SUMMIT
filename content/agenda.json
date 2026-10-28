@@ -31,7 +31,7 @@
           "title": "Committees Catch Up",
           "room": "Hotel Lobby",
           "speakerIds": [],
-          "description": "Meet the committees' leaders and members at the hotel lobby.",
+          "description": "Meet the committees' leaders and members at the hotel lobby. Please contact the relevant Committee Leader for more information.",
           "track": "Committee"
         },
         {
@@ -39,22 +39,12 @@
           "menuId": "menu-tue-welcome",
           "sponsorId": "spon-xeos",
           "startTime": "19:00",
-          "endTime": "19:05",
+          "endTime": "20:00",
           "title": "Welcome Reception",
           "room": "Sports Club",
           "speakerIds": [],
-          "description": "Sponsored by XEOS.",
+          "description": "Sponsored by XEOS. Includes the Welcome to the EAASI Conference by Secretary General Marcos Martinez.",
           "track": "Social"
-        },
-        {
-          "id": "d1-s5",
-          "startTime": "19:05",
-          "endTime": "19:15",
-          "title": "Welcome to EAASI Conference",
-          "room": "Sports Club",
-          "speakerIds": [],
-          "description": "Welcome by Secretary General Marcos Martinez.",
-          "track": "Plenary"
         },
         {
           "id": "d1-s7",
@@ -80,7 +70,9 @@
           "endTime": "09:30",
           "title": "Conference Welcome",
           "room": "Augusta",
-          "speakerIds": ["spk-president"],
+          "speakerIds": [
+            "spk-president"
+          ],
           "description": "By EAASI President Roland Stengele. Opening of Conference Day 1.",
           "track": "Plenary"
         },
@@ -88,10 +80,12 @@
           "id": "d2-s2",
           "startTime": "09:30",
           "endTime": "10:00",
-          "title": "Keynote",
+          "title": "Keynote — \"Geofutures\"",
           "room": "Augusta",
-          "speakerIds": [],
-          "description": "Keynote speaker to be confirmed.",
+          "speakerIds": [
+            "spk-cassettari"
+          ],
+          "description": "Keynote from the British Cartographic Society on the Geofutures initiative.",
           "track": "Keynote"
         },
         {
@@ -101,7 +95,10 @@
           "endTime": "10:25",
           "title": "Taking Airborne Data to a Next Level of Detail — Combined Processing of Aerial and Mobile Mapping Data",
           "room": "Augusta",
-          "speakerIds": ["spk-szadkowski", "spk-klimek"],
+          "speakerIds": [
+            "spk-szadkowski",
+            "spk-klimek"
+          ],
           "description": "Gold Sponsor showcase — Esri, in cooperation with EAASI members IGI and GeoFly. We will explore how combined processing and co-registration of airborne imagery, LiDAR, and ground-level mobile mapping data can extend the value of traditional aerial survey workflows. Using new Reality Mapping capabilities, including Gaussian Splats generated from multisource imagery and LiDAR, we will demonstrate how aerial and ground data can be fused into a continuous, highly detailed representation of reality. The session will include practical examples and early results from new capabilities executed with IGI and GeoFly. Beyond the technology itself, the focus will be on what this means for the aerial mapping market: how existing airborne datasets can become the foundation for new services, new customer use cases, and new demand streams across infrastructure, transportation, asset management, digital twins, and site operations.",
           "track": "Sponsor"
         },
@@ -110,7 +107,7 @@
           "menuId": "menu-wed-coffee-am",
           "sponsorId": "spon-pointly",
           "startTime": "10:25",
-          "endTime": "10:55",
+          "endTime": "11:00",
           "title": "Coffee Break",
           "room": "PLACEHOLDER — Foyer",
           "speakerIds": [],
@@ -120,29 +117,36 @@
         {
           "id": "d2-s5",
           "sponsorId": "spon-riegl",
-          "startTime": "10:55",
-          "endTime": "11:25",
+          "startTime": "11:00",
+          "endTime": "11:20",
           "title": "Real-time Geo-referencing in Wide-area and Corridor Airborne Laser Scanning",
           "room": "Augusta",
-          "speakerIds": ["spk-rieger"],
+          "speakerIds": [
+            "spk-rieger"
+          ],
           "description": "Silver Sponsor showcase — RIEGL. Technical challenges, accuracy limits, and emerging applications, presented by Peter Rieger, RIEGL ALS Business Division Manager.",
           "track": "Sponsor"
         },
         {
           "id": "d2-s6",
-          "startTime": "11:25",
-          "endTime": "12:40",
+          "startTime": "11:20",
+          "endTime": "13:00",
           "title": "Experts Panel — Wider Geospatial Data Economy",
           "room": "Augusta",
-          "speakerIds": ["spk-parsons", "spk-delatorre", "spk-cooper", "spk-laaksonen"],
+          "speakerIds": [
+            "spk-parsons",
+            "spk-delatorre",
+            "spk-cooper",
+            "spk-laaksonen"
+          ],
           "description": "Moderated by Ed Parsons (Chair of the Board, Open Geospatial Consortium). Panellists: Javier de la Torre (CARTO), Phil Cooper (AWS) and Heli Laaksonen (National Land Survey of Finland).",
           "track": "Panel"
         },
         {
           "id": "d2-s7",
           "sponsorId": "spon-neobora",
-          "startTime": "12:40",
-          "endTime": "13:00",
+          "startTime": "13:00",
+          "endTime": "13:20",
           "title": "Silver Sponsor Use Case — Neobora",
           "room": "Augusta",
           "speakerIds": [],
@@ -150,21 +154,11 @@
           "track": "Sponsor"
         },
         {
-          "id": "d2-s8",
-          "startTime": "13:00",
-          "endTime": "13:30",
-          "title": "Keynote — \"Geofutures\"",
-          "room": "Augusta",
-          "speakerIds": ["spk-cassettari"],
-          "description": "Keynote from the British Cartographic Society on the Geofutures initiative.",
-          "track": "Keynote"
-        },
-        {
           "id": "d2-s9",
           "menuId": "menu-wed-lunch",
           "sponsorId": "spon-riegl",
           "startTime": "13:30",
-          "endTime": "14:25",
+          "endTime": "14:30",
           "title": "Lunch",
           "room": "Olivo's Restaurant",
           "speakerIds": [],
@@ -174,18 +168,20 @@
         {
           "id": "d2-s10",
           "sponsorId": "spon-pointly",
-          "startTime": "14:25",
-          "endTime": "14:45",
+          "startTime": "14:30",
+          "endTime": "14:50",
           "title": "Same Flight, More Deliverables: From Point Cloud Classification to 3D Vector Objects",
           "room": "Augusta",
-          "speakerIds": ["spk-hinrichs"],
+          "speakerIds": [
+            "spk-hinrichs"
+          ],
           "description": "Silver Sponsor showcase — Pointly, presented by Sid Hinrichs.",
           "track": "Sponsor"
         },
         {
           "id": "d2-s11",
-          "startTime": "14:45",
-          "endTime": "15:55",
+          "startTime": "14:50",
+          "endTime": "16:25",
           "title": "Working Session — Geofutures",
           "room": "Birdie",
           "speakerIds": [],
@@ -195,7 +191,7 @@
         {
           "id": "d2-s12",
           "sponsorId": "spon-flai",
-          "startTime": "15:55",
+          "startTime": "16:25",
           "endTime": "16:45",
           "title": "Silver Sponsor Use Case — FLAI",
           "room": "Augusta",
@@ -216,12 +212,26 @@
           "track": "Break"
         },
         {
-          "id": "d2-s14",
+          "id": "d2-s16",
           "startTime": "17:00",
+          "endTime": "17:15",
+          "title": "EAASI Communications Plan",
+          "room": "Augusta",
+          "speakerIds": [
+            "spk-perello"
+          ],
+          "description": "Presented by Ada Perelló, EAASI Marketing & Communications Manager.",
+          "track": "Plenary"
+        },
+        {
+          "id": "d2-s14",
+          "startTime": "17:15",
           "endTime": "",
           "title": "2026 Budget & Current Reserves — Day 1 Wrap Up",
           "room": "Augusta",
-          "speakerIds": ["spk-tidmarsh"],
+          "speakerIds": [
+            "spk-tidmarsh"
+          ],
           "description": "Presented by Rachel Tidmarsh, EAASI Treasurer.",
           "track": "Board"
         },
@@ -249,7 +259,9 @@
           "endTime": "09:20",
           "title": "Opening Speech",
           "room": "Augusta",
-          "speakerIds": ["spk-vp"],
+          "speakerIds": [
+            "spk-vp"
+          ],
           "description": "By EAASI Vice President Simon Musaeus. Opening of Conference Day 2.",
           "track": "Plenary"
         },
@@ -270,7 +282,9 @@
           "endTime": "10:25",
           "title": "Keynote — \"Artificial Intelligence in Remote Sensing — its positive and negative characteristics\"",
           "room": "Augusta",
-          "speakerIds": ["spk-isprs"],
+          "speakerIds": [
+            "spk-isprs"
+          ],
           "description": "Keynote from Lena Halounova, Former President of ISPRS (International Society for Photogrammetry and Remote Sensing).",
           "track": "Keynote"
         },
@@ -347,7 +361,9 @@
           "endTime": "14:55",
           "title": "When Humans and AI Look at the Same Pixel — How Reference Images Create a Common Language for Humans and AI",
           "room": "Augusta",
-          "speakerIds": ["spk-muick"],
+          "speakerIds": [
+            "spk-muick"
+          ],
           "description": "Silver Sponsor showcase — Vexcel Imaging, presented by Marc Muick.",
           "track": "Sponsor"
         },
@@ -357,7 +373,9 @@
           "endTime": "15:25",
           "title": "From Data to Value — A Retrospective and Outlook on Data Use in Germany's Federal Administration",
           "room": "Augusta",
-          "speakerIds": ["spk-knoefel"],
+          "speakerIds": [
+            "spk-knoefel"
+          ],
           "description": "Guest presentation on Digital Twin Germany by Dr. Patrick Knöfel, Federal Agency for Cartography and Geodesy (BKG).",
           "track": "Guest"
         },
@@ -367,7 +385,9 @@
           "endTime": "16:15",
           "title": "Keynote — \"Legal Landscape of AI & Geospatial\"",
           "room": "Augusta",
-          "speakerIds": ["spk-iulietto"],
+          "speakerIds": [
+            "spk-iulietto"
+          ],
           "description": "Gian Marco Iulietto, Tech Lawyer at LX20 Law Firm, on the legal landscape of AI and geospatial data.",
           "track": "Keynote"
         },
