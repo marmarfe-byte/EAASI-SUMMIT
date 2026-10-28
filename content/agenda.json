@@ -193,10 +193,12 @@
           "sponsorId": "spon-flai",
           "startTime": "16:25",
           "endTime": "16:45",
-          "title": "Silver Sponsor Use Case — FLAI",
+          "title": "AI Classification for Powerline and Mobile Mapping: The Value Is in the Details",
           "room": "Augusta",
-          "speakerIds": [],
-          "description": "Silver Sponsor showcase — FLAI.",
+          "speakerIds": [
+            "spk-vidmar"
+          ],
+          "description": "Silver Sponsor showcase — Flai, presented by Blaž Vidmar, Head of Business Development.",
           "track": "Sponsor"
         },
         {

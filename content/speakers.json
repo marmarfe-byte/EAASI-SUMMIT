@@ -152,6 +152,15 @@
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
       "bio": "Location-intelligence pioneer; founded CARTO in 2012."
+    },
+    {
+      "id": "spk-vidmar",
+      "name": "Blaž Vidmar",
+      "company": "Flai",
+      "role": "Head of Business Development",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "Head of Business Development at Flai, where he works with national mapping agencies and large-scale LiDAR production teams across Europe to deploy AI-powered point cloud classification. He holds an MSc in Geodesy and Geoinformatics, previously worked on the commercial side at Pix4D, and began his career in photogrammetry research for cultural heritage."
     }
   ]
 }
