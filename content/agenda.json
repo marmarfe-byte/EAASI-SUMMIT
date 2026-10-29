@@ -272,9 +272,11 @@
           "sponsorId": "spon-hexagon",
           "startTime": "09:20",
           "endTime": "09:45",
-          "title": "Gold Sponsor Use Case #2 — HEXAGON",
+          "title": "Advancing Airborne Mapping: Technology and Portfolio Updates",
           "room": "Augusta",
-          "speakerIds": [],
+          "speakerIds": [
+            "spk-neumann"
+          ],
           "description": "Gold Sponsor showcase — HEXAGON.",
           "track": "Sponsor"
         },

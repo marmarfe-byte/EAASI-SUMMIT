@@ -91,6 +91,15 @@
       "bio": "PLACEHOLDER — 2–3 sentence bio."
     },
     {
+      "id": "spk-neumann",
+      "name": "Klaus Neumann",
+      "company": "Leica Geosystems, part of Hexagon",
+      "role": "VP Strategic Sales Airborne Systems",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "PLACEHOLDER — 2–3 sentence bio."
+    },
+    {
       "id": "spk-parsons",
       "name": "Ed Parsons",
       "company": "Open Geospatial Consortium (OGC)",
