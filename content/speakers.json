@@ -19,8 +19,17 @@
       "bio": "Business and technical leader with over 27 years in geospatial, Earth Observation and space technology. Phil spent nine years at Airbus leading the delivery of airborne and spaceborne Earth Observation capabilities, then ran the geospatial software and data business Sterling GEO for eight years — including National Survey programmes — before two years in geospatial strategy consulting. He joined AWS in 2019 and is now Global Geospatial and GeoIntelligence Lead for AWS Public Sector, where he champions Geospatial AI (GeoAI): applying foundation models, machine learning and generative AI to satellite imagery and aerial survey data. He created the AWS GenAI Geospatial Challenge programme. Phil holds an MSc in Earth Observation Science and an MBA from the University of Leicester, is a graduate of Oxford's Saïd Business School, a Visiting Fellow in Leicester's Department of Physics and Astronomy, a Fellow of the Royal Geographical Society and a Science and Technology Ambassador."
     },
     {
+      "id": "spk-garcia",
+      "name": "José Carlos García",
+      "company": "Neobora / DIELMO 3D",
+      "role": "Presenter",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "PLACEHOLDER — 2–3 sentence bio."
+    },
+    {
       "id": "spk-isprs",
-      "name": "Lena Halounova",
+      "name": "Lena Halounová",
       "company": "ISPRS",
       "role": "Former President, ISPRS",
       "photo": "PLACEHOLDER — photo path",
@@ -83,7 +92,7 @@
     },
     {
       "id": "spk-vp",
-      "name": "Simon Musaeus",
+      "name": "Simon Musäus",
       "company": "EAASI",
       "role": "Vice President",
       "photo": "PLACEHOLDER — photo path",
@@ -122,6 +131,24 @@
       "name": "Peter Rieger",
       "company": "RIEGL",
       "role": "ALS Business Division Manager",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "PLACEHOLDER — 2–3 sentence bio."
+    },
+    {
+      "id": "spk-spiegel",
+      "name": "Mario Spiegel",
+      "company": "Diamond Aircraft",
+      "role": "Presenter",
+      "photo": "PLACEHOLDER — photo path",
+      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "bio": "PLACEHOLDER — 2–3 sentence bio."
+    },
+    {
+      "id": "spk-stpierre",
+      "name": "Tony St-Pierre",
+      "company": "XEOS Imaging",
+      "role": "Presenter",
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
       "bio": "PLACEHOLDER — 2–3 sentence bio."

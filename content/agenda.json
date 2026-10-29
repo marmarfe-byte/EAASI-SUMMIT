@@ -149,8 +149,10 @@
           "endTime": "13:20",
           "title": "From Flight to Delivery: Managing Geospatial Data with Neobora, the Applus+ Experience",
           "room": "Augusta",
-          "speakerIds": [],
-          "description": "Silver Sponsor showcase — Neobora.",
+          "speakerIds": [
+            "spk-garcia"
+          ],
+          "description": "Silver Sponsor showcase — Neobora, presented by José Carlos García (Neobora / DIELMO 3D).",
           "track": "Sponsor"
         },
         {
@@ -244,9 +246,9 @@
           "startTime": "19:00",
           "endTime": "",
           "title": "Dinner — La Ereta",
-          "room": "",
+          "room": "Restaurante La Ereta (Mount Benacantil, Alicante)",
           "speakerIds": [],
-          "description": "Sponsored by ESRI. Mediterranean tasting-menu dinner at La Ereta, perched on Mount Benacantil below Santa Bárbara Castle with panoramic views over Alicante. Buses depart the hotel at 19:00 (dinner service from ~19:30), returning at 21:30.",
+          "description": "Sponsored by ESRI. Mediterranean tasting-menu dinner at La Ereta, perched on Mount Benacantil below Santa Bárbara Castle with panoramic views over Alicante. Buses depart the hotel at 18:30 (dinner service from ~19:30), returning at 21:30.",
           "track": "Social"
         }
       ]
@@ -264,7 +266,7 @@
           "speakerIds": [
             "spk-vp"
           ],
-          "description": "By EAASI Vice President Simon Musaeus. Opening of Conference Day 2.",
+          "description": "By EAASI Vice President Simon Musäus. Opening of Conference Day 2.",
           "track": "Plenary"
         },
         {
@@ -289,7 +291,7 @@
           "speakerIds": [
             "spk-isprs"
           ],
-          "description": "Keynote from Lena Halounova, Former President of ISPRS (International Society for Photogrammetry and Remote Sensing).",
+          "description": "Keynote from Lena Halounová, Former President of ISPRS (International Society for Photogrammetry and Remote Sensing).",
           "track": "Keynote"
         },
         {
@@ -297,10 +299,12 @@
           "sponsorId": "spon-diamond",
           "startTime": "10:25",
           "endTime": "10:55",
-          "title": "Silver Sponsor Use Case — Diamond Aircraft",
+          "title": "5 Years of EAASI Partnership",
           "room": "Augusta",
-          "speakerIds": [],
-          "description": "\"5 years of EAASI partnership\" — presented by Mario Spiegel.",
+          "speakerIds": [
+            "spk-spiegel"
+          ],
+          "description": "Silver Sponsor showcase — Diamond Aircraft, presented by Mario Spiegel.",
           "track": "Sponsor"
         },
         {
@@ -320,61 +324,18 @@
           "sponsorId": "spon-xeos",
           "startTime": "11:25",
           "endTime": "11:45",
-          "title": "Silver Sponsor Use Case — XEOS",
-          "room": "Augusta",
-          "speakerIds": [],
-          "description": "\"Large Scale Automatic 3D City Buildings Reconstruction from Aerial LiDAR by XEOS AI\" — presented by Tony St-Pierre.",
-          "track": "Sponsor"
-        },
-        {
-          "id": "d3-s7",
-          "startTime": "11:45",
-          "endTime": "13:15",
-          "title": "Committees Presentations and Debate",
-          "room": "Birdie",
-          "speakerIds": [],
-          "description": "EAASI Committees Debate. Parallel working group sessions.",
-          "track": "Working Group"
-        },
-        {
-          "id": "d3-s8",
-          "startTime": "13:15",
-          "endTime": "13:35",
-          "title": "Committees Conclusions & Next Steps",
-          "room": "Augusta",
-          "speakerIds": [],
-          "description": "Working groups present their conclusions.",
-          "track": "Plenary"
-        },
-        {
-          "id": "d3-s9",
-          "menuId": "menu-thu-lunch",
-          "sponsorId": "spon-diamond",
-          "startTime": "13:35",
-          "endTime": "14:35",
-          "title": "Lunch + Board Vote",
-          "room": "Olivo's Restaurant",
-          "speakerIds": [],
-          "description": "Sponsored by Diamond Aircraft. EAASI Members will have the opportunity to vote for their preferred candidates for the next term, with ballots available for collection throughout the morning. Voting closes at 14:15.",
-          "track": "Break"
-        },
-        {
-          "id": "d3-s10",
-          "sponsorId": "spon-vexcel",
-          "startTime": "14:35",
-          "endTime": "14:55",
-          "title": "When Humans and AI Look at the Same Pixel — How Reference Images Create a Common Language for Humans and AI",
+          "title": "Large Scale Automatic 3D City Buildings Reconstruction from Aerial LiDAR by XEOS AI",
           "room": "Augusta",
           "speakerIds": [
-            "spk-muick"
+            "spk-stpierre"
           ],
-          "description": "Silver Sponsor showcase — Vexcel Imaging, presented by Marc Muick.",
+          "description": "Silver Sponsor showcase — XEOS Imaging, presented by Tony St-Pierre.",
           "track": "Sponsor"
         },
         {
           "id": "d3-s11",
-          "startTime": "14:55",
-          "endTime": "15:25",
+          "startTime": "11:45",
+          "endTime": "12:15",
           "title": "From Data to Value — A Retrospective and Outlook on Data Use in Germany's Federal Administration",
           "room": "Augusta",
           "speakerIds": [
@@ -384,9 +345,22 @@
           "track": "Guest"
         },
         {
+          "id": "d3-s10",
+          "sponsorId": "spon-vexcel",
+          "startTime": "12:15",
+          "endTime": "12:35",
+          "title": "When Humans and AI Look at the Same Pixel — How Reference Images Create a Common Language for Humans and AI",
+          "room": "Augusta",
+          "speakerIds": [
+            "spk-muick"
+          ],
+          "description": "Silver Sponsor showcase — Vexcel Imaging, presented by Marc Muick.",
+          "track": "Sponsor"
+        },
+        {
           "id": "d3-s12",
-          "startTime": "15:25",
-          "endTime": "16:15",
+          "startTime": "12:35",
+          "endTime": "13:20",
           "title": "Keynote — \"Legal Landscape of AI & Geospatial\"",
           "room": "Augusta",
           "speakerIds": [
@@ -396,11 +370,53 @@
           "track": "Keynote"
         },
         {
+          "id": "d3-s9",
+          "menuId": "menu-thu-lunch",
+          "sponsorId": "spon-diamond",
+          "startTime": "13:30",
+          "endTime": "14:30",
+          "title": "Lunch + Board Vote",
+          "room": "Olivo's Restaurant",
+          "speakerIds": [],
+          "description": "Sponsored by Diamond Aircraft. EAASI Members will have the opportunity to vote for their preferred candidates for the next term, with ballots available for collection throughout the morning. Voting closes at 14:15.",
+          "track": "Break"
+        },
+        {
+          "id": "d3-s17",
+          "startTime": "14:30",
+          "endTime": "15:00",
+          "title": "FlightPath 2050 Workshop — Conclusions",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "Conclusions from Wednesday's FlightPath 2050 working session on the future of aerial survey.",
+          "track": "Plenary"
+        },
+        {
+          "id": "d3-s7",
+          "startTime": "15:00",
+          "endTime": "16:00",
+          "title": "Working Groups: Progress, Discussion & Next Steps",
+          "room": "Birdie",
+          "speakerIds": [],
+          "description": "EAASI working groups report on progress, discuss open topics and agree next steps.",
+          "track": "Working Group"
+        },
+        {
+          "id": "d3-s8",
+          "startTime": "16:00",
+          "endTime": "16:20",
+          "title": "Committees Conclusions & Next Steps",
+          "room": "Augusta",
+          "speakerIds": [],
+          "description": "Working groups present their conclusions.",
+          "track": "Plenary"
+        },
+        {
           "id": "d3-s13",
           "menuId": "menu-thu-coffee-pm",
           "sponsorId": "spon-vexcel",
-          "startTime": "16:15",
-          "endTime": "16:30",
+          "startTime": "16:20",
+          "endTime": "16:35",
           "title": "Coffee Break",
           "room": "PLACEHOLDER — Foyer",
           "speakerIds": [],
@@ -409,8 +425,8 @@
         },
         {
           "id": "d3-s14",
-          "startTime": "16:30",
-          "endTime": "17:00",
+          "startTime": "16:35",
+          "endTime": "17:05",
           "title": "OTA 2026 Ceremony",
           "room": "Augusta",
           "speakerIds": [],
@@ -419,7 +435,7 @@
         },
         {
           "id": "d3-s15",
-          "startTime": "17:00",
+          "startTime": "17:05",
           "endTime": "",
           "title": "Conference Wrap Up",
           "room": "Augusta",
@@ -434,9 +450,9 @@
           "startTime": "19:00",
           "endTime": "",
           "title": "Dinner — La Dársena",
-          "room": "",
+          "room": "Restaurante Dársena (Alicante marina)",
           "speakerIds": [],
-          "description": "Sponsored by FLAI. Dinner at Dársena, known for authentic Alicantian rice dishes on the marina. Buses depart the hotel at 19:00 (dinner service from ~19:30), returning at 21:30.",
+          "description": "Sponsored by FLAI. Dinner at Dársena, known for authentic Alicantian rice dishes on the marina. Buses depart the hotel at 18:30 (dinner service from ~19:30), returning at 21:30.",
           "track": "Social"
         }
       ]
