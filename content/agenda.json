@@ -161,10 +161,10 @@
           "sponsorId": "spon-riegl",
           "startTime": "13:30",
           "endTime": "14:30",
-          "title": "Lunch",
+          "title": "Lunch + Board Vote",
           "room": "Olivo's Restaurant",
           "speakerIds": [],
-          "description": "Sponsored by RIEGL.",
+          "description": "Sponsored by RIEGL. EAASI Members will have the opportunity to vote for their preferred candidates for the next term, with ballots available for collection throughout the morning. Voting closes at 14:15.",
           "track": "Break"
         },
         {
@@ -375,10 +375,10 @@
           "sponsorId": "spon-diamond",
           "startTime": "13:30",
           "endTime": "14:30",
-          "title": "Lunch + Board Vote",
+          "title": "Lunch",
           "room": "Olivo's Restaurant",
           "speakerIds": [],
-          "description": "Sponsored by Diamond Aircraft. EAASI Members will have the opportunity to vote for their preferred candidates for the next term, with ballots available for collection throughout the morning. Voting closes at 14:15.",
+          "description": "Sponsored by Diamond Aircraft.",
           "track": "Break"
         },
         {
