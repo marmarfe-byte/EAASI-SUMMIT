@@ -26,6 +26,7 @@
       "name": "Flai",
       "tier": "silver",
       "logo": "/assets/sponsors/flai.png",
+      "logoScale": 0.72,
       "websiteUrl": "https://www.flai.ai"
     },
     {
@@ -47,6 +48,7 @@
       "name": "Vexcel Imaging",
       "tier": "silver",
       "logo": "/assets/sponsors/vexcel.png",
+      "logoScale": 0.85,
       "websiteUrl": "https://www.vexcel-imaging.com"
     },
     {
