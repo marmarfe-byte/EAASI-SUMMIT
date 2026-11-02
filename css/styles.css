@@ -888,12 +888,16 @@ main {
   padding-top: 12px;
   border-top: 1px solid var(--periwinkle);
 }
+/* Tiered sizing, as in .sponsor-chip: the box depends on the tier, not the file */
 .agenda-sponsor-logo {
-  max-height: 64px;
-  max-width: 220px;
+  flex-shrink: 0;
   object-fit: contain;
+  object-position: left center;
   display: block;
 }
+.agenda-sponsor-logo--gold { width: 200px; height: 72px; }
+.agenda-sponsor-logo--silver { width: 150px; height: 56px; }
+.agenda-sponsor-logo--bronze { width: 130px; height: 48px; }
 .agenda-sponsor-label {
   font-size: 12.5px;
   font-weight: 700;
@@ -909,11 +913,12 @@ main {
   flex-shrink: 0;
 }
 .agenda-sponsor-logo-detail {
-  max-height: 120px;
-  max-width: 200px;
   object-fit: contain;
   display: block;
 }
+.agenda-sponsor-logo-detail--gold { width: 200px; height: 96px; }
+.agenda-sponsor-logo-detail--silver { width: 160px; height: 64px; }
+.agenda-sponsor-logo-detail--bronze { width: 140px; height: 54px; }
 .agenda-sponsor-detail .agenda-sponsor-label {
   text-align: center;
   white-space: nowrap;

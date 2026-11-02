@@ -32,7 +32,7 @@ function getSponsor(data, sponsorId) {
 function sponsorLogoImg(sponsor, sizeClass) {
   if (!sponsor) return "";
   return !isPlaceholder(sponsor.logo)
-    ? `<img class="${sizeClass}" src="${escapeHtml(sponsor.logo)}" alt="${escapeHtml(sponsor.name)}"/>`
+    ? `<img class="${sizeClass} ${sizeClass}--${escapeHtml(sponsor.tier)}" src="${escapeHtml(sponsor.logo)}" alt="${escapeHtml(sponsor.name)}"/>`
     : `<div class="${sizeClass} agenda-sponsor-logo--text">${escapeHtml(sponsor.name)}</div>`;
 }
 
