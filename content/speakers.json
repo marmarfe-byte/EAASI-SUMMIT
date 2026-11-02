@@ -15,17 +15,17 @@
       "company": "Amazon Web Services (AWS)",
       "role": "Global Geospatial & GeoIntelligence Lead, AWS Public Sector",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "linkedInUrl": "https://www.linkedin.com/in/cooperrow/",
       "bio": "Business and technical leader with over 27 years in geospatial, Earth Observation and space technology. Phil spent nine years at Airbus leading the delivery of airborne and spaceborne Earth Observation capabilities, then ran the geospatial software and data business Sterling GEO for eight years — including National Survey programmes — before two years in geospatial strategy consulting. He joined AWS in 2019 and is now Global Geospatial and GeoIntelligence Lead for AWS Public Sector, where he champions Geospatial AI (GeoAI): applying foundation models, machine learning and generative AI to satellite imagery and aerial survey data. He created the AWS GenAI Geospatial Challenge programme. Phil holds an MSc in Earth Observation Science and an MBA from the University of Leicester, is a graduate of Oxford's Saïd Business School, a Visiting Fellow in Leicester's Department of Physics and Astronomy, a Fellow of the Royal Geographical Society and a Science and Technology Ambassador."
     },
     {
       "id": "spk-garcia",
       "name": "José Carlos García",
       "company": "Neobora / DIELMO 3D",
-      "role": "Presenter",
+      "role": "CEO, DIELMO 3D",
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "PLACEHOLDER — 2–3 sentence bio."
+      "bio": "Founder and CEO of DIELMO 3D, the Valencia-based company established in 2003 that has worked in LiDAR and geospatial data management for more than 20 years."
     },
     {
       "id": "spk-isprs",
@@ -33,7 +33,7 @@
       "company": "ISPRS",
       "role": "Former President, ISPRS",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "linkedInUrl": "https://www.linkedin.com/in/lena-halounov%C3%A1-60271355/",
       "bio": "Former President of the International Society for Photogrammetry and Remote Sensing (ISPRS)."
     },
     {
@@ -60,7 +60,7 @@
       "company": "Esri",
       "role": "Senior Solution Engineer, Global Imagery & Remote Sensing",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "linkedInUrl": "https://www.linkedin.com/in/kristin-klimek-6b121729/",
       "bio": "Senior Solution Engineer in Esri's Global Imagery and Remote Sensing team, specialising in Reality Mapping and photogrammetry with ArcGIS Reality. Based at the Esri R&D Center Stuttgart (formerly nFrames), she previously worked as a presales consultant and workflow specialist at Leica Geosystems and has co-authored research on combining airborne oblique cameras and LiDAR sensors."
     },
     {
@@ -87,8 +87,8 @@
       "company": "Vexcel Imaging",
       "role": "Head of Applied Photogrammetry",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "PLACEHOLDER — 2–3 sentence bio."
+      "linkedInUrl": "https://www.linkedin.com/in/marc-muick-216189170/",
+      "bio": "Leads radiometric and geometric quality assurance for Vexcel Imaging's UltraCam systems and their ongoing development, including image quality optimisation and calibration workflows. Holds an MSc in Geospatial Technologies from Graz University of Technology and was named one of the Geospatial World 50 Rising Stars in 2023."
     },
     {
       "id": "spk-vp",
@@ -96,8 +96,8 @@
       "company": "EAASI",
       "role": "Vice President",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "PLACEHOLDER — 2–3 sentence bio."
+      "linkedInUrl": "https://www.linkedin.com/in/simon-mus%C3%A4us-dr-396a1212/",
+      "bio": "Founding board member of EAASI and the association's first President, from 2019 to 2023, now serving as Vice President."
     },
     {
       "id": "spk-neumann",
@@ -106,7 +106,7 @@
       "role": "VP Strategic Sales Airborne Systems",
       "photo": "PLACEHOLDER — photo path",
       "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "PLACEHOLDER — 2–3 sentence bio."
+      "bio": "More than three decades in the geospatial industry. Klaus helped design the first digital aerial camera systems, spent many years as product manager for airborne sensors at Leica Geosystems and went on to lead airborne sensor sales for EMEA, India and Australia/New Zealand. Holds a master's degree in electronic engineering from the University of Applied Sciences in Aalen, Germany."
     },
     {
       "id": "spk-parsons",
@@ -123,8 +123,8 @@
       "company": "EAASI",
       "role": "Marketing & Communications Manager",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "PLACEHOLDER — 2–3 sentence bio."
+      "linkedInUrl": "https://www.linkedin.com/in/ada-perello-0a834013/",
+      "bio": "Leads marketing and communications for EAASI. Holds a Master's Degree in Journalism and a Master's in International Business Administration."
     },
     {
       "id": "spk-rieger",
@@ -132,26 +132,26 @@
       "company": "RIEGL",
       "role": "ALS Business Division Manager",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "PLACEHOLDER — 2–3 sentence bio."
+      "linkedInUrl": "https://www.linkedin.com/in/peter-rieger-a4295a53/",
+      "bio": "Heads the Airborne Laser Scanning Business Division at RIEGL Laser Measurement Systems in Horn, Austria, and speaks regularly at industry events such as Geo Week. Holds an MSc in Telecommunications Engineering from the Vienna University of Technology."
     },
     {
       "id": "spk-spiegel",
       "name": "Mario Spiegel",
       "company": "Diamond Aircraft",
-      "role": "Presenter",
+      "role": "Head of Sales, Special Mission Aircraft",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "PLACEHOLDER — 2–3 sentence bio."
+      "linkedInUrl": "https://www.linkedin.com/in/mario-spiegel-152502177/",
+      "bio": "Head of Sales for Special Mission Aircraft at Diamond Aircraft in Austria, working with operators of the DA42 MPP and DA62 MPP platforms, including Flycom, QinetiQ and 2Excel Aviation."
     },
     {
       "id": "spk-stpierre",
       "name": "Tony St-Pierre",
       "company": "XEOS Imaging",
-      "role": "Presenter",
+      "role": "President",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "PLACEHOLDER — 2–3 sentence bio."
+      "linkedInUrl": "https://www.linkedin.com/in/tony-st-pierre-656a0560/",
+      "bio": "President and Associate of XEOS Imaging, the Quebec City company specialising in aerial imagery and LiDAR surveys. An engineer and surveyor, active in the acquisition of aerial photographic and LiDAR data since 1992."
     },
     {
       "id": "spk-president",
@@ -159,8 +159,8 @@
       "company": "EAASI",
       "role": "President",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "PLACEHOLDER — 2–3 sentence bio."
+      "linkedInUrl": "https://www.linkedin.com/in/roland-stengele-dr-33b0a1104/",
+      "bio": "President of EAASI, succeeding Florian Romanowski after serving as Vice President. Dr. Stengele was CEO of BSF Swissphoto from 2006 to 2022 and remains a board member and senior advisor of the company, with more than two decades of experience in the aerial surveying industry."
     },
     {
       "id": "spk-szadkowski",
@@ -177,8 +177,8 @@
       "company": "EAASI",
       "role": "Treasurer",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
-      "bio": "PLACEHOLDER — 2–3 sentence bio."
+      "linkedInUrl": "https://www.linkedin.com/in/rachel-tidmarsh-dl-b0383721/",
+      "bio": "CEO and founding partner of Bluesky International, the aerial mapping company established in 2003 and acquired by Woolpert in 2025. EAASI Treasurer and board member, promoting careers in the industry to young people and under-represented groups. Holds an honours degree in GIS from Kingston University and began as a Project Manager at the National Remote Sensing Centre."
     },
     {
       "id": "spk-delatorre",
@@ -186,7 +186,7 @@
       "company": "CARTO",
       "role": "Founder & Chief Strategy Officer",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "linkedInUrl": "https://www.linkedin.com/in/jatorre/",
       "bio": "Location-intelligence pioneer; founded CARTO in 2012."
     },
     {
@@ -195,7 +195,7 @@
       "company": "Flai",
       "role": "Head of Business Development",
       "photo": "PLACEHOLDER — photo path",
-      "linkedInUrl": "PLACEHOLDER — https://linkedin.com/in/placeholder",
+      "linkedInUrl": "https://www.linkedin.com/in/bla%C5%BE-vidmar-8a9496203/",
       "bio": "Head of Business Development at Flai, where he works with national mapping agencies and large-scale LiDAR production teams across Europe to deploy AI-powered point cloud classification. He holds an MSc in Geodesy and Geoinformatics and began his career in photogrammetry research for cultural heritage."
     }
   ]
