@@ -94,6 +94,7 @@ export function renderAgenda(data, agendaDay, agendaCategory) {
               <span>${escapeHtml(displayText(s.room, "Room TBC"))}</span>
               ${speakerNames ? `<span>· ${escapeHtml(speakerNames)}</span>` : ""}
             </div>
+            ${s.cardNote ? `<p class="session-note">${escapeHtml(s.cardNote)}</p>` : ""}
             ${
               sponsor
                 ? `<div class="agenda-sponsor-block">

@@ -9,7 +9,7 @@
           "startTime": "16:00",
           "endTime": "17:00",
           "title": "Board Meeting",
-          "room": "",
+          "room": "Birdie",
           "speakerIds": [],
           "description": "Board members will meet.",
           "track": "Board"
@@ -42,6 +42,7 @@
           "endTime": "20:00",
           "title": "Welcome Reception",
           "room": "Sports Club",
+          "cardNote": "During the reception, the candidates for Wednesday's Board election will be briefly introduced and member companies will receive their membership certificates.",
           "speakerIds": [],
           "description": "Sponsored by XEOS. Includes the Welcome to the EAASI Conference by Secretary General Marcos Martinez.",
           "track": "Social"
@@ -55,7 +56,7 @@
           "title": "Reception Dinner",
           "room": "Albatros",
           "speakerIds": [],
-          "description": "Sponsored by HEXAGON.",
+          "description": "Sponsored by HEXAGON. Tables will be randomly pre-assigned to encourage networking.",
           "track": "Social"
         }
       ]
