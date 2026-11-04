@@ -12,7 +12,7 @@
  * added/renamed.
  */
 
-const CACHE_VERSION = "eaasi-summit-v53";
+const CACHE_VERSION = "eaasi-summit-v54";
 const APP_SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const CONTENT_CACHE = `${CACHE_VERSION}-content`;
 
@@ -36,6 +36,7 @@ const APP_SHELL_FILES = [
   "/js/components/practical.js",
   "/js/components/tickets.js",
   "/js/components/menu.js",
+  "/play/",
   "/icons/icon-192.png",
   "/icons/icon-512.png",
   "/assets/eaasi-logo.png",
