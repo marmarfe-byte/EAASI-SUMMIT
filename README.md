@@ -35,3 +35,18 @@ Sourced so far from the brief, `BM52_EAASI_def.pptx`, `hotelalicantegolf.com`, `
 - `js/components/*.js` — one render function per IA section
 - `js/data.js`, `js/utils.js`, `js/icons.js` — content loading, formatting helpers, inline SVG icons
 - `manifest.json`, `service-worker.js` — PWA install + offline caching (app shell cache-first, `content/*.json` network-first with cache fallback)
+
+## Cloud Invaders (`/play/`)
+
+Break-time arcade game at `https://eaasi-summit.eu/play/`, linked from the Home screen (`content/home.json` → `arcade`). Single self-contained file: `play/index.html` (no build step). Players unlock aircraft by clearing waves — Partenavia P68 (start), Diamond DA62 (wave 2), Cessna 421 (wave 4), Beechcraft King Air 350 (wave 6); progress and personal best are kept in each player's browser.
+
+### Top Pilots leaderboard (Supabase, optional)
+
+The game runs without a leaderboard until it is configured:
+
+1. Create a free project at [supabase.com](https://supabase.com) (region: EU, e.g. Frankfurt).
+2. Dashboard → **SQL Editor** → New query → paste `play/supabase-setup.sql` → **Run**.
+3. Dashboard → **Project Settings → API Keys**: copy the **Project URL** and the **publishable** key (`sb_publishable_…`, or the legacy `anon` key).
+4. In `play/index.html`, fill in `const LEADERBOARD = { url: "", key: "" };` and commit. The publishable/anon key is meant to be public; the table only allows reading, and scores go in through the `submit_score` function, which validates name format, plane and a maximum plausible score per wave, and rate-limits submissions.
+
+During the event: remove an entry in **Table Editor → scores**, or reset the board with `truncate table public.scores restart identity;` before the Summit starts.

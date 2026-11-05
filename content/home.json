@@ -15,5 +15,12 @@
     { "label": "Social Activities", "target": "social" },
     { "label": "Practical Info", "target": "practical" }
   ],
-  "heroImage": "PLACEHOLDER — hero/venue photo path"
+  "heroImage": "PLACEHOLDER — hero/venue photo path",
+  "arcade": {
+    "kicker": "Break-time arcade",
+    "title": "Cloud Invaders",
+    "description": "Clear the sky with LiDAR pulses, unlock the DA62, the Cessna 421 and the King Air 350, and climb the Top Pilots board.",
+    "cta": "Play",
+    "url": "/play/"
+  }
 }

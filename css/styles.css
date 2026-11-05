@@ -565,6 +565,29 @@ main {
   color: var(--teal-dark);
 }
 
+/* ---------- Home arcade promo (Cloud Invaders) ---------- */
+.arcade-promo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 12px;
+  padding: 16px;
+  border-radius: var(--radius-card);
+  background: var(--navy);
+  box-shadow: var(--shadow-card);
+}
+.arcade-promo-text { display: flex; flex-direction: column; gap: 4px; min-width: 0; flex: 1; }
+.arcade-promo-kicker {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--teal);
+}
+.arcade-promo-title { font-size: 20px; font-weight: 800; color: var(--cloud); }
+.arcade-promo-desc { font-size: 13px; line-height: 1.4; color: var(--periwinkle); }
+.arcade-promo-btn { flex-shrink: 0; padding: 10px 20px; }
+
 /* ---------- Home sponsor strip ---------- */
 .sponsor-strip {
   display: block;
