@@ -80,8 +80,8 @@ export function renderHome(data) {
         : ""
     }
     <div class="quick-links">${quickLinks}</div>
-    ${arcadePromo}
     ${sponsorStrip}
+    ${arcadePromo}
   `;
 }
 
