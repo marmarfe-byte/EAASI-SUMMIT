@@ -4,7 +4,19 @@ import { CHEVRON_DOWN } from "../icons.js";
 export function renderCommittees(data, openCommittees) {
   const open = openCommittees || new Set();
   const committees = data.committees.committees || [];
-  const cards = committees
+  const arcade = data.committees.arcade;
+  const arcadeCard = arcade
+    ? `
+    <a class="arcade-promo" href="${escapeHtml(arcade.url)}">
+      <div class="arcade-promo-text">
+        <span class="arcade-promo-kicker">${escapeHtml(arcade.kicker)}</span>
+        <span class="arcade-promo-title">${escapeHtml(arcade.title)}</span>
+        <span class="arcade-promo-desc">${escapeHtml(arcade.description)}</span>
+      </div>
+      <span class="btn arcade-promo-btn">${escapeHtml(arcade.cta)}</span>
+    </a>`
+    : "";
+  const cardList = committees
     .map((c) => {
       const members = (c.members || []).filter((m) => !!m);
       const isOpen = open.has(c.id);
@@ -38,8 +50,10 @@ export function renderCommittees(data, openCommittees) {
             : ""
         }
       </div>`;
-    })
-    .join("");
+    });
+  // The game sits in the middle of the committee list, for attendees not joining one
+  if (arcadeCard) cardList.splice(Math.ceil(cardList.length / 2), 0, arcadeCard);
+  const cards = cardList.join("");
 
   return `
     <div class="section-heading">

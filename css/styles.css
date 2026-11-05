@@ -570,8 +570,8 @@ main {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-top: 24px;
-  padding: 16px;
+  margin-bottom: 14px;
+  padding: 18px;
   border-radius: var(--radius-card);
   background: var(--navy);
   box-shadow: var(--shadow-card);
