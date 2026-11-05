@@ -46,19 +46,6 @@ export function renderHome(data) {
     </a>`
     : "";
 
-  const arcade = home.arcade;
-  const arcadePromo = arcade
-    ? `
-    <a class="arcade-promo" href="${escapeHtml(arcade.url)}">
-      <div class="arcade-promo-text">
-        <span class="arcade-promo-kicker">${escapeHtml(arcade.kicker)}</span>
-        <span class="arcade-promo-title">${escapeHtml(arcade.title)}</span>
-        <span class="arcade-promo-desc">${escapeHtml(arcade.description)}</span>
-      </div>
-      <span class="btn arcade-promo-btn">${escapeHtml(arcade.cta)}</span>
-    </a>`
-    : "";
-
   return `
     <section class="hero">
       ${SCAN_GLYPH_MOTIF}
@@ -81,7 +68,6 @@ export function renderHome(data) {
     }
     <div class="quick-links">${quickLinks}</div>
     ${sponsorStrip}
-    ${arcadePromo}
   `;
 }
 
