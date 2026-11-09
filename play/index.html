@@ -47,7 +47,7 @@ canvas:focus-visible{box-shadow:0 0 0 3px var(--teal), 0 24px 60px rgba(0,0,0,.4
 <div class="wrap" id="wrap">
   <a class="back" id="back" href="/">&lt; EAASI SUMMIT APP</a>
   <div class="stage" id="stage">
-  <canvas id="game" tabindex="0" aria-label="Cloud Invaders, an EAASI Partners Summit 2026 arcade game. Arrow keys move, Space fires, Enter starts. On touch screens, drag to steer; the aircraft fires automatically."></canvas>
+  <canvas id="game" tabindex="0" aria-label="Cloud Invaders, an EAASI Partners Summit 2026 arcade game. Arrow keys move, Space fires, Enter starts. On touch screens, drag on the left half to steer and touch the right half to fire."></canvas>
   <form class="lb-form" id="lbForm" hidden autocomplete="off">
     <label for="lbName">NEW SCORE! ENTER YOUR NAME FOR THE TOP PILOTS BOARD</label>
     <input id="lbName" name="name" maxlength="14" required spellcheck="false" placeholder="YOUR NAME">
@@ -289,7 +289,9 @@ function buildBackground() {
 
 // ---------------------------------------------------------------- input
 const keys = { left:false, right:false, fire:false };
-const touch = { active:false, x:W / 2 };
+const touch = { active:false, x:W / 2 };          // mouse: drag steers (absolute) and fires
+// Touch screens: left half steers by relative drag, right half fires (hold = repeat, tap = one shot)
+const pad2 = { steerId:null, lastX:0, dx:0, fire:new Set(), queued:false, used:false };
 let paused = false;
 
 // ---------------------------------------------------------------- game state
@@ -412,9 +414,14 @@ function update(dt) {
   else {
     let mv = (keys.right ? 1 : 0) - (keys.left ? 1 : 0);
     if (touch.active) { const d = touch.x - g.px; mv = Math.abs(d) < 3 ? 0 : Math.sign(d) * Math.min(1, Math.abs(d) / 24); }
-    g.px = clamp(g.px + mv * pl.speed * dt, 34, W - 34);
+    // touch drag: plane follows the finger 1.5x, but never faster than the aircraft can fly (fair leaderboard)
+    const lim = pl.speed * dt, want = pad2.dx * 1.5, step = clamp(want, -lim, lim);
+    pad2.dx = pad2.steerId === null ? 0 : (want - step) / 1.5;
+    const nx = g.px + mv * pl.speed * dt + step;
+    if (nx < 34 || nx > W - 34) pad2.dx = 0;
+    g.px = clamp(nx, 34, W - 34);
     g.cool -= dt; g.inv -= dt;
-    if ((keys.fire || touch.active) && g.cool <= 0 && g.shots.length + pl.beams <= pl.maxBul) fire();
+    if ((keys.fire || touch.active || pad2.fire.size || pad2.queued) && g.cool <= 0 && g.shots.length + pl.beams <= pl.maxBul) { fire(); pad2.queued = false; }
   }
 
   // LiDAR pulses
@@ -485,6 +492,17 @@ function drawHUD() {
     text(g.pl.short, W - 16, 52, 8, C.steel, "right");
   }
 }
+function drawTouchPad() {
+  if (!pad2.used || state !== "play" || paused) return;
+  const y = GROUND + 30, on = pad2.fire.size > 0, st2 = pad2.steerId !== null;
+  ctx.globalAlpha = .9;
+  ctx.fillStyle = "rgba(16,22,42,.55)"; ctx.fillRect(W / 2 - 1, GROUND + 4, 2, FOOT - GROUND - 8);
+  text("< DRAG TO STEER >", W / 4, y, 10, st2 ? C.teal : C.peri);
+  ctx.fillStyle = on ? C.teal : "rgba(16,22,42,.7)"; ctx.fillRect(W * 3 / 4 - 70, y - 17, 140, 34);
+  ctx.strokeStyle = C.teal; ctx.lineWidth = 2; ctx.strokeRect(W * 3 / 4 - 70, y - 17, 140, 34);
+  text("FIRE", W * 3 / 4, y, 12, on ? C.navy : C.teal);
+  ctx.globalAlpha = 1;
+}
 function drawFooter() {
   text(save.mute ? "SOUND OFF" : "SOUND ON", W - 14, FOOT + 15, 8, save.mute ? C.steel : C.teal, "right");
   hits.push({ x:W - 120, y:FOOT, w:120, h:H - FOOT, action:() => { save.mute = !save.mute; persist(); if (!save.mute) SFX.blip(); } });
@@ -537,7 +555,7 @@ function drawTitle() {
   }
   if (blink()) text("PRESS ENTER OR TAP TO START", W / 2, 578, 12, C.teal);
   text("ARROWS MOVE  ·  SPACE FIRES  ·  P PAUSE", W / 2, 620, 8, C.steel);
-  text("TOUCH: DRAG TO STEER, AUTO-FIRE", W / 2, 640, 8, C.steel);
+  text("TOUCH: LEFT SIDE STEERS  ·  RIGHT SIDE FIRES", W / 2, 640, 8, C.steel);
   const n = PLANES.filter((p, i) => isUnlocked(i)).length;
   text(`AIRCRAFT UNLOCKED ${n}/${PLANES.length}`, W / 2, 682, 10, C.white);
   hits.push({ x:0, y:0, w:W, h:FOOT, action:goHangar });
@@ -685,6 +703,7 @@ function draw() {
     ctx.fillStyle = "rgba(16,22,42,.75)"; ctx.fillRect(0, 0, W, FOOT);
     text("PAUSED", W / 2, 360, 28, C.teal); text("PRESS P OR TAP TO RESUME", W / 2, 410, 10, C.white);
   }
+  drawTouchPad();
   drawFooter();
   // CRT scanlines
   ctx.fillStyle = "rgba(0,0,0,.12)";
@@ -730,14 +749,28 @@ cv.addEventListener("pointerdown", e => {
   const p = toLogical(e);
   if (paused) { paused = false; return; }
   const h = [...hits].reverse().find(h => p.x >= h.x && p.x <= h.x + h.w && p.y >= h.y && p.y <= h.y + h.h);
-  if (state === "play" && !(h && p.y > FOOT)) { touch.active = true; touch.x = p.x; cv.setPointerCapture(e.pointerId); return; }
+  if (state === "play" && !(h && p.y > FOOT)) {
+    cv.setPointerCapture(e.pointerId);
+    if (e.pointerType === "mouse") { touch.active = true; touch.x = p.x; return; }
+    pad2.used = true;
+    if (p.x < W / 2 && pad2.steerId === null) { pad2.steerId = e.pointerId; pad2.lastX = p.x; }
+    else { pad2.fire.add(e.pointerId); pad2.queued = true; }
+    return;
+  }
   if (h) h.action();
 });
-cv.addEventListener("pointermove", e => { if (touch.active) touch.x = toLogical(e).x; });
-const endTouch = () => { touch.active = false; };
+cv.addEventListener("pointermove", e => {
+  if (e.pointerType === "mouse") { if (touch.active) touch.x = toLogical(e).x; return; }
+  if (e.pointerId === pad2.steerId) { const x = toLogical(e).x; pad2.dx += x - pad2.lastX; pad2.lastX = x; }
+});
+const endTouch = e => {
+  if (e.pointerType === "mouse") { touch.active = false; return; }
+  if (e.pointerId === pad2.steerId) pad2.steerId = null;
+  pad2.fire.delete(e.pointerId);
+};
 cv.addEventListener("pointerup", endTouch); cv.addEventListener("pointercancel", endTouch);
 document.addEventListener("visibilitychange", () => { if (document.hidden && state === "play") paused = true; });
-addEventListener("blur", () => { keys.left = keys.right = keys.fire = false; touch.active = false; });
+addEventListener("blur", () => { keys.left = keys.right = keys.fire = false; touch.active = false; pad2.steerId = null; pad2.fire.clear(); pad2.queued = false; });
 
 new ResizeObserver(resize).observe(wrap);
 resize();
