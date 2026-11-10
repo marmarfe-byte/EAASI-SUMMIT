@@ -313,7 +313,7 @@ main {
   color: var(--navy);
 }
 .btn:active { background: var(--teal-dark); }
-.buy-tickets-btn {
+.home-cta-btn {
   width: 100%;
   padding: 15px 18px;
   font-size: 15.5px;
@@ -321,7 +321,7 @@ main {
   margin-bottom: 16px;
   box-shadow: var(--shadow-card);
 }
-.buy-tickets-btn svg { width: 20px; height: 20px; }
+.home-cta-btn svg { width: 20px; height: 20px; }
 .btn.btn--ghost {
   background: transparent;
   border: 1.5px solid var(--teal);

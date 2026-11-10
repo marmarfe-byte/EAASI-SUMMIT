@@ -14,7 +14,7 @@ import { renderMenuDetail } from "./components/menu.js";
 
 const TABS = [
   { id: "home", label: "Home" },
-  { id: "tickets", label: "Tickets" },
+  // Tickets tab hidden: registration closed (Nov 2026). Re-add to restore.
   { id: "venue", label: "Venue" },
   { id: "agenda", label: "Agenda" },
   { id: "speakers", label: "Speakers" },

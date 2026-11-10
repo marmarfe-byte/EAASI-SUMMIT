@@ -1,10 +1,9 @@
 import { SCAN_GLYPH_MOTIF, ICONS } from "../icons.js";
-import { escapeHtml, displayText, isPlaceholder, externalLinkAttrs } from "../utils.js";
+import { escapeHtml, displayText, isPlaceholder } from "../utils.js";
 import { TIER_ORDER, TIER_LABELS } from "./sponsors.js";
 
 export function renderHome(data) {
   const home = data.home;
-  const tickets = data.tickets;
 
   const quickLinks = (home.quickLinks || [])
     .map(
@@ -62,8 +61,8 @@ export function renderHome(data) {
       </div>
     </section>
     ${
-      tickets && !isPlaceholder(tickets.purchaseUrl)
-        ? `<a class="btn buy-tickets-btn" href="${escapeHtml(tickets.purchaseUrl)}" ${externalLinkAttrs()}>${ICONS.tickets} Buy Tickets</a>`
+      home.agendaPdf && !isPlaceholder(home.agendaPdf)
+        ? `<a class="btn home-cta-btn" href="${escapeHtml(home.agendaPdf)}" download="EAASI_Summit_2026_Agenda.pdf">${ICONS.download} Download Agenda</a>`
         : ""
     }
     <div class="quick-links">${quickLinks}</div>

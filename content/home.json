@@ -9,6 +9,7 @@
   },
   "welcomeMessage": "Join EAASI Members and Observers in Alicante for keynotes, working sessions, and networking dedicated to the aerial surveying industry — hosted at Hotel Alicante Golf, Playa San Juan.",
   "countdownTargetISO": "2026-11-17T09:00:00+01:00",
+  "agendaPdf": "/assets/docs/eaasi-summit-2026-agenda.pdf",
   "quickLinks": [
     { "label": "Agenda", "target": "agenda" },
     { "label": "Venue & Map", "target": "venue" },
