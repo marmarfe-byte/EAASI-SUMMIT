@@ -396,11 +396,11 @@
           "id": "d3-s7",
           "startTime": "15:00",
           "endTime": "16:00",
-          "title": "Working Groups: Progress, Discussion & Next Steps",
+          "title": "Committees: Progress, Discussion & Next Steps",
           "room": "Birdie",
           "speakerIds": [],
-          "description": "EAASI working groups report on progress, discuss open topics and agree next steps.",
-          "track": "Working Group"
+          "description": "EAASI committees report on progress, discuss open topics and agree next steps.",
+          "track": "Committee"
         },
         {
           "id": "d3-s8",
@@ -409,7 +409,7 @@
           "title": "Committees Conclusions & Next Steps",
           "room": "Augusta",
           "speakerIds": [],
-          "description": "Working groups present their conclusions.",
+          "description": "Committees present their conclusions.",
           "track": "Plenary"
         },
         {
