@@ -12,7 +12,7 @@
  * added/renamed.
  */
 
-const CACHE_VERSION = "eaasi-summit-v61";
+const CACHE_VERSION = "eaasi-summit-v62";
 const APP_SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const CONTENT_CACHE = `${CACHE_VERSION}-content`;
 

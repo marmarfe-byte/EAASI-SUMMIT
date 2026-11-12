@@ -81,8 +81,8 @@ async function lbRefresh() {
   if (!LB_ON) return;
   try {
     const r = await fetch(`${LEADERBOARD.url}/rest/v1/scores?select=id,name,score,wave,plane&order=score.desc,created_at.asc&limit=10`, { headers:lbHeaders() });
-    if (r.ok) lb.top = await r.json();
-  } catch (e) {}
+    if (r.ok) { lb.top = await r.json(); lb.failed = false; } else lb.failed = true;
+  } catch (e) { lb.failed = true; }
 }
 async function lbSubmit(name, score, wave, plane) {
   const r = await fetch(`${LEADERBOARD.url}/rest/v1/rpc/submit_score`, {
@@ -545,20 +545,33 @@ function drawTitle() {
   if (LB_ON && lb.top && lb.top.length && Math.floor(clock / 7) % 2 === 1) {
     drawBoard(300, null);
   } else {
-  text("* SCORE ADVANCE TABLE *", W / 2, 312, 10, C.white);
+  text("* SCORE ADVANCE TABLE *", W / 2, 302, 10, C.white);
   const rows = [["jammer", "= ? MYSTERY"], ["storm", "= 40 POINTS"], ["cumulus", "= 20 POINTS"], ["small", "= 10 POINTS"]];
   rows.forEach(([k, l], i) => {
-    const y = 358 + i * 50, sp = SPR[k][Math.floor(clock * 2) % 2];
+    const y = 342 + i * 46, sp = SPR[k][Math.floor(clock * 2) % 2];
     ctx.drawImage(sp, W / 2 - 150 - sp.width / 2, y - sp.height / 2);
     text(l, W / 2 - 80, y, 12, C.white, "left");
   });
   }
-  if (blink()) text("PRESS ENTER OR TAP TO START", W / 2, 578, 12, C.teal);
-  text("ARROWS MOVE  ·  SPACE FIRES  ·  P PAUSE", W / 2, 620, 8, C.steel);
-  text("TOUCH: LEFT SIDE STEERS  ·  RIGHT SIDE FIRES", W / 2, 640, 8, C.steel);
+  if (blink()) text("PRESS ENTER OR TAP TO START", W / 2, 528, 12, C.teal);
+  text("ARROWS MOVE  ·  SPACE FIRES  ·  P PAUSE  ·  L TOP PILOTS", W / 2, 618, 8, C.steel);
+  text("TOUCH: LEFT SIDE STEERS  ·  RIGHT SIDE FIRES", W / 2, 636, 8, C.steel);
   const n = PLANES.filter((p, i) => isUnlocked(i)).length;
-  text(`AIRCRAFT UNLOCKED ${n}/${PLANES.length}`, W / 2, 682, 10, C.white);
+  text(`AIRCRAFT UNLOCKED ${n}/${PLANES.length}`, W / 2, 670, 10, C.white);
   hits.push({ x:0, y:0, w:W, h:FOOT, action:goHangar });
+  if (LB_ON) button("TOP PILOTS", W / 2 - 120, 552, 240, 40, true, goBoard);
+}
+
+function drawBoardScreen() {
+  text("TOP PILOTS", W / 2, 92, 24, C.teal);
+  text("THE 10 BEST SCORES AT THE SUMMIT", W / 2, 126, 8, C.steel);
+  if (lb.top) drawBoard(130, lb.myId, false);
+  else text(lb.failed ? "COULD NOT LOAD THE RANKING. CHECK THE CONNECTION." : "LOADING...", W / 2, 240, 10, C.white);
+  text(`YOUR HI-SCORE ${pad(save.hi)}`, W / 2, 440, 10, C.white);
+  if (lb.rank && lb.rank > 10) text(`YOUR LAST RANK: #${lb.rank}`, W / 2, 466, 10, C.teal);
+  button("BACK", W / 2 - 250, 670, 230, 44, true, goTitle);
+  button("PLAY", W / 2 + 20, 670, 230, 44, true, goHangar);
+  text("ESC BACK  ·  ENTER PLAY", W / 2, 738, 8, C.white);
 }
 
 function drawHangar() {
@@ -629,8 +642,8 @@ function drawPicker(owned, a) {
   text("ARROWS CHOOSE  ·  ENTER CONFIRM", W / 2, 670, 8, C.steel, "center", a);
 }
 
-function drawBoard(y0, hiId) {
-  text("* TOP PILOTS *", W / 2, y0 + 12, 12, C.teal);
+function drawBoard(y0, hiId, heading = true) {
+  if (heading) text("* TOP PILOTS *", W / 2, y0 + 12, 12, C.teal);
   const rows = lb.top || [];
   if (!rows.length) { text("NO SCORES YET. BE THE FIRST!", W / 2, y0 + 60, 10, C.white); return; }
   rows.slice(0, 10).forEach((r, i) => {
@@ -697,8 +710,9 @@ function draw() {
   ctx.imageSmoothingEnabled = false;
   if (state === "title") drawTitle();
   else if (state === "hangar") drawHangar();
+  else if (state === "board") drawBoardScreen();
   else { drawHUD(); drawWorld(); if (state === "clear") drawClear(); if (state === "over") drawOver(); }
-  if (state === "title" || state === "hangar") text("HI " + pad(save.hi), W - 16, 26, 10, C.steel, "right");
+  if (state === "title" || state === "hangar" || state === "board") text("HI " + pad(save.hi), W - 16, 26, 10, C.steel, "right");
   if (paused) {
     ctx.fillStyle = "rgba(16,22,42,.75)"; ctx.fillRect(0, 0, W, FOOT);
     text("PAUSED", W / 2, 360, 28, C.teal); text("PRESS P OR TAP TO RESUME", W / 2, 410, 10, C.white);
@@ -711,10 +725,12 @@ function draw() {
 }
 
 // ---------------------------------------------------------------- flow
+function goBoard() { state = "board"; st = 0; SFX.blip(); lbRefresh(); }
+function goTitle() { state = "title"; st = 0; SFX.blip(); }
 function goHangar() { form.hidden = true; state = "hangar"; st = 0; SFX.blip(); lbRefresh(); }
 function primary() {
   if (paused) { paused = false; return; }
-  if (state === "title") goHangar();
+  if (state === "title" || state === "board") goHangar();
   else if (state === "hangar") { if (isUnlocked(sel)) newGame(); else SFX.nope(); }
   else if (state === "over" && st > 1 && g.lbDone) goHangar();
   else if (state === "clear" && g.picking && st >= 1.2) choosePlane(g.pickSel);
@@ -730,6 +746,8 @@ addEventListener("keydown", e => {
     if (e.code === "ArrowUp" || e.code === "ArrowDown" || e.code === "KeyW" || e.code === "KeyS") { sel = (sel + 2) % 4; SFX.blip(); return; }
     if (e.code === "Escape") { state = "title"; st = 0; return; }
   }
+  if (state === "title" && e.code === "KeyL" && LB_ON) { goBoard(); return; }
+  if (state === "board" && e.code === "Escape") { goTitle(); return; }
   if (state === "clear" && g && !e.repeat) {
     if (g.picking) {
       if (e.code === "ArrowLeft" || e.code === "KeyA") { movePick(-1); return; }
@@ -782,7 +800,7 @@ function loop(now) {
   requestAnimationFrame(loop);
 }
 if (document.fonts && document.fonts.load) document.fonts.load(`12px ${FONT}`).then(() => { bgLayer = buildBackground(); }).catch(() => {});
-lbRefresh(); setInterval(() => { if (state === "title") lbRefresh(); }, 60000);
+lbRefresh(); setInterval(() => { if (state === "title" || state === "board") lbRefresh(); }, 60000);
 requestAnimationFrame(loop);
 cv.focus({ preventScroll:true });
 })();
