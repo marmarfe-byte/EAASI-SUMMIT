@@ -1,0 +1,13 @@
+name: tmp-leaderboard-read
+on:
+  push:
+    branches: [tmp-leaderboard-read]
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read Top Pilots
+        run: |
+          curl -sS "https://eqlgrzfvixsyzjjqiiji.supabase.co/rest/v1/scores?select=id,name,score,wave,plane,created_at&order=score.desc,created_at.asc&limit=20" \
+            -H "apikey: sb_publishable_DVnReUZmPpT6lR_H69135Q_m09yCT29" | python3 -m json.tool
+          echo; curl -sS -I "https://eqlgrzfvixsyzjjqiiji.supabase.co/rest/v1/scores?select=id" -H "apikey: sb_publishable_DVnReUZmPpT6lR_H69135Q_m09yCT29" -H "Prefer: count=exact" | grep -i content-range
