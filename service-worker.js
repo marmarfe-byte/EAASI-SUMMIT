@@ -9,7 +9,7 @@
  * the game still open offline. PDFs are not precached.
  */
 
-const CACHE_VERSION = "eaasi-summit-v63-farewell";
+const CACHE_VERSION = "eaasi-summit-v64-farewell";
 
 const PRECACHE_FILES = [
   "/",

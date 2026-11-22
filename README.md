@@ -1,6 +1,6 @@
 # EAASI Partners Summit — farewell page (between summits)
 
-Since 22 Nov 2026 eaasi-summit.eu shows only a farewell page: the "¡Gracias, Alicante!" image, the Cloud Invaders game (`play/`) and the English Alicante tide-gauge PDF (`assets/docs/`).
+Since 22 Nov 2026 eaasi-summit.eu shows only a farewell page: the "¡Gracias, Alicante!" image, the Cloud Invaders game (`play/`) and a button to the tide-gauge visit guide "Where Spain's Heights Begin" (Claude artifact https://claude.ai/artifact/BkwKufdw5r8dfRHXHVQQkc).
 
 The full 2026 event app (agenda, speakers, sponsors, venue, menus…) is saved in:
 
