@@ -1,13 +1,13 @@
 {
   "name": "EAASI Partners Summit 2026",
   "short_name": "EAASI Summit",
-  "description": "Agenda, venue, speakers, and event info for the EAASI Partners Summit 2026 in Alicante, Spain.",
+  "description": "Thank you for the EAASI Partners Summit 2026 in Alicante. Next stop: EAASI Partners Summit 2027.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "theme_color": "#3DBFBF",
-  "background_color": "#EEF2F8",
+  "theme_color": "#1A2340",
+  "background_color": "#1A2340",
   "lang": "en",
   "icons": [
     {

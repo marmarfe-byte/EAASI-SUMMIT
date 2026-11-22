@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>EAASI Partners Summit 2026</title>
-  <meta name="description" content="Agenda, venue, speakers, and event info for the EAASI Partners Summit 2026 in Alicante, Spain." />
+  <title>EAASI Partners Summit 2026 — Thank you, Alicante</title>
+  <meta name="description" content="Thank you for a record EAASI Partners Summit 2026 in Alicante. Next stop: EAASI Partners Summit 2027, destination coming soon." />
 
   <link rel="manifest" href="/manifest.json" />
-  <meta name="theme-color" content="#3DBFBF" />
+  <meta name="theme-color" content="#1A2340" />
 
   <link rel="icon" href="/icons/icon-192.png" type="image/png" />
   <link rel="apple-touch-icon" href="/icons/icon-192.png" />
@@ -16,10 +16,49 @@
   <meta name="apple-mobile-web-app-title" content="EAASI Summit" />
   <meta name="mobile-web-app-capable" content="yes" />
 
-  <link rel="stylesheet" href="/css/styles.css" />
+  <!-- Farewell page shown between summits. The full 2026 event app is archived in
+       "EAASI Partners Summit Event App/archive/2026-alicante-app" and git tag alicante-2026-final. -->
+  <style>
+    :root { --navy: #1A2340; --navy-2: #2B3A67; --teal: #3DBFBF; --white: #F5F8FF; --steel: #9AA8C7; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--navy); color: var(--white); }
+    body {
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      display: flex; flex-direction: column; align-items: center;
+      padding: max(16px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+    }
+    main { width: 100%; max-width: 540px; }
+    .farewell { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: 0 10px 30px rgba(0, 0, 0, .35); }
+    .links { display: grid; gap: 12px; margin-top: 20px; }
+    .btn {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 15px 18px; border-radius: 14px; font-size: 15.5px; font-weight: 700;
+      text-decoration: none; text-align: center;
+    }
+    .btn svg { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .btn--primary { background: var(--teal); color: var(--navy); }
+    .btn--outline { border: 1.5px solid var(--teal); color: var(--white); }
+    .btn:active { opacity: .85; }
+  </style>
 </head>
 <body>
-  <div id="app-shell"></div>
-  <script type="module" src="/js/main.js"></script>
+  <main>
+    <img class="farewell" src="/assets/farewell-2026.webp" width="1080" height="1350"
+      alt="EAASI Partners Summit 2026, Alicante, 17–20 November 2026. ¡Gracias, Alicante! Thank you for a record Summit: 110 participants, 61 organisations, 21 countries. Next stop: EAASI Partners Summit 2027, destination coming soon." />
+    <div class="links">
+      <a class="btn btn--primary" href="/play/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 13l8-2 4-7h2l-2 7 6 1v2l-6 1 2 7h-2l-4-7-8-2z"/></svg>
+        Play Cloud Invaders
+      </a>
+      <a class="btn btn--outline" href="/assets/docs/alicante-tide-gauge-brochure-en.pdf">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 16c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2"/><path d="M2 20c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2"/><path d="M12 3v9"/><path d="M9 6h6"/></svg>
+        Alicante Tide Gauge visit (PDF)
+      </a>
+    </div>
+  </main>
+  <script>
+    if ("serviceWorker" in navigator) navigator.serviceWorker.register("/service-worker.js").catch(() => {});
+  </script>
 </body>
 </html>

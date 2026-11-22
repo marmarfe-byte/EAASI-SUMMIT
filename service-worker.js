@@ -1,93 +1,33 @@
 /**
- * EAASI Partners Summit 2026 — Service Worker
+ * EAASI Partners Summit — Service Worker (farewell page between summits)
  *
- * Strategy:
- * - App shell (HTML/CSS/JS): cache-first, populated on install
- * - content/*.json (agenda, venue, speakers, etc.): network-first,
- *   falling back to cache so the app works offline once content has
- *   been fetched at least once.
+ * Replaces the 2026 event-app worker on attendees' phones: on activate it deletes
+ * every older cache, and the old app reloads itself when this worker takes control,
+ * so installed apps switch to the farewell page.
  *
- * This is a plain static build (no bundler), so the shell file list
- * below is the real, final set of files — update it if files are
- * added/renamed.
+ * Strategy: network-first for everything, cache fallback so the farewell page and
+ * the game still open offline. PDFs are not precached.
  */
 
-const CACHE_VERSION = "eaasi-summit-v62";
-const APP_SHELL_CACHE = `${CACHE_VERSION}-shell`;
-const CONTENT_CACHE = `${CACHE_VERSION}-content`;
+const CACHE_VERSION = "eaasi-summit-v63-farewell";
 
-const APP_SHELL_FILES = [
+const PRECACHE_FILES = [
   "/",
   "/index.html",
-  "/manifest.json",
-  "/css/styles.css",
-  "/js/main.js",
-  "/js/data.js",
-  "/js/icons.js",
-  "/js/utils.js",
-  "/js/components/home.js",
-  "/js/components/venue.js",
-  "/js/components/agenda.js",
-  "/js/components/speakers.js",
-  "/js/components/social.js",
-  "/js/components/additional.js",
-  "/js/components/sponsors.js",
-  "/js/components/committees.js",
-  "/js/components/practical.js",
-  "/js/components/tickets.js",
-  "/js/components/menu.js",
+  "/assets/farewell-2026.webp",
   "/play/",
+  "/manifest.json",
   "/icons/icon-192.png",
   "/icons/icon-512.png",
-  "/assets/eaasi-logo.png",
-  "/assets/sponsors/hexagon.png",
-  "/assets/sponsors/esri.png",
-  "/assets/sponsors/riegl.png",
-  "/assets/sponsors/flai.png",
-  "/assets/sponsors/pointly.png",
-  "/assets/sponsors/neobora.svg",
-  "/assets/sponsors/vexcel.png",
-  "/assets/sponsors/diamond-aircraft.png",
-  "/assets/sponsors/xeos.png",
-  "/assets/sponsors/teledyne.png",
-  "/assets/sponsors/phaseone.png",
-  "/assets/sponsors/simactive.png",
-  "/assets/sponsors/trimble.png",
-  "/assets/venue/hotel-1.avif",
-  "/assets/practical/vista-alicante.avif",
-  "/assets/practical/taxis/freenow.svg",
-  "/assets/practical/taxis/bolt.svg",
-  "/assets/practical/taxis/cabify.svg",
-  "/assets/practical/taxis/uber.svg",
-  "/assets/committees/eu-projects.png",
-  "/assets/committees/universities.png",
-  "/assets/committees/aerial-operations.png",
-  "/assets/committees/certification.png",
-];
-
-const CONTENT_FILES = [
-  "/content/home.json",
-  "/content/tickets.json",
-  "/content/venue.json",
-  "/content/agenda.json",
-  "/content/speakers.json",
-  "/content/social_activities.json",
-  "/content/additional_activities.json",
-  "/content/sponsors.json",
-  "/content/committees.json",
-  "/content/practical_info.json",
-  "/content/menus.json",
 ];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
-      const shellCache = await caches.open(APP_SHELL_CACHE);
-      // cache: "reload" bypasses the browser's HTTP cache (GitHub Pages sends
-      // max-age=600), so a new version never stores stale JS/CSS.
-      await shellCache.addAll(APP_SHELL_FILES.map((u) => new Request(u, { cache: "reload" })));
-      const contentCache = await caches.open(CONTENT_CACHE);
-      await contentCache.addAll(CONTENT_FILES.map((u) => new Request(u, { cache: "reload" })));
+      const cache = await caches.open(CACHE_VERSION);
+      // One by one so a single missing file (e.g. "/play/" on the local dev server,
+      // which has no directory index) does not abort the install.
+      await Promise.allSettled(PRECACHE_FILES.map((u) => cache.add(new Request(u, { cache: "reload" }))));
       self.skipWaiting();
     })()
   );
@@ -97,11 +37,7 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(
     (async () => {
       const keys = await caches.keys();
-      await Promise.all(
-        keys
-          .filter((key) => !key.startsWith(CACHE_VERSION))
-          .map((key) => caches.delete(key))
-      );
+      await Promise.all(keys.filter((key) => key !== CACHE_VERSION).map((key) => caches.delete(key)));
       self.clients.claim();
     })()
   );
@@ -109,34 +45,21 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
   const { request } = event;
-  if (request.method !== "GET") return;
-  const url = new URL(request.url);
-
-  // Content JSON: network-first, cache fallback (keeps content fresh
-  // when online, still works offline).
-  if (url.pathname.startsWith("/content/")) {
-    event.respondWith(
-      (async () => {
-        try {
-          const fresh = await fetch(request);
-          const cache = await caches.open(CONTENT_CACHE);
-          cache.put(request, fresh.clone());
-          return fresh;
-        } catch (err) {
-          const cached = await caches.match(request);
-          if (cached) return cached;
-          throw err;
-        }
-      })()
-    );
-    return;
-  }
-
-  // App shell: cache-first
+  if (request.method !== "GET" || new URL(request.url).origin !== self.location.origin) return;
   event.respondWith(
     (async () => {
-      const cached = await caches.match(request);
-      return cached || fetch(request);
+      try {
+        const fresh = await fetch(request);
+        if (fresh.ok && !request.url.endsWith(".pdf")) {
+          const cache = await caches.open(CACHE_VERSION);
+          cache.put(request, fresh.clone());
+        }
+        return fresh;
+      } catch (err) {
+        const cached = (await caches.match(request)) || (request.mode === "navigate" && (await caches.match("/")));
+        if (cached) return cached;
+        throw err;
+      }
     })()
   );
 });
